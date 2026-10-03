@@ -4,9 +4,9 @@ test families: ['Cryptohitman', 'DMALocker', 'JigSaw', 'Locky', 'TowerWeb', 'Wan
 
               precision    recall  f1-score   support
 
-      Benign       0.96      0.84      0.90     33384
-  Ransomware       0.88      0.97      0.93     41375
+      Benign       0.97      0.88      0.92     33384
+  Ransomware       0.91      0.98      0.94     41375
 
-    accuracy                           0.91     74759
-   macro avg       0.92      0.91      0.91     74759
-weighted avg       0.92      0.91      0.91     74759
+    accuracy                           0.93     74759
+   macro avg       0.94      0.93      0.93     74759
+weighted avg       0.94      0.93      0.93     74759

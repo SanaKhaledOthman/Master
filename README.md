@@ -56,7 +56,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    I["<b>Input layer</b><br/>d = 8 features<br/>Time, Protocol, Flag, Family,<br/>Clusters, Threats, USD, BTC"]
+    I["<b>Input layer</b><br/>d = 10 features<br/>Time, Protocol, Flag, Family,<br/>Clusters, BTC, USD, Netflow_Bytes,<br/>Threats, Port"]
     H1["<b>Hidden layer 1</b><br/>Fully connected, 64 neurons<br/>W1 ∈ R^64×d<br/>ReLU"]
     H2["<b>Hidden layer 2</b><br/>Fully connected, 64 neurons<br/>W2 ∈ R^64×64<br/>ReLU"]
     O["<b>Output layer</b><br/>Linear, no activation<br/>one Q-value per action<br/>binary: 2 · multiclass: 3"]
@@ -64,13 +64,13 @@ flowchart LR
     I --> H1 --> H2 --> O --> A
 ```
 
-| Layer | Type | Shape | Activation | Parameters (d = 8, binary) |
+| Layer | Type | Shape | Activation | Parameters (d = 10, binary) |
 |---|---|---|---|---|
-| Input | flow feature vector | d = 8 | – | – |
-| Hidden 1 | Linear | d → 64 | ReLU | 8·64 + 64 = 576 |
+| Input | flow feature vector | d = 10 (8 with `--features table1`) | – | – |
+| Hidden 1 | Linear | d → 64 | ReLU | 10·64 + 64 = 704 |
 | Hidden 2 | Linear | 64 → 64 | ReLU | 64·64 + 64 = 4,160 |
 | Output | Linear | 64 → \|A\| (2 or 3) | identity | 64·2 + 2 = 130 (multiclass 195) |
-| **Total** | | | | **4,866** (multiclass 4,931) |
+| **Total** | | | | **4,994** (multiclass 5,059) |
 
 The target network Q(s, a; θ⁻) is an identical copy of these layers. Its weights are copied from
 the policy network at the end of every episode.
@@ -126,7 +126,7 @@ run_experiments.py          runs Exp 1–4, writes metrics and figures
 |---|---|
 | Dataset: UGRansome, 149,043 flows, labels A / S / SS (Table 1, Fig. 1) | `data/ugransome_final2.csv`, the Kaggle `final(2).csv`. Label counts match exactly: S = 66,380, A = 42,561, SS = 40,102 |
 | Remove incomplete records; drop `SeedAddress`, `ExpAddress`, `IPaddress`; label-encode `Protocol`, `Flag`, `Family`, `Threats`; Min-Max to [0, 1] (Sec. IV-A, Fig. 3) | `dqn_ids/data.py` |
-| Features: Time, Protocol, Flag, Family, Clusters, Threats, USD, BTC (Table 1) | default `--features table1`; `--features all` also keeps `Netflow_Bytes` and `Port` |
+| Features: all columns left after dropping the 3 high-cardinality IDs (Sec. IV-A text) | default `--features all` (10 features). `--features table1` uses the 8 features listed in Table 1, which omits `Netflow_Bytes` and `Port` |
 | Binary: S = benign, A + SS = ransomware | `task="binary"` |
 | Random 70/30 stratified split (Exp 1, 3) | `train_test_split(..., stratify=Prediction)`. The test set has 44,713 rows, matching the paper |
 | Zero-day family split (Exp 2, 4) | see below |
@@ -157,38 +157,39 @@ In both cases 6 of the 17 families (≈ 30 %) are held out.
 | Multiclass reward (only "positive if correct, negative otherwise") | +1 correct / −1 wrong | `--multiclass-reward asymmetric` (Table 2 generalised to 3 classes) |
 | Order of samples within an episode | 20,000 flows drawn uniformly from the training set | – |
 | Min-Max scaler fit | training split only (no test leakage) | `--scale-on all` |
-| Feature set | Table 1 (8 features) | `--features all` (10 features) |
+| Feature set | all 10 remaining features (Sec. IV-A text). Matches the paper best, see the sweep below | `--features table1` (8 features in Table 1) |
 | Seeds / "best run" | the paper reports its best run; we report the best seed **and** the mean ± std over seeds | `--seeds` |
 
 ## Results
 
-Default configuration (Table 3 hyperparameters, Table 1 features, scaler fit on train), seeds 0–2.
-Regenerate with `python run_experiments.py --seeds 0 1 2`. Every number below is in `results/`.
+Default configuration: Table 3 hyperparameters, all 10 remaining features, scaler fit on the
+training split only, seeds 0–2. Regenerate with `python run_experiments.py --seeds 0 1 2`. Every
+number below is in `results/`.
 
 | Exp | Setting | Paper accuracy | Reproduced, best seed | Reproduced, mean ± std | Paper macro-F1 | Reproduced macro-F1 |
 |---|---|---|---|---|---|---|
-| 1 | Binary (Random Split) | 97.6% | 96.9% | 96.7% ± 0.2% | 0.98 | 0.97 |
-| 2 | Binary (Zero-Day Family Split) | 95.9% | 91.3% | 90.6% ± 0.7% | 0.96 | 0.91 |
-| 3 | Multiclass (Random Split) | 97.0% | 97.2% | 97.0% ± 0.1% | 0.97 | 0.97 |
-| 4 | Multiclass (Zero-Day Family Split) | 92.0% | 94.0% | 93.6% ± 0.5% | 0.92 | 0.94 |
+| 1 | Binary (Random Split) | 97.6% | **97.7%** | 97.4% ± 0.2% | 0.98 | 0.98 |
+| 2 | Binary (Zero-Day Family Split) | 95.9% | **93.2%** | 91.7% ± 1.4% | 0.96 | 0.93 |
+| 3 | Multiclass (Random Split) | 97.0% | **97.6%** | 97.6% ± 0.1% | 0.97 | 0.98 |
+| 4 | Multiclass (Zero-Day Family Split) | 92.0% | **93.0%** | 92.6% ± 0.4% | 0.92 | 0.93 |
 
 ### Per-class recall (best seed)
 
 | Exp | Paper | Reproduced |
 |---|---|---|
-| 1 | Benign 0.95 / Ransomware 1.00 | Benign 0.94 / Ransomware 1.00 |
-| 2 | Benign 0.93 / Ransomware 0.99 | Benign 0.84 / Ransomware 0.97 |
-| 3 | A 0.94 / S 0.97 / SS 0.99 | A 0.96 / S 0.98 / SS 0.98 |
-| 4 | A 0.90 / S 0.89 / SS 0.99 | A 0.91 / S 0.94 / SS 0.98 |
+| 1 | Benign 0.95 / Ransomware 1.00 | Benign 0.95 / Ransomware 1.00 |
+| 2 | Benign 0.93 / Ransomware 0.99 | Benign 0.88 / Ransomware 0.98 |
+| 3 | A 0.94 / S 0.97 / SS 0.99 | A 0.97 / S 0.97 / SS 0.99 |
+| 4 | A 0.90 / S 0.89 / SS 0.99 | A 0.90 / S 0.92 / SS 0.98 |
 
 ### Confusion matrices (rows = true, cols = predicted)
 
 | Exp | Paper | Reproduced (best seed) |
 |---|---|---|
-| 1 | `[[18893, 1021], [65, 24734]]` | `[[18637, 1277], [117, 24682]]` |
-| 2 | `[[30891, 2493], [570, 40805]]` | `[[28027, 5357], [1122, 40253]]` |
-| 3 | `[[12050, 450, 268], [416, 19238, 260], [42, 49, 11940]]` | `[[12241, 422, 105], [403, 19451, 60], [127, 147, 11757]]` |
-| 4 | `[[17511, 1131, 786], [1723, 25392, 1323], [76, 47, 16399]]` | `[[17631, 1116, 681], [1187, 26648, 603], [204, 77, 16241]]` |
+| 1 | `[[18893, 1021], [65, 24734]]` | `[[18986, 928], [95, 24704]]` |
+| 2 | `[[30891, 2493], [570, 40805]]` | `[[29250, 4134], [918, 40457]]` |
+| 3 | `[[12050, 450, 268], [416, 19238, 260], [42, 49, 11940]]` | `[[12403, 219, 146], [391, 19368, 155], [65, 98, 11868]]` |
+| 4 | `[[17511, 1131, 786], [1723, 25392, 1323], [76, 47, 16399]]` | `[[17516, 1037, 875], [1326, 26092, 1020], [177, 82, 16263]]` |
 
 ### Figures
 
@@ -199,12 +200,24 @@ Regenerate with `python run_experiments.py --seeds 0 1 2`. Every number below is
 | Exp 3 | ![](results/exp3_confusion_matrix.png) | ![](results/exp3_loss_curve.png) |
 | Exp 4 | ![](results/exp4_confusion_matrix.png) | ![](results/exp4_loss_curve.png) |
 
+### Sensitivity to the choices the paper leaves open
+
+The table gives best-seed / mean accuracy over seeds 0–2. The first row is the default.
+
+| Features | Scaler fit on | Exp 1 (paper 97.6) | Exp 2 (paper 95.9) | Exp 3 (paper 97.0) | Exp 4 (paper 92.0) |
+|---|---|---|---|---|---|
+| 10 (all) | train | 97.7% / 97.4% | 93.2% / 91.7% | 97.6% / 97.6% | 93.0% / 92.6% |
+| 10 (all) | all | 97.7% / 97.4% | 92.5% / 91.7% | 97.6% / 97.6% | 92.7% / 92.5% |
+| 8 (Table 1) | train | 96.9% / 96.7% | 91.3% / 90.6% | 97.2% / 97.0% | 94.0% / 93.6% |
+| 8 (Table 1) | all | 96.9% / 96.7% | 93.2% / 91.7% | 97.2% / 97.0% | 94.0% / 93.9% |
+
 ### Discussion
 
-- **Exp 1 and Exp 3 (random splits) reproduce.** Accuracy is within 0.7 pts of the paper, and the confusion matrices have the same structure. In binary, the asymmetric reward pushes ransomware recall to ≈1.00 at the cost of ~1,000 false positives, as in the paper's Fig. 6.
-- **The loss curves match the paper's shape.** In the binary experiments the TD loss jumps from ≈0.07 to ≈0.25 after the first target-network sync and then plateaus (paper Fig. 5/8). This comes from the γ = 0.99 bootstrap. In multiclass the loss decreases monotonically, as in Fig. 10/12.
-- **Exp 4 (multiclass zero-day)** is about 2 pts *above* the paper (94.0 % vs 92.0 %). SS recall is 0.98 (paper 0.99), and S is the hardest class, as in the paper.
-- **Exp 2 (binary zero-day) is the one gap.** It reaches 91 % vs the paper's 95.9 %. The pattern is the same (ransomware recall 0.97 vs 0.99), but more held-out benign flows are flagged as ransomware (benign recall 0.84 vs 0.93). Single DQN runs on this split vary by about ±1 pt across seeds. The paper reports its best run, and seeds or unreported details (sample order, scaler fit, reward for the multiclass case) can plausibly explain the rest.
+- **Exp 1 and Exp 3 (random splits) reproduce.** Exp 1 reaches 97.7 % vs 97.6 %, and its confusion matrix is almost the same as the paper's Fig. 6: 928 vs 1,021 false positives and 95 vs 65 missed ransomware. Exp 3 is 0.6 pts above the paper.
+- **The loss curves match the paper's shape.** In the binary experiments the TD loss jumps from ≈0.06 to ≈0.22–0.25 after the first target-network sync and then plateaus (paper Fig. 5/8). This comes from the γ = 0.99 bootstrap. In multiclass the loss decreases steadily, as in Fig. 10/12.
+- **Exp 4 (multiclass zero-day) reproduces.** It reaches 93.0 % vs 92.0 %. SS recall is 0.98 (paper 0.99), and S and A are the harder classes, as in the paper.
+- **Exp 2 (binary zero-day) is the remaining gap.** It reaches 93.2 % vs the paper's 95.9 %. The error pattern is the same: ransomware recall is 0.98 vs 0.99, and most errors are benign flows from unseen families flagged as ransomware (benign recall 0.88 vs 0.93). This experiment has the highest seed variance (±1.4 pts). The paper reports its best run, so more seeds or unreported details (sample order, seeds) plausibly explain the rest.
+- Using the 8 Table-1 features instead of all 10 costs about 0.7 pts on the random splits. Fitting the scaler on all data instead of only the training split makes little difference.
 
 ## Notes
 

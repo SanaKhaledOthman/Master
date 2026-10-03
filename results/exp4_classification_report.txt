@@ -4,10 +4,10 @@ test families: ['APT', 'EDA2', 'Globe', 'JigSaw', 'Razy', 'SamSam']
 
               precision    recall  f1-score   support
 
-           A       0.93      0.91      0.92     19428
-           S       0.96      0.94      0.95     28438
-          SS       0.93      0.98      0.95     16522
+           A       0.92      0.90      0.91     19428
+           S       0.96      0.92      0.94     28438
+          SS       0.90      0.98      0.94     16522
 
-    accuracy                           0.94     64388
-   macro avg       0.94      0.94      0.94     64388
-weighted avg       0.94      0.94      0.94     64388
+    accuracy                           0.93     64388
+   macro avg       0.93      0.93      0.93     64388
+weighted avg       0.93      0.93      0.93     64388

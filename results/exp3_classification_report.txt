@@ -1,13 +1,13 @@
-Experiment 3: Multiclass (Random Split) (best seed = 0)
+Experiment 3: Multiclass (Random Split) (best seed = 1)
 train=104330 test=44713
 test families: ['APT', 'CryptXXX', 'CryptoLocker', 'CryptoLocker2015', 'Cryptohitman', 'DMALocker', 'EDA2', 'Flyper', 'Globe', 'Globev3', 'JigSaw', 'Locky', 'NoobCrypt', 'Razy', 'SamSam', 'TowerWeb', 'WannaCry']
 
               precision    recall  f1-score   support
 
-           A       0.96      0.96      0.96     12768
-           S       0.97      0.98      0.97     19914
-          SS       0.99      0.98      0.98     12031
+           A       0.96      0.97      0.97     12768
+           S       0.98      0.97      0.98     19914
+          SS       0.98      0.99      0.98     12031
 
-    accuracy                           0.97     44713
-   macro avg       0.97      0.97      0.97     44713
-weighted avg       0.97      0.97      0.97     44713
+    accuracy                           0.98     44713
+   macro avg       0.97      0.98      0.98     44713
+weighted avg       0.98      0.98      0.98     44713

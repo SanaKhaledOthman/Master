@@ -115,7 +115,7 @@ def main():
     p.add_argument("--exp", type=int, nargs="+", default=[1, 2, 3, 4])
     p.add_argument("--seeds", type=int, nargs="+", default=[0, 1, 2, 3, 4])
     p.add_argument("--split-seed", type=int, default=42)
-    p.add_argument("--features", choices=["table1", "all"], default="table1")
+    p.add_argument("--features", choices=["table1", "all"], default="all")
     p.add_argument("--gamma", type=float, default=0.99)
     p.add_argument("--episodes", type=int, default=10)
     p.add_argument("--steps", type=int, default=20_000)

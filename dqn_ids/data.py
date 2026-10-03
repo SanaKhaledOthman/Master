@@ -62,7 +62,7 @@ def load(csv_path=DEFAULT_CSV):
     return df
 
 
-def make_split(df, task, split, features="table1", test_size=0.3, seed=42,
+def make_split(df, task, split, features="all", test_size=0.3, seed=42,
                scale_on="train"):
     """task: 'binary' | 'multiclass'; split: 'random' | 'zeroday'."""
     cols = FEATURE_SETS[features]

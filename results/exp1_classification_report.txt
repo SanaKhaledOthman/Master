@@ -4,9 +4,9 @@ test families: ['APT', 'CryptXXX', 'CryptoLocker', 'CryptoLocker2015', 'Cryptohi
 
               precision    recall  f1-score   support
 
-      Benign       0.99      0.94      0.96     19914
-  Ransomware       0.95      1.00      0.97     24799
+      Benign       1.00      0.95      0.97     19914
+  Ransomware       0.96      1.00      0.98     24799
 
-    accuracy                           0.97     44713
-   macro avg       0.97      0.97      0.97     44713
-weighted avg       0.97      0.97      0.97     44713
+    accuracy                           0.98     44713
+   macro avg       0.98      0.97      0.98     44713
+weighted avg       0.98      0.98      0.98     44713
