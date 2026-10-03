@@ -11,6 +11,88 @@ problem. Each flow is a state, the predicted class is the action, and an asymmet
 missed ransomware. A DQN agent learns the policy. The paper has no public code, so everything here
 follows the description in the paper.
 
+## Architecture of the proposed DQN-based IDS
+
+The diagrams below show the paper's method at three levels: the end-to-end pipeline, the
+Q-network layers, and the DQN training loop (Algorithm 1). They render on GitHub. PNG copies are in
+`docs/` ([pipeline](docs/pipeline.png), [layers](docs/q_network_layers.png), [training loop](docs/dqn_training_loop.png)).
+
+### 1. End-to-end pipeline (paper Sec. IV, Fig. 3, Fig. 4)
+
+```mermaid
+flowchart LR
+    A["UGRansome CSV<br/>149,043 flows × 14 cols<br/>labels A / S / SS"] --> B
+
+    subgraph B["Preprocessing (Fig. 3)"]
+        direction TB
+        B1["1. Remove incomplete records"] --> B2["2. Drop high-cardinality IDs<br/>SeedAddress, ExpAddress, IPaddress"]
+        B2 --> B3["3. Label-encode<br/>Protocol, Flag, Family, Threats"]
+        B3 --> B4["4. Min-Max scale to 0..1"]
+    end
+
+    B --> C{"Split strategy"}
+    C -->|"Random 70/30 stratified"| D1["Exp 1 binary<br/>Exp 3 multiclass"]
+    C -->|"Zero-day: unseen families in test"| D2["Exp 2 binary<br/>Exp 4 multiclass"]
+
+    D1 --> E
+    D2 --> E
+
+    subgraph E["RL environment"]
+        direction TB
+        E1["State s_t = flow feature vector x_t"]
+        E2["Action a_t = predicted class"]
+        E3["Reward r_t from Table 2<br/>TP +1.0 · TN +0.1 · FP −0.5 · FN −1.0"]
+        E4["Next state s_t+1 = next flow"]
+    end
+
+    E <-->|"s_t, r_t / a_t"| F["DQN agent<br/>policy net + target net<br/>+ replay buffer"]
+    F --> G["Trained Q-network<br/>a = argmax Q(s, a)"]
+    G --> H["Evaluation on test set<br/>accuracy, precision, recall, F1,<br/>confusion matrix"]
+```
+
+### 2. Q-network layers (paper Eq. 2, Sec. IV-A)
+
+`Q(s) = W3 · ReLU(W2 · ReLU(W1 · s + b1) + b2) + b3`
+
+```mermaid
+flowchart LR
+    I["<b>Input layer</b><br/>d = 8 features<br/>Time, Protocol, Flag, Family,<br/>Clusters, Threats, USD, BTC"]
+    H1["<b>Hidden layer 1</b><br/>Fully connected, 64 neurons<br/>W1 ∈ R^64×d<br/>ReLU"]
+    H2["<b>Hidden layer 2</b><br/>Fully connected, 64 neurons<br/>W2 ∈ R^64×64<br/>ReLU"]
+    O["<b>Output layer</b><br/>Linear, no activation<br/>one Q-value per action<br/>binary: 2 · multiclass: 3"]
+    A["<b>Action</b><br/>argmax over Q-values<br/>Benign / Ransomware<br/>or A / S / SS"]
+    I --> H1 --> H2 --> O --> A
+```
+
+| Layer | Type | Shape | Activation | Parameters (d = 8, binary) |
+|---|---|---|---|---|
+| Input | flow feature vector | d = 8 | – | – |
+| Hidden 1 | Linear | d → 64 | ReLU | 8·64 + 64 = 576 |
+| Hidden 2 | Linear | 64 → 64 | ReLU | 64·64 + 64 = 4,160 |
+| Output | Linear | 64 → \|A\| (2 or 3) | identity | 64·2 + 2 = 130 (multiclass 195) |
+| **Total** | | | | **4,866** (multiclass 4,931) |
+
+The target network Q(s, a; θ⁻) is an identical copy of these layers. Its weights are copied from
+the policy network at the end of every episode.
+
+### 3. DQN training loop (paper Eq. 1, Algorithm 1, Table 3)
+
+```mermaid
+flowchart TB
+    S["Observe state s_t<br/>(one network flow)"] --> EG{"ε-greedy<br/>ε: 1.0 → 0.1, ×0.995 per step"}
+    EG -->|"probability ε"| R1["Random action"]
+    EG -->|"probability 1−ε"| R2["argmax_a Q_policy(s_t, a)"]
+    R1 --> ENV
+    R2 --> ENV
+    ENV["Environment<br/>reward r_t from Table 2<br/>next flow s_t+1"] --> M[("Replay buffer<br/>capacity 10^5<br/>(s, a, r, s', done)")]
+    M -->|"sample minibatch B = 64"| T["TD target<br/>y = r + γ · max_a' Q_target(s', a')<br/>γ = 0.99"]
+    T --> L["MSE loss<br/>(y − Q_policy(s, a))²"]
+    L --> OPT["Adam, lr = 0.001<br/>update policy net θ"]
+    OPT --> S
+    OPT -.->|"end of each episode<br/>(20,000 steps, 10 episodes)"| TG["Target net θ⁻ ← θ"]
+    TG -.-> T
+```
+
 ## Quick start
 
 ```bash
