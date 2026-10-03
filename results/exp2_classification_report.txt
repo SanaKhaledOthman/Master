@@ -1,0 +1,12 @@
+Experiment 2: Binary (Zero-Day Family Split) (best seed = 2)
+train=74284 test=74759
+test families: ['Cryptohitman', 'DMALocker', 'JigSaw', 'Locky', 'TowerWeb', 'WannaCry']
+
+              precision    recall  f1-score   support
+
+      Benign       0.96      0.84      0.90     33384
+  Ransomware       0.88      0.97      0.93     41375
+
+    accuracy                           0.91     74759
+   macro avg       0.92      0.91      0.91     74759
+weighted avg       0.92      0.91      0.91     74759

@@ -1,0 +1,447 @@
+{
+  "config": {
+    "csv": "data/ugransome_final2.csv",
+    "exp": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "split_seed": 42,
+    "features": "table1",
+    "gamma": 0.99,
+    "episodes": 10,
+    "steps": 20000,
+    "multiclass_reward": "symmetric",
+    "scale_on": "train",
+    "workers": 4,
+    "out": "/tmp/claude-0/-home-user-Master/d079913a-9d9b-5490-bf6d-b9e3da50beb2/scratchpad/sw_table1_train"
+  },
+  "experiments": {
+    "1": {
+      "title": "Binary (Random Split)",
+      "paper": {
+        "accuracy": 0.976,
+        "f1_macro": 0.98
+      },
+      "best": {
+        "seed": 0,
+        "accuracy": 0.9688233846979626,
+        "f1_macro": 0.9682429339660117,
+        "f1_weighted": 0.9687119996112689,
+        "confusion_matrix": [
+          [
+            18637,
+            1277
+          ],
+          [
+            117,
+            24682
+          ]
+        ],
+        "losses": [
+          0.07055064351624675,
+          0.22216989079378546,
+          0.24828268150985242,
+          0.22795734266340734,
+          0.24610429197698833,
+          0.21904258051738143,
+          0.22722390176579357,
+          0.22279055142104626,
+          0.2388758624739945,
+          0.24521661337092518
+        ],
+        "report": {
+          "Benign": {
+            "precision": 0.9937613309160712,
+            "recall": 0.9358742593150547,
+            "f1-score": 0.963949518982104,
+            "support": 19914.0
+          },
+          "Ransomware": {
+            "precision": 0.950807041873724,
+            "recall": 0.9952820678253156,
+            "f1-score": 0.9725363489499192,
+            "support": 24799.0
+          },
+          "accuracy": 0.9688233846979626,
+          "macro avg": {
+            "precision": 0.9722841863948977,
+            "recall": 0.9655781635701852,
+            "f1-score": 0.9682429339660117,
+            "support": 44713.0
+          },
+          "weighted avg": {
+            "precision": 0.9699377580410422,
+            "recall": 0.9688233846979626,
+            "f1-score": 0.9687119996112689,
+            "support": 44713.0
+          }
+        },
+        "n_train": 104330,
+        "n_test": 44713,
+        "test_families": [
+          "APT",
+          "CryptXXX",
+          "CryptoLocker",
+          "CryptoLocker2015",
+          "Cryptohitman",
+          "DMALocker",
+          "EDA2",
+          "Flyper",
+          "Globe",
+          "Globev3",
+          "JigSaw",
+          "Locky",
+          "NoobCrypt",
+          "Razy",
+          "SamSam",
+          "TowerWeb",
+          "WannaCry"
+        ],
+        "train_time_s": 275.6949417591095,
+        "inference_ms_per_sample": 0.0004064734704652363
+      },
+      "all_seeds": [
+        {
+          "seed": 0,
+          "accuracy": 0.9688233846979626,
+          "f1_macro": 0.9682429339660117
+        },
+        {
+          "seed": 1,
+          "accuracy": 0.9686668306756424,
+          "f1_macro": 0.968082875237871
+        },
+        {
+          "seed": 2,
+          "accuracy": 0.9644398720729989,
+          "f1_macro": 0.9637193853603621
+        }
+      ],
+      "mean_accuracy": 0.967310029148868,
+      "std_accuracy": 0.0020305136493996155
+    },
+    "2": {
+      "title": "Binary (Zero-Day Family Split)",
+      "paper": {
+        "accuracy": 0.959,
+        "f1_macro": 0.96
+      },
+      "best": {
+        "seed": 2,
+        "accuracy": 0.9133348493158014,
+        "f1_macro": 0.9109532996261254,
+        "f1_weighted": 0.9125098973334868,
+        "confusion_matrix": [
+          [
+            28027,
+            5357
+          ],
+          [
+            1122,
+            40253
+          ]
+        ],
+        "losses": [
+          0.07012390774071785,
+          0.2590897064767778,
+          0.2501591022193432,
+          0.23763494849130512,
+          0.23723235652446747,
+          0.20511945111900567,
+          0.24663252979591488,
+          0.24635490454658865,
+          0.24639812871813774,
+          0.23913197131305933
+        ],
+        "report": {
+          "Benign": {
+            "precision": 0.9615081134858828,
+            "recall": 0.8395339084591421,
+            "f1-score": 0.8963907057073865,
+            "support": 33384.0
+          },
+          "Ransomware": {
+            "precision": 0.8825476869107651,
+            "recall": 0.9728821752265862,
+            "f1-score": 0.9255158935448641,
+            "support": 41375.0
+          },
+          "accuracy": 0.9133348493158014,
+          "macro avg": {
+            "precision": 0.922027900198324,
+            "recall": 0.9062080418428642,
+            "f1-score": 0.9109532996261254,
+            "support": 74759.0
+          },
+          "weighted avg": {
+            "precision": 0.9178078546602498,
+            "recall": 0.9133348493158014,
+            "f1-score": 0.9125098973334868,
+            "support": 74759.0
+          }
+        },
+        "n_train": 74284,
+        "n_test": 74759,
+        "test_families": [
+          "Cryptohitman",
+          "DMALocker",
+          "JigSaw",
+          "Locky",
+          "TowerWeb",
+          "WannaCry"
+        ],
+        "train_time_s": 273.3125550746918,
+        "inference_ms_per_sample": 0.0002973638645860417
+      },
+      "all_seeds": [
+        {
+          "seed": 0,
+          "accuracy": 0.9094022124426491,
+          "f1_macro": 0.9064022893921244
+        },
+        {
+          "seed": 1,
+          "accuracy": 0.8963736807608449,
+          "f1_macro": 0.8920147775501079
+        },
+        {
+          "seed": 2,
+          "accuracy": 0.9133348493158014,
+          "f1_macro": 0.9109532996261254
+        }
+      ],
+      "mean_accuracy": 0.9063702475064318,
+      "std_accuracy": 0.007248674279629803
+    },
+    "3": {
+      "title": "Multiclass (Random Split)",
+      "paper": {
+        "accuracy": 0.97,
+        "f1_macro": 0.97
+      },
+      "best": {
+        "seed": 0,
+        "accuracy": 0.9717308165410506,
+        "f1_macro": 0.9714807066412349,
+        "f1_weighted": 0.9717404980552173,
+        "confusion_matrix": [
+          [
+            12241,
+            422,
+            105
+          ],
+          [
+            403,
+            19451,
+            60
+          ],
+          [
+            127,
+            147,
+            11757
+          ]
+        ],
+        "losses": [
+          0.18053716974436726,
+          0.2138132058398798,
+          0.1840052371736616,
+          0.17202385492362082,
+          0.16171284203752875,
+          0.14670322803091257,
+          0.13619988287733867,
+          0.13090725246444346,
+          0.12927868561916986,
+          0.12491376646012067
+        ],
+        "report": {
+          "A": {
+            "precision": 0.9584997259415864,
+            "recall": 0.9587249373433584,
+            "f1-score": 0.9586123184149732,
+            "support": 12768.0
+          },
+          "S": {
+            "precision": 0.9715784215784216,
+            "recall": 0.9767500251079643,
+            "f1-score": 0.9741573596434117,
+            "support": 19914.0
+          },
+          "SS": {
+            "precision": 0.986160040261701,
+            "recall": 0.9772255007896268,
+            "f1-score": 0.9816724418653195,
+            "support": 12031.0
+          },
+          "accuracy": 0.9717308165410506,
+          "macro avg": {
+            "precision": 0.9720793959272364,
+            "recall": 0.9709001544136499,
+            "f1-score": 0.9714807066412349,
+            "support": 44713.0
+          },
+          "weighted avg": {
+            "precision": 0.9717672406799673,
+            "recall": 0.9717308165410506,
+            "f1-score": 0.9717404980552173,
+            "support": 44713.0
+          }
+        },
+        "n_train": 104330,
+        "n_test": 44713,
+        "test_families": [
+          "APT",
+          "CryptXXX",
+          "CryptoLocker",
+          "CryptoLocker2015",
+          "Cryptohitman",
+          "DMALocker",
+          "EDA2",
+          "Flyper",
+          "Globe",
+          "Globev3",
+          "JigSaw",
+          "Locky",
+          "NoobCrypt",
+          "Razy",
+          "SamSam",
+          "TowerWeb",
+          "WannaCry"
+        ],
+        "train_time_s": 279.7918665409088,
+        "inference_ms_per_sample": 0.00031261611736108975
+      },
+      "all_seeds": [
+        {
+          "seed": 0,
+          "accuracy": 0.9717308165410506,
+          "f1_macro": 0.9714807066412349
+        },
+        {
+          "seed": 1,
+          "accuracy": 0.9701205465971865,
+          "f1_macro": 0.96976073713213
+        },
+        {
+          "seed": 2,
+          "accuracy": 0.9694496007872431,
+          "f1_macro": 0.969107809592646
+        }
+      ],
+      "mean_accuracy": 0.9704336546418267,
+      "std_accuracy": 0.000957257824750397
+    },
+    "4": {
+      "title": "Multiclass (Zero-Day Family Split)",
+      "paper": {
+        "accuracy": 0.92,
+        "f1_macro": 0.92
+      },
+      "best": {
+        "seed": 0,
+        "accuracy": 0.9399266944151085,
+        "f1_macro": 0.939372490238089,
+        "f1_weighted": 0.9397775818635236,
+        "confusion_matrix": [
+          [
+            17631,
+            1116,
+            681
+          ],
+          [
+            1187,
+            26648,
+            603
+          ],
+          [
+            204,
+            77,
+            16241
+          ]
+        ],
+        "losses": [
+          0.1463433521570241,
+          0.14322321966905147,
+          0.11357957810973748,
+          0.11020799529934303,
+          0.10028143847365864,
+          0.0938382662340533,
+          0.09338468082868494,
+          0.09449397188811563,
+          0.09421661541922949,
+          0.09103487245249561
+        ],
+        "report": {
+          "A": {
+            "precision": 0.9268741457260015,
+            "recall": 0.9075046324891909,
+            "f1-score": 0.9170871261378414,
+            "support": 19428.0
+          },
+          "S": {
+            "precision": 0.9571495276750117,
+            "recall": 0.9370560517617272,
+            "f1-score": 0.9469962152845645,
+            "support": 28438.0
+          },
+          "SS": {
+            "precision": 0.9267332382310984,
+            "recall": 0.9829923738046241,
+            "f1-score": 0.9540341292918613,
+            "support": 16522.0
+          },
+          "accuracy": 0.9399266944151085,
+          "macro avg": {
+            "precision": 0.9369189705440372,
+            "recall": 0.942517686018514,
+            "f1-score": 0.939372490238089,
+            "support": 64388.0
+          },
+          "weighted avg": {
+            "precision": 0.9402096001310951,
+            "recall": 0.9399266944151085,
+            "f1-score": 0.9397775818635236,
+            "support": 64388.0
+          }
+        },
+        "n_train": 84655,
+        "n_test": 64388,
+        "test_families": [
+          "APT",
+          "EDA2",
+          "Globe",
+          "JigSaw",
+          "Razy",
+          "SamSam"
+        ],
+        "train_time_s": 277.4618899822235,
+        "inference_ms_per_sample": 0.000281278973167236
+      },
+      "all_seeds": [
+        {
+          "seed": 0,
+          "accuracy": 0.9399266944151085,
+          "f1_macro": 0.939372490238089
+        },
+        {
+          "seed": 1,
+          "accuracy": 0.9289308566813692,
+          "f1_macro": 0.928036175620815
+        },
+        {
+          "seed": 2,
+          "accuracy": 0.9386531651860596,
+          "f1_macro": 0.9378992215872333
+        }
+      ],
+      "mean_accuracy": 0.9358369054275123,
+      "std_accuracy": 0.004910913094825308
+    }
+  }
+}

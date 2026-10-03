@@ -80,7 +80,49 @@ In both cases 6 of the 17 families (≈ 30 %) are held out.
 
 ## Results
 
-RESULTS_PLACEHOLDER
+Default configuration (Table 3 hyperparameters, Table 1 features, scaler fit on train), seeds 0–2.
+Regenerate with `python run_experiments.py --seeds 0 1 2`. Every number below is in `results/`.
+
+| Exp | Setting | Paper accuracy | Reproduced, best seed | Reproduced, mean ± std | Paper macro-F1 | Reproduced macro-F1 |
+|---|---|---|---|---|---|---|
+| 1 | Binary (Random Split) | 97.6% | 96.9% | 96.7% ± 0.2% | 0.98 | 0.97 |
+| 2 | Binary (Zero-Day Family Split) | 95.9% | 91.3% | 90.6% ± 0.7% | 0.96 | 0.91 |
+| 3 | Multiclass (Random Split) | 97.0% | 97.2% | 97.0% ± 0.1% | 0.97 | 0.97 |
+| 4 | Multiclass (Zero-Day Family Split) | 92.0% | 94.0% | 93.6% ± 0.5% | 0.92 | 0.94 |
+
+### Per-class recall (best seed)
+
+| Exp | Paper | Reproduced |
+|---|---|---|
+| 1 | Benign 0.95 / Ransomware 1.00 | Benign 0.94 / Ransomware 1.00 |
+| 2 | Benign 0.93 / Ransomware 0.99 | Benign 0.84 / Ransomware 0.97 |
+| 3 | A 0.94 / S 0.97 / SS 0.99 | A 0.96 / S 0.98 / SS 0.98 |
+| 4 | A 0.90 / S 0.89 / SS 0.99 | A 0.91 / S 0.94 / SS 0.98 |
+
+### Confusion matrices (rows = true, cols = predicted)
+
+| Exp | Paper | Reproduced (best seed) |
+|---|---|---|
+| 1 | `[[18893, 1021], [65, 24734]]` | `[[18637, 1277], [117, 24682]]` |
+| 2 | `[[30891, 2493], [570, 40805]]` | `[[28027, 5357], [1122, 40253]]` |
+| 3 | `[[12050, 450, 268], [416, 19238, 260], [42, 49, 11940]]` | `[[12241, 422, 105], [403, 19451, 60], [127, 147, 11757]]` |
+| 4 | `[[17511, 1131, 786], [1723, 25392, 1323], [76, 47, 16399]]` | `[[17631, 1116, 681], [1187, 26648, 603], [204, 77, 16241]]` |
+
+### Figures
+
+| | Confusion matrix | Loss curve |
+|---|---|---|
+| Exp 1 | ![](results/exp1_confusion_matrix.png) | ![](results/exp1_loss_curve.png) |
+| Exp 2 | ![](results/exp2_confusion_matrix.png) | ![](results/exp2_loss_curve.png) |
+| Exp 3 | ![](results/exp3_confusion_matrix.png) | ![](results/exp3_loss_curve.png) |
+| Exp 4 | ![](results/exp4_confusion_matrix.png) | ![](results/exp4_loss_curve.png) |
+
+### Discussion
+
+- **Exp 1 and Exp 3 (random splits) reproduce.** Accuracy is within 0.7 pts of the paper, and the confusion matrices have the same structure. In binary, the asymmetric reward pushes ransomware recall to ≈1.00 at the cost of ~1,000 false positives, as in the paper's Fig. 6.
+- **The loss curves match the paper's shape.** In the binary experiments the TD loss jumps from ≈0.07 to ≈0.25 after the first target-network sync and then plateaus (paper Fig. 5/8). This comes from the γ = 0.99 bootstrap. In multiclass the loss decreases monotonically, as in Fig. 10/12.
+- **Exp 4 (multiclass zero-day)** is about 2 pts *above* the paper (94.0 % vs 92.0 %). SS recall is 0.98 (paper 0.99), and S is the hardest class, as in the paper.
+- **Exp 2 (binary zero-day) is the one gap.** It reaches 91 % vs the paper's 95.9 %. The pattern is the same (ransomware recall 0.97 vs 0.99), but more held-out benign flows are flagged as ransomware (benign recall 0.84 vs 0.93). Single DQN runs on this split vary by about ±1 pt across seeds. The paper reports its best run, and seeds or unreported details (sample order, scaler fit, reward for the multiclass case) can plausibly explain the rest.
 
 ## Notes
 
