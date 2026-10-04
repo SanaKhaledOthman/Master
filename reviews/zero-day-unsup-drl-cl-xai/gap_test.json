@@ -1,0 +1,1875 @@
+{
+  "gaps": {
+    "G1": "XAI-gated pseudo-labels: explanations decide whether an automatically labelled zero-day sample may enter continual retraining",
+    "G2": "Explanation-aware DRL controller: a DRL agent uses explanation signals (state or reward) to decide when / how much to retrain a detector, with veto or rollback",
+    "G3": "Explaining continual updates: explanations that show how the detector changes across updates (forgetting, drift impact)",
+    "G4": "Encoding vs novelty: how categorical feature encoding affects unsupervised zero-day detectability"
+  },
+  "papers": [
+    {
+      "title": "GARDIAN: Deep RL for autonomous and continual network intrusion detection",
+      "year": 2026,
+      "venue": "J. Information Security and Applications",
+      "vtype": "Q1 journal (included)",
+      "U": "✓",
+      "D": "✓",
+      "C": "✓",
+      "X": "",
+      "part": "Baseline framework for your work: unsupervised labelling + DRL + continual learning (no XAI)",
+      "g1": [
+        "Partial overlap",
+        "Pseudo-labels from MAE + DBSCAN with no quality gate and no XAI; our run: 82.5% correct, harmful for fine-tuning"
+      ],
+      "g2": [
+        "Partial overlap",
+        "PPO decides when / how much to retrain, but its state has no explanation signals and it cannot roll back"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "full text",
+      "link": "https://doi.org/10.1016/j.jisa.2026.104594"
+    },
+    {
+      "title": "A Self-Adaptive IDS for Zero-Day Attacks Using Deep Q-Networks",
+      "year": 2025,
+      "venue": "IEEE Access",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "Zero-day ransomware DRL baseline on UGRansome",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "Partial overlap",
+        "Uses label-encoded categoricals without studying encoding; our test shows it hides unseen families (AUC 0.49)"
+      ],
+      "src": "full text",
+      "link": "https://doi.org/10.1109/ACCESS.2025.3617792"
+    },
+    {
+      "title": "An active learning framework using deep Q-network for zero-day attack detection",
+      "year": 2024,
+      "venue": "Computers & Security",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "DRL chooses which zero-day samples get labelled",
+      "g1": [
+        "Partial overlap",
+        "DQN selects samples for labelling; labels assigned by distance, never checked with explanations"
+      ],
+      "g2": [
+        "Low overlap",
+        "DRL used for sample selection, not to control retraining"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://doi.org/10.1016/j.cose.2024.103713"
+    },
+    {
+      "title": "Auto-IDaS: RL to configure models, tasks and capacities",
+      "year": 2024,
+      "venue": "J. Network and Computer Applications",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "DRL as an IDS manager (model selection)",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "Low overlap",
+        "DQN switches detector models over time; no XAI, no retraining decision"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://doi.org/10.1016/j.jnca.2024.103936"
+    },
+    {
+      "title": "RL for Intrusion Detection: More Model Longness and Fewer Updates",
+      "year": 2023,
+      "venue": "IEEE Trans. Network and Service Management",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "✓",
+      "C": "✓",
+      "X": "",
+      "part": "Long-horizon RL classifier with transfer-learning updates (4 years of real traffic)",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "Low overlap",
+        "Update schedule is periodic; RL does not decide when to update; no XAI"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "full text (partial)",
+      "link": "https://secplab.ppgia.pucpr.br/files/papers/2023tnsm.pdf"
+    },
+    {
+      "title": "Adaptive Defense: Zero-Day Attack Detection in NIDS with DRL",
+      "year": 2025,
+      "venue": "IEEE Access",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "DRL zero-day baseline with public code",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://ieeexplore.ieee.org/document/11063272"
+    },
+    {
+      "title": "DQ-IDS: Deep Q-learning intrusion detection system",
+      "year": 2025,
+      "venue": "ICT Express",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "DRL classifier baseline",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://www.sciencedirect.com/science/article/pii/S2405959525000694"
+    },
+    {
+      "title": "Cross-dataset zero-day IDS integrating Siamese network and RL",
+      "year": 2026,
+      "venue": "ICT Express",
+      "vtype": "Q1 journal (included)",
+      "U": "✓",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "Unsupervised detection + PPO; lists XAI as future work",
+      "g1": [
+        "Partial overlap",
+        "Zero-day labels defined by a distance threshold, never validated"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "full text (arXiv version)",
+      "link": "https://www.sciencedirect.com/science/article/pii/S2405959526000731"
+    },
+    {
+      "title": "ULTIMATE: Multi-agent DRL for false-positive optimized enterprise ID",
+      "year": 2026,
+      "venue": "Array",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "✓",
+      "part": "DRL + SHAP example",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "Low overlap",
+        "SHAP explains the agents after the fact; explanations do not drive decisions"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://www.sciencedirect.com/science/article/pii/S2590005626002195"
+    },
+    {
+      "title": "Adaptive IIoT intrusion detection using DRL against APT attacks (DRL-GCN)",
+      "year": 2026,
+      "venue": "Eng. Applications of AI",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "✓",
+      "C": "✓",
+      "X": "",
+      "part": "Online DRL policy adaptation under drift",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "Low overlap",
+        "DRL updates its policy online; no explanation signals"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S0952197626018336"
+    },
+    {
+      "title": "IGPC-MSOS: knowledge-preserving mode-switching for concept drift",
+      "year": 2026,
+      "venue": "Knowledge-Based Systems",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Drift-triggered adaptation baseline",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "Low overlap",
+        "Drift + performance trigger decides adaptation (not RL, not XAI)"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://doi.org/10.1016/j.knosys.2026.115361"
+    },
+    {
+      "title": "RL-based voting for feature drift-aware ID (IFDA-GPC)",
+      "year": 2025,
+      "venue": "IEEE Access",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "✓",
+      "C": "✓",
+      "X": "",
+      "part": "DQN feature selection under feature drift",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "Low overlap",
+        "DRL picks features, not retraining; no XAI"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://ieeexplore.ieee.org/document/10896652"
+    },
+    {
+      "title": "Analysis of Continual Learning Models for IDS",
+      "year": 2022,
+      "venue": "IEEE Access",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Continual-learning baselines (LwF, ER, DER)",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "Low overlap",
+        "Measures forgetting but gives no explanations"
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://doi.org/10.1109/ACCESS.2022.3222715"
+    },
+    {
+      "title": "RepShield: robust knowledge representation in CL for NIDS",
+      "year": 2026,
+      "venue": "Computer Networks",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Continual-learning baseline with drift detection",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "Low overlap",
+        "PCA drift detector; no explanations"
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S1389128626003208"
+    },
+    {
+      "title": "Latent space alignment for IoT botnet detection in non-stationary environments",
+      "year": 2025,
+      "venue": "Knowledge-Based Systems",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Drift robustness without retraining",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://www.sciencedirect.com/science/article/pii/S0950705125017873"
+    },
+    {
+      "title": "VLSA-CL: variational latent alignment + contrastive learning under drift",
+      "year": 2026,
+      "venue": "Neurocomputing",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Drift robustness without retraining",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://www.sciencedirect.com/science/article/pii/S0925231226014967"
+    },
+    {
+      "title": "ONIDS: class-imbalance and drift invariant online botnet detection",
+      "year": 2024,
+      "venue": "Computers & Security",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Online drift-adaptive IoT IDS",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S0167404824001214"
+    },
+    {
+      "title": "An adaptable deep learning-based IDS to zero-day attacks (DOC++)",
+      "year": 2023,
+      "venue": "J. Information Security and Applications",
+      "vtype": "Q1 journal (included)",
+      "U": "✓",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Open-set detection, then clustering of unknown samples for later updates",
+      "g1": [
+        "Partial overlap",
+        "Clusters novel samples so they can be labelled; no explanation-based validation"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://doi.org/10.1016/j.jisa.2023.103516"
+    },
+    {
+      "title": "Intelligent zero-day attack detection using unsupervised ML (ZdAD-UML)",
+      "year": 2025,
+      "venue": "Knowledge-Based Systems",
+      "vtype": "Q1 journal (included)",
+      "U": "✓",
+      "D": "",
+      "C": "",
+      "X": "✓",
+      "part": "Unsupervised zero-day + SHAP",
+      "g1": [
+        "Low overlap",
+        "SHAP used to explain detections only; no labels, no updates"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://doi.org/10.1016/j.knosys.2025.113833"
+    },
+    {
+      "title": "Semi-supervised in-vehicle IDS with VAE and adversarial RL",
+      "year": 2024,
+      "venue": "Knowledge-Based Systems",
+      "vtype": "Q1 journal (included)",
+      "U": "✓",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "Pseudo-labels + RL for unknown attacks",
+      "g1": [
+        "Partial overlap",
+        "Pseudo-labels for pre-training without an explanation check"
+      ],
+      "g2": [
+        "Low overlap",
+        "Adversarial RL agents classify / select samples, not retraining control"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://doi.org/10.1016/j.knosys.2024.112563"
+    },
+    {
+      "title": "Application of DRL to intrusion detection for supervised problems",
+      "year": 2020,
+      "venue": "Expert Systems with Applications",
+      "vtype": "Q1 journal (included)",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "Foundational DRL-IDS reference",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": ""
+    },
+    {
+      "title": "CNN feature extraction + OC-SVM for zero-day detection",
+      "year": 2026,
+      "venue": "Scientific Reports",
+      "vtype": "Q1 journal (included)",
+      "U": "✓",
+      "D": "",
+      "C": "",
+      "X": "",
+      "part": "One-class zero-day baseline with code",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "full text (PMC)",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13527146/"
+    },
+    {
+      "title": "Enhancing Autonomous Online IDS for IoT with Reliable Pseudo-Labels (PseudoFilter)",
+      "year": 2026,
+      "venue": "arXiv 2605.26166",
+      "vtype": "Preprint (arXiv)",
+      "U": "✓",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Closest non-XAI pseudo-label gate: your G1 baseline",
+      "g1": [
+        "High overlap",
+        "Accepts a pseudo-label only if confidence >= 0.85 AND encoder/decoder agree (+1.25 pts acc); uses no XAI. Also shows AOC-IDS accuracy collapsing 90% -> 75% without a gate"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "full text",
+      "link": "https://arxiv.org/abs/2605.26166"
+    },
+    {
+      "title": "SOUL: Semi-supervised Open-world continUal Learning for NIDS",
+      "year": 2024,
+      "venue": "arXiv 2412.00911",
+      "vtype": "Preprint (arXiv)",
+      "U": "✓",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Label-efficient CL baseline (<=20% labels)",
+      "g1": [
+        "High overlap",
+        "Generates high-confidence labels for new tasks; confidence-based, no XAI"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://arxiv.org/abs/2412.00911"
+    },
+    {
+      "title": "RSST-NIDS: Robust Semi-Supervised Temporal ID for adversarial cloud networks",
+      "year": 2026,
+      "venue": "arXiv 2604.12655",
+      "vtype": "Preprint (arXiv)",
+      "U": "✓",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Confidence-aware pseudo-labelling under drift",
+      "g1": [
+        "High overlap",
+        "Confidence-aware pseudo-labelling; no XAI"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://arxiv.org/abs/2604.12655"
+    },
+    {
+      "title": "UNAD+: Explainable Hybrid Framework for Unknown Network Attack Detection",
+      "year": 2026,
+      "venue": "arXiv 2605.22621",
+      "vtype": "Preprint (arXiv)",
+      "U": "✓",
+      "D": "",
+      "C": "",
+      "X": "✓",
+      "part": "Unsupervised zero-day -> pseudo-labels -> supervised refinement + LIME",
+      "g1": [
+        "High overlap",
+        "Pseudo-labels refine a classifier; a HUMAN checks a subset; LIME/surrogate are post hoc and never gate labels"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "full text",
+      "link": "https://arxiv.org/abs/2605.22621"
+    },
+    {
+      "title": "ACORN-IDS: Adaptive Continual Novelty Detection for IDS",
+      "year": 2026,
+      "venue": "arXiv 2602.07291",
+      "vtype": "Preprint (arXiv)",
+      "U": "✓",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Continual novelty detection; strong unsupervised-CL baseline (5 datasets)",
+      "g1": [
+        "Partial overlap",
+        "K-Means pseudo-labels from overlap with clean normal data; no gate, no XAI"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "Low overlap",
+        "One-hot encodes categoricals but does not study the effect"
+      ],
+      "src": "full text",
+      "link": "https://arxiv.org/abs/2602.07291"
+    },
+    {
+      "title": "CITADEL: Continual Anomaly Detection for IoT Intrusion Detection",
+      "year": 2025,
+      "venue": "arXiv 2508.19450",
+      "vtype": "Preprint (arXiv)",
+      "U": "✓",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Self-supervised CL novelty-detection baseline",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://arxiv.org/abs/2508.19450"
+    },
+    {
+      "title": "ThreatFormer-IDS: zero-day generalization and explainable attribution",
+      "year": 2026,
+      "venue": "arXiv 2603.00185",
+      "vtype": "Preprint (arXiv)",
+      "U": "✓",
+      "D": "",
+      "C": "",
+      "X": "✓",
+      "part": "Zero-day + Integrated-Gradients attribution per alert",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "Low overlap",
+        "Explains individual alerts; CL listed as future work"
+      ],
+      "g4": [
+        "Low overlap",
+        "Categorical vocabulary embeddings, not studied"
+      ],
+      "src": "full text",
+      "link": "https://arxiv.org/abs/2603.00185"
+    },
+    {
+      "title": "DeepXplain: XAI-Guided Autonomous Defense Against Multi-Stage APT",
+      "year": 2026,
+      "venue": "arXiv 2603.21296 (under review, GLOBECOM 2026)",
+      "vtype": "Preprint (arXiv)",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "✓",
+      "part": "Explanation signals inside DRL training: closest to G2",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "High overlap",
+        "Explanation-alignment loss + explanation-confidence reward shape a PPO defence policy. BUT it chooses response actions for APTs, not detector retraining; no CL, no rollback"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "full text",
+      "link": "https://arxiv.org/abs/2603.21296"
+    },
+    {
+      "title": "C-MADF: Explainable Autonomous Cyber Defense using Adversarial MARL",
+      "year": 2026,
+      "venue": "arXiv 2604.04442",
+      "vtype": "Preprint (arXiv)",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "✓",
+      "part": "Explainability score gates autonomous actions",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "High overlap",
+        "Explainability-Transparency Score decides escalation vs autonomous action; for response actions, not retraining"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "full text",
+      "link": "https://arxiv.org/abs/2604.04442"
+    },
+    {
+      "title": "Navigating the Latent Manifold: Proactive Concept Drift Adaptation for NIDS",
+      "year": 2026,
+      "venue": "arXiv 2609.08623",
+      "vtype": "Preprint (arXiv)",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Drift adaptation related work",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://arxiv.org/abs/2609.08623"
+    },
+    {
+      "title": "Universal adversarial perturbations with explainability against DRL-based IDS",
+      "year": 2026,
+      "venue": "arXiv 2609.30605",
+      "vtype": "Preprint (arXiv)",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "✓",
+      "part": "Robustness of DRL-IDS",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "Low overlap",
+        "Explains attacks on a DRL-IDS; not adaptation"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://arxiv.org/abs/2609.30605"
+    },
+    {
+      "title": "HuntGPT: ML anomaly detection + XAI + LLM",
+      "year": 2023,
+      "venue": "arXiv 2309.16021",
+      "vtype": "Preprint (arXiv)",
+      "U": "",
+      "D": "",
+      "C": "",
+      "X": "✓",
+      "part": "Analyst-facing XAI",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://arxiv.org/abs/2309.16021"
+    },
+    {
+      "title": "Explain to Not Forget: Defending Against Catastrophic Forgetting with XAI",
+      "year": 2022,
+      "venue": "arXiv 2205.01929 (venue not verified)",
+      "vtype": "Preprint (arXiv)",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "✓",
+      "part": "XAI against forgetting (outside IDS)",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "High overlap",
+        "Uses explanations to reduce forgetting in CL, but on vision tasks, not NIDS"
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://arxiv.org/abs/2205.01929"
+    },
+    {
+      "title": "CIP-Net: Continual Interpretable Prototype-based Network",
+      "year": 2025,
+      "venue": "arXiv 2512.07981",
+      "vtype": "Preprint (arXiv)",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "✓",
+      "part": "Interpretable continual learning (outside IDS)",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "Partial overlap",
+        "Interpretable prototypes in CL; not security"
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://arxiv.org/abs/2512.07981"
+    },
+    {
+      "title": "ADAPT: pseudo-labeling to combat concept drift in malware detection",
+      "year": 2025,
+      "venue": "arXiv 2507.08597",
+      "vtype": "Preprint (arXiv)",
+      "U": "✓",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Pseudo-labels for drift (malware, not NIDS)",
+      "g1": [
+        "Partial overlap",
+        "Pseudo-labelling for drift adaptation; no XAI gate in title/abstract"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "title/abstract snippet",
+      "link": "https://arxiv.org/abs/2507.08597"
+    },
+    {
+      "title": "AOC-IDS: Autonomous Online Framework with Contrastive Learning",
+      "year": 2024,
+      "venue": "IEEE INFOCOM 2024",
+      "vtype": "Conference / workshop / chapter",
+      "U": "✓",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Autonomous online IDS with AE pseudo-labels; code available",
+      "g1": [
+        "Partial overlap",
+        "Pseudo-labels with no quality gate (only 5% random flips); accuracy collapses over time per Afzaal et al."
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://github.com/xinchen930/AOC-IDS"
+    },
+    {
+      "title": "SSF: Continual Learning with Strategic Selection and Forgetting for NIDS",
+      "year": 2025,
+      "venue": "IEEE INFOCOM 2025",
+      "vtype": "Conference / workshop / chapter",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Strong CL baseline (top-tier venue)",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://arxiv.org/abs/2412.16264"
+    },
+    {
+      "title": "Online IDS framework with explainable concept drift detection and adaptation (Drago et al.)",
+      "year": 2026,
+      "venue": "ITASEC & SERICS 2026 (CEUR-WS 4198)",
+      "vtype": "Conference / workshop / chapter",
+      "U": "✓",
+      "D": "",
+      "C": "✓",
+      "X": "✓",
+      "part": "Closest to G3; partly G2 (XAI decides when to adapt)",
+      "g1": [
+        "Low overlap",
+        "Lowers labelling cost by requesting few human labels; no pseudo-label validation"
+      ],
+      "g2": [
+        "Partial overlap",
+        "Label-free drift detector based on changes in SHAP feature-importance profiles triggers adaptation; no RL"
+      ],
+      "g3": [
+        "High overlap",
+        "Explains the drift's impact and shows how model decisions evolve over time"
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "full text",
+      "link": "https://ceur-ws.org/Vol-4198/paper54.pdf"
+    },
+    {
+      "title": "ExpIDS: drift-adaptable NIDS with improved explainability",
+      "year": 2024,
+      "venue": "IEEE conference (Xplore 10815461)",
+      "vtype": "Conference / workshop / chapter",
+      "U": "✓",
+      "D": "",
+      "C": "✓",
+      "X": "✓",
+      "part": "Drift-adaptive AE with decision-tree explanations",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "Partial overlap",
+        "Global TRUSTEE explanations of the current model; drift updates via U-index with ground-truth labels; does not explain changes between updates"
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "full text",
+      "link": "https://arxiv.org/abs/2509.20767"
+    },
+    {
+      "title": "CADE: Detecting and Explaining Concept Drift Samples for Security Applications",
+      "year": 2021,
+      "venue": "USENIX Security 2021",
+      "vtype": "Conference / workshop / chapter",
+      "U": "✓",
+      "D": "",
+      "C": "✓",
+      "X": "✓",
+      "part": "Explains drifting samples for analysts",
+      "g1": [
+        "Partial overlap",
+        "Explains why a sample drifted to help analysts label it; no automatic gate"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "High overlap",
+        "Detects and explains concept-drift samples"
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "title + citation (ExpIDS ref. 9)",
+      "link": "https://www.usenix.org/conference/usenixsecurity21/presentation/yang-limin"
+    },
+    {
+      "title": "ENIDrift: fast adaptive ensemble NIDS under real-world drift",
+      "year": 2022,
+      "venue": "ACSAC 2022",
+      "vtype": "Conference / workshop / chapter",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Drift-adaptive NIDS baseline",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "citation (ExpIDS ref. 13)",
+      "link": "https://doi.org/10.1145/3564625.3567992"
+    },
+    {
+      "title": "Replay or Regret: Evaluating CL Methods for Robust ID",
+      "year": 2025,
+      "venue": "IEEE MILCOM 2025",
+      "vtype": "Conference / workshop / chapter",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Replay is the most effective CL strategy",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "Low overlap",
+        "Measures forgetting, no explanations"
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": ""
+    },
+    {
+      "title": "SCL-IDS: Semi-Supervised Continual Learning for Adaptive ID (poster)",
+      "year": 2025,
+      "venue": "IEEE ICNP 2025",
+      "vtype": "Conference / workshop / chapter",
+      "U": "✓",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Semi-supervised CL",
+      "g1": [
+        "Low overlap",
+        "Semi-supervised CL with scarce labels; no XAI"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": ""
+    },
+    {
+      "title": "MAML AE-SAC: Meta-Learning and Adversarial RL for Adaptive ID",
+      "year": 2025,
+      "venue": "KSE 2025",
+      "vtype": "Conference / workshop / chapter",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "Fast-adapting RL IDS",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "Low overlap",
+        "RL adapts quickly; no explanation signals"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": ""
+    },
+    {
+      "title": "Q-ID: RL framework for adaptive intrusion detection",
+      "year": 2025,
+      "venue": "FedCSIS 2025",
+      "vtype": "Conference / workshop / chapter",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "RL classifier",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": ""
+    },
+    {
+      "title": "DRL-based IDS for next-generation wireless networks",
+      "year": 2025,
+      "venue": "ICIRCA 2025",
+      "vtype": "Conference / workshop / chapter",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "DRL classifier",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": ""
+    },
+    {
+      "title": "Network anomaly detection using Q-Learning and DQN (UNSW-NB15 zero-day)",
+      "year": 2025,
+      "venue": "ICSECS 2025",
+      "vtype": "Conference / workshop / chapter",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "DRL zero-day classifier",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": ""
+    },
+    {
+      "title": "ZDADS: zero-day detection in cloud with adaptive DQN",
+      "year": 2025,
+      "venue": "ICCES 2025",
+      "vtype": "Conference / workshop / chapter",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "DRL zero-day classifier",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": ""
+    },
+    {
+      "title": "Explainable graph-based RL for intrusion detection",
+      "year": 2025,
+      "venue": "ICCMC 2025",
+      "vtype": "Conference / workshop / chapter",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "✓",
+      "part": "Conceptual XAI + RL",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "Low overlap",
+        "Proposes combining XAI with RL conceptually; no explanation-driven decisions"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": ""
+    },
+    {
+      "title": "RL for automated ID and adaptive defense in zero-day scenarios (chapter)",
+      "year": 2025,
+      "venue": "Book chapter",
+      "vtype": "Conference / workshop / chapter",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "Background",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": ""
+    },
+    {
+      "title": "Continual Learning for Intrusion Detection Under Evolving Network Threats (Guo et al.)",
+      "year": 2025,
+      "venue": "Future Internet (Q2)",
+      "vtype": "Journal below Q1 / rank not verified",
+      "U": "✓",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Clustering memory + distillation + pseudo-label filtering",
+      "g1": [
+        "High overlap",
+        "Confidence-aware pseudo-label filtering (entropy + agreement); no XAI"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://doi.org/10.3390/fi17100456"
+    },
+    {
+      "title": "Post-hoc categorization based on XAI and RL for improved ID",
+      "year": 2024,
+      "venue": "Applied Sciences (Q2)",
+      "vtype": "Journal below Q1 / rank not verified",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "✓",
+      "part": "Explaining an RL-based IDS",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "Low overlap",
+        "Multi-level post-hoc explanations of an RL classifier"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://doi.org/10.3390/app142411511"
+    },
+    {
+      "title": "Continual learning process for learned and emerging attacks (Memory-LGBM)",
+      "year": 2025,
+      "venue": "Applied Sciences (Q2)",
+      "vtype": "Journal below Q1 / rank not verified",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Prototype-memory CL baseline",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://doi.org/10.3390/app151810034"
+    },
+    {
+      "title": "Versatile XAI-based framework for efficient explainable IDS",
+      "year": 2025,
+      "venue": "Annals of Telecommunications (Q2)",
+      "vtype": "Journal below Q1 / rank not verified",
+      "U": "",
+      "D": "",
+      "C": "",
+      "X": "✓",
+      "part": "Cost and reliability of XAI (SHAP vs LIME cross-check)",
+      "g1": [
+        "Low overlap",
+        "Cross-checking two explainers is a reliability test that could serve inside a gate"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://doi.org/10.1007/s12243-025-01118-9"
+    },
+    {
+      "title": "SpIDER: satellite ID using explainable RL",
+      "year": 2026,
+      "venue": "Telecom (MDPI)",
+      "vtype": "Journal below Q1 / rank not verified",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "✓",
+      "part": "DRL + SHAP example",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "Low overlap",
+        "SHAP explains the RL model post hoc"
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://doi.org/10.3390/telecom7010003"
+    },
+    {
+      "title": "Harnessing DBSCAN and autoencoder for intrusion detection in cloud",
+      "year": 2024,
+      "venue": "Bull. Electrical Eng. & Informatics",
+      "vtype": "Journal below Q1 / rank not verified",
+      "U": "✓",
+      "D": "",
+      "C": "",
+      "X": "",
+      "part": "AE detection + DBSCAN clustering of attacks",
+      "g1": [
+        "Low overlap",
+        "Clusters attacks; no labels for retraining, no XAI"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://doi.org/10.11591/eei.v13i5.8135"
+    },
+    {
+      "title": "XAI-based model drift detection applicable to unsupervised environments",
+      "year": 2023,
+      "venue": "Computers, Materials & Continua (rank not verified)",
+      "vtype": "Journal below Q1 / rank not verified",
+      "U": "✓",
+      "D": "",
+      "C": "✓",
+      "X": "✓",
+      "part": "SHAP-based drift detection without labels",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "Partial overlap",
+        "Explanations decide when drift occurred; no RL"
+      ],
+      "g3": [
+        "High overlap",
+        "Uses SHAP to detect and characterise drift"
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://www.sciencedirect.com/org/science/article/pii/S1546221823001558"
+    },
+    {
+      "title": "Application of DRL for intrusion detection in IoT: a systematic review",
+      "year": 2025,
+      "venue": "Internet of Things (Q1)",
+      "vtype": "Review / out of domain",
+      "U": "",
+      "D": "✓",
+      "C": "",
+      "X": "",
+      "part": "Background on DRL-IDS",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": ""
+    },
+    {
+      "title": "Evolving cybersecurity frontiers: survey on concept drift in IDS",
+      "year": 2024,
+      "venue": "Eng. Applications of AI (Q1)",
+      "vtype": "Review / out of domain",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "",
+      "part": "Background on drift",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": ""
+    },
+    {
+      "title": "XAI-Guided Continual Learning: Rationale, Methods, and Future Directions",
+      "year": 2025,
+      "venue": "WIREs Data Mining & Knowledge Discovery",
+      "vtype": "Review / out of domain",
+      "U": "",
+      "D": "",
+      "C": "✓",
+      "X": "✓",
+      "part": "Shows XAI-for-CL exists outside security",
+      "g1": [
+        "No overlap",
+        ""
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "High overlap",
+        "Reviews XAI used against forgetting (general ML, not IDS)"
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://wires.onlinelibrary.wiley.com/doi/10.1002/widm.70046"
+    },
+    {
+      "title": "Explaining anomalies detected by autoencoders using SHAP (Antwarg et al.)",
+      "year": 2021,
+      "venue": "Expert Systems with Applications (Q1)",
+      "vtype": "Review / out of domain",
+      "U": "✓",
+      "D": "",
+      "C": "",
+      "X": "✓",
+      "part": "Method you would build G1 on",
+      "g1": [
+        "Partial overlap",
+        "Explains AE anomalies with kernel SHAP; no labels or retraining (enabler, not duplicate)"
+      ],
+      "g2": [
+        "No overlap",
+        ""
+      ],
+      "g3": [
+        "No overlap",
+        ""
+      ],
+      "g4": [
+        "No overlap",
+        ""
+      ],
+      "src": "abstract",
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S0957417421011155"
+    }
+  ],
+  "summary": [
+    [
+      "G1",
+      "XAI-gated pseudo-labels: explanations decide whether an automatically labelled zero-day sample may enter continual retraining",
+      "OPEN",
+      "Afzaal et al. 2026 (confidence + agreement gate); Guo et al. 2025 (entropy + agreement); SOUL, RSST-NIDS (confidence); UNAD+ 2026 (human check, post-hoc LIME); CADE 2021 (explains drift samples for analysts)",
+      "No paper uses explanations to accept or reject pseudo-labels. Every existing gate uses confidence, model agreement or a human.",
+      "Claim: explanation consistency as the admission rule for pseudo-labelled zero-day samples in continual NIDS. Must beat a confidence gate (PseudoFilter) as baseline. Motivation evidence: AOC-IDS 90% -> 75% collapse; GARDIAN on UGRansome (82.5% labels hurt fine-tuning).",
+      "Strong: core contribution"
+    ],
+    [
+      "G2",
+      "Explanation-aware DRL controller: a DRL agent uses explanation signals (state or reward) to decide when / how much to retrain a detector, with veto or rollback",
+      "PARTIALLY ADDRESSED",
+      "DeepXplain 2026 (explanations in DRL reward / loss); C-MADF 2026 (explainability score gates actions); Drago et al. 2026 and CMC 2023 (SHAP-profile change triggers adaptation, no RL); GARDIAN (DRL retraining control, no XAI)",
+      "Explanation signals inside DRL exist, but only for response actions; XAI-triggered adaptation exists, but without RL.",
+      "Claim must be narrow: a DRL controller for continual retraining of a NIDS whose state includes explanation shift, with skip / rollback actions. Position explicitly against DeepXplain, C-MADF and Drago et al.",
+      "Medium: good extension, not standalone"
+    ],
+    [
+      "G3",
+      "Explaining continual updates: explanations that show how the detector changes across updates (forgetting, drift impact)",
+      "PARTIALLY ADDRESSED",
+      "Drago et al. 2026 (explains drift impact and how decisions evolve); CADE 2021 (explains drift samples); CMC 2023 (SHAP drift detection); Explain to Not Forget, WIREs review (XAI against forgetting, outside IDS)",
+      "Explaining drift in NIDS is done. Explaining forgetting caused by each continual update (replay / generated samples) in a NIDS is not.",
+      "Use as an evaluation / analysis component (attribution diff before vs after each update), not as the main novelty.",
+      "Weak as standalone"
+    ],
+    [
+      "G4",
+      "Encoding vs novelty: how categorical feature encoding affects unsupervised zero-day detectability",
+      "OPEN (narrow)",
+      "None. ACORN-IDS, AOC-IDS (one-hot) and ThreatFormer-IDS (embeddings) choose an encoding without studying it; Alkasassbeh et al. label-encode",
+      "No study of how categorical encoding changes zero-day detectability.",
+      "Supporting experiment: our UGRansome result (label encoding AUC 0.49 vs one-hot 0.94).",
+      "Supporting finding"
+    ]
+  ]
+}
