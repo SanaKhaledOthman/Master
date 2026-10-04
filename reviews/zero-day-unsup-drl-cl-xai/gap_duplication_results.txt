@@ -1,0 +1,103 @@
+RESULTS OF THE GAP DUPLICATION TEST
+Field: zero-day attack detection using unsupervised learning + DRL + continual learning + XAI
+Papers tested: 63 (22 Q1 journal papers, 35 excluded papers including preprints and conference papers, 6 found later)
+Search date: 2026-10-04
+Source workbook: systematic_review.xlsx (sheets "Gap Duplication Summary" and "All Papers - Gap Test")
+
+Overall: no paper duplicates any of the four gaps.
+
+======================================================================
+G1. XAI decides which pseudo-labels are used
+======================================================================
+Definition : Explanations decide whether an automatically labelled zero-day sample may enter
+             continual retraining.
+Status     : OPEN
+Closest    : - Afzaal et al. 2026 (arXiv 2605.26166): keeps a pseudo-label only if confidence >= 0.85
+               and the encoder and decoder agree.
+             - Guo et al. 2025 (Future Internet, Q2): filters pseudo-labels by prediction entropy
+               and agreement.
+             - SOUL 2024 and RSST-NIDS 2026 (arXiv): filter pseudo-labels by confidence.
+             - UNAD+ 2026 (arXiv): a person checks a subset of pseudo-labels; LIME is used only
+               to explain results afterwards.
+             - CADE 2021 (USENIX Security): explains drifting samples to help analysts label them.
+Still new  : No paper uses explanations to accept or reject pseudo-labels. Every existing filter
+             uses confidence, model agreement or a person.
+Evidence   : - AOC-IDS without a filter: accuracy collapses from 90% to 75% over 50 batches
+               (reported by Afzaal et al.).
+             - GARDIAN on UGRansome (our run): pseudo-labels were 82.5% correct, and fine-tuning
+               on them made the classifier worse (0.829 -> 0.787 on new families).
+Baseline   : The PseudoFilter confidence filter from Afzaal et al.
+Strength   : Strong. Core contribution.
+
+======================================================================
+G2. DRL agent that uses explanations to decide retraining
+======================================================================
+Definition : A DRL agent uses explanation signals (in its state or reward) to decide when and how
+             much to retrain a detector, with skip or rollback actions.
+Status     : PARTIALLY ADDRESSED
+Closest    : - DeepXplain 2026 (arXiv, under review at GLOBECOM 2026): explanations shape DRL
+               training, but the agent chooses APT response actions, not retraining.
+             - C-MADF 2026 (arXiv): an explainability score gates autonomous actions.
+             - Drago et al. 2026 (ITASEC & SERICS, CEUR): changes in SHAP feature importance
+               trigger adaptation, without RL.
+             - GARDIAN 2026 (JISA): a DRL agent controls retraining, without XAI.
+Still new  : The combination: a DRL agent that decides when to retrain a NIDS, uses explanation
+             shift as input, and can skip or roll back updates.
+Positioning: Must be compared explicitly against DeepXplain, C-MADF and Drago et al.
+Strength   : Medium. Good extension, not a standalone contribution.
+
+======================================================================
+G3. Explaining continual updates
+======================================================================
+Definition : Explanations that show how the detector changes across updates (forgetting, effect
+             of drift).
+Status     : PARTIALLY ADDRESSED
+Closest    : - Drago et al. 2026: explains the impact of drift and how model decisions evolve.
+             - CADE 2021: detects and explains drifting samples.
+             - CMC 2023 (Computers, Materials & Continua): SHAP-based drift detection without
+               labels.
+             - Outside security: "Explain to Not Forget" (arXiv 2205.01929) and the 2025 WIREs
+               review "XAI-Guided Continual Learning" use XAI against forgetting.
+Still new  : Only explaining the forgetting caused by each update (replay or generated samples)
+             inside a NIDS.
+Strength   : Weak as a standalone contribution. Better used as an analysis section.
+
+======================================================================
+G4. Feature encoding vs zero-day detection
+======================================================================
+Definition : How categorical feature encoding affects whether unsupervised methods can detect
+             zero-day traffic.
+Status     : OPEN (narrow)
+Closest    : None. ACORN-IDS and AOC-IDS (one-hot) and ThreatFormer-IDS (embeddings) choose an
+             encoding without studying it; Alkasassbeh et al. 2025 use integer (label) encoding.
+Still new  : No study of how categorical encoding changes zero-day detectability.
+Evidence   : Our UGRansome test: autoencoder AUC 0.49 with integer codes vs 0.94 with one-hot.
+Strength   : Supporting finding. Too narrow to stand alone.
+
+======================================================================
+RECOMMENDED FRAMING
+======================================================================
+G1 = core contribution
+G2 = extension
+G3 = analysis section
+G4 = supporting experiment
+
+======================================================================
+COUNTS OVER ALL 63 PAPERS
+======================================================================
+G1: High overlap 5, Partial overlap 10, Low overlap 5, No overlap 43
+G2: High overlap 2, Partial overlap 3, Low overlap 13, No overlap 45
+G3: High overlap 5, Partial overlap 2, Low overlap 4, No overlap 52
+G4: Partial overlap 1, Low overlap 2, No overlap 60
+Duplicates of any gap: 0
+
+======================================================================
+RELIABILITY NOTES
+======================================================================
+- Full text was read for the papers that matter most for overlap: DeepXplain, C-MADF, UNAD+,
+  Afzaal et al., ACORN-IDS, ExpIDS, ThreatFormer-IDS, Drago et al., the Siamese+RL paper and
+  GARDIAN.
+- About a dozen verdicts rest only on the abstract or on a citation in another paper (see the
+  "Extraction source" column in the workbook).
+- Preprints may still change (DeepXplain is under review; ACORN-IDS code is due on acceptance).
+  Re-check them before submission.
