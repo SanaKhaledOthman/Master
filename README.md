@@ -118,6 +118,7 @@ dqn_ids/data.py             preprocessing + random / zero-day splits
 dqn_ids/env.py              classification-as-RL environment + reward tables
 dqn_ids/agent.py            Q-network, replay buffer, DQN agent, Algorithm 1 training loop
 run_experiments.py          runs Exp 1–4, writes metrics and figures
+gardian/GARDIAN.ipynb       GARDIAN (Sami et al., JISA 2026) implementation, executed
 ```
 
 ## What was implemented (mapping to the paper)
@@ -218,6 +219,20 @@ The table gives best-seed / mean accuracy over seeds 0–2. The first row is the
 - **Exp 4 (multiclass zero-day) reproduces.** It reaches 93.0 % vs 92.0 %. SS recall is 0.98 (paper 0.99), and S and A are the harder classes, as in the paper.
 - **Exp 2 (binary zero-day) is the remaining gap.** It reaches 93.2 % vs the paper's 95.9 %. The error pattern is the same: ransomware recall is 0.98 vs 0.99, and most errors are benign flows from unseen families flagged as ransomware (benign recall 0.88 vs 0.93). This experiment has the highest seed variance (±1.4 pts). The paper reports its best run, so more seeds or unreported details (sample order, seeds) plausibly explain the rest.
 - Using the 8 Table-1 features instead of all 10 costs about 0.7 pts on the random splits. Fitting the scaler on all data instead of only the training split makes little difference.
+
+## GARDIAN notebook
+
+`gardian/GARDIAN.ipynb` implements GARDIAN from H. Sami et al., "Deep reinforcement learning for
+autonomous and continual network intrusion detection", *JISA* 102 (2026) 104594. The notebook covers:
+
+- Layer 1: a multi-head autoencoder flags emerging patterns, and DBSCAN with semi-supervised labelling assigns their labels.
+- Layer 2: a CGAN and a replay buffer supply retraining data, and a PPO agent decides when to fine-tune the MLP classifier and with how many samples.
+- Experiments: an ablation (CGAN only / buffer only), the paper's diagnostics, and a reward-sensitivity sweep.
+
+It runs on the bundled UGRansome CSV, where the six held-out ransomware families act as the
+emerging patterns. It also has a loader for the paper's NetFlow-v2 CSVs. Run it with
+`jupyter notebook gardian/GARDIAN.ipynb` (about 10 min on 4 CPU cores). Section 16 of the notebook
+summarises what we observed.
 
 ## Notes
 

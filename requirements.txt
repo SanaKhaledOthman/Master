@@ -3,3 +3,7 @@ numpy
 pandas
 scikit-learn
 matplotlib
+# GARDIAN notebook (gardian/GARDIAN.ipynb)
+gymnasium
+stable-baselines3
+jupyter
