@@ -1,7 +1,8 @@
 # GARDIAN: authors' code on NetFlow v3 (unmodified)
 
-**Code.** [hanisami/nids_continual_learning](https://github.com/hanisami/nids_continual_learning),
-commit `2aad9eb`. No file was changed.
+**Code.** [hanisami/nids_continual_learning](https://github.com/hanisami/nids_continual_learning/tree/2aad9eb710781fe24a1d198aaa68462b70e0759d),
+commit `2aad9eb`. No file was changed. The code is not copied here (the repository has no license);
+`run_authors_code.sh` downloads it.
 
 **Data.** NF-UNSW-NB15-v3 and NF-BoT-IoT-v3 from Hugging Face (`keys-i/netFlow`), merged by
 `prepare_netflow.py`:
@@ -67,6 +68,8 @@ peak of 0.836 at PPO step 10,240. See `curve_metrics.png`.
 
 ## Files
 
+* `run_authors_code.sh`: downloads the authors' code (commit `2aad9eb`) and the data, then repeats every step of this run
+* `prepare_netflow.py`: our data-preparation script (the only code we wrote for this run)
 * `curve_return.png`: PPO episodic return
 * `curve_metrics.png`: accuracy and F1 during training
 * `pca_real_vs_generated.png`: CGAN real vs generated samples (cf. Fig. 7)
