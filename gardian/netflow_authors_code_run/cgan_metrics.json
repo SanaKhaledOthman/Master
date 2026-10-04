@@ -1,0 +1,16 @@
+{
+  "target_label": 1,
+  "status": "ok",
+  "n_real_used": 2000,
+  "n_generated_used": 2000,
+  "real_avg_pairwise_distance": 0.5496819615364075,
+  "generated_avg_pairwise_distance": 0.40733975172042847,
+  "diversity_ratio": 0.7410462416883382,
+  "feature_mean_abs_diff_avg": 0.006412737537175417,
+  "feature_std_abs_diff_avg": 0.013552838936448097,
+  "generated_to_real_nn_distance_avg": 0.07117127914726734,
+  "cgan_finetune_seconds": 29.63799695299997,
+  "generation_seconds": 0.004390577999970446,
+  "n_pair_samples": 5000,
+  "max_plot_samples": 1000
+}

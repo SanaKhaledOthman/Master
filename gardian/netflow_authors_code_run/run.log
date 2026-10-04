@@ -1,0 +1,44 @@
+[main] streaming seen-class pool (for MLP pretrain & replay seeding) ...
+[main] streaming UNSEEN target-class pool (for CGAN training) ...
+[main] streaming test split (stratified per class) ...
+[main] seen_df: (90000, 52) | unseen_df: (80000, 52) | test_df: (19001, 52)
+[main] pretraining MLP on seen classes only ...
+[MLP] epoch 001/2  loss=0.3786  acc=0.8858
+[MLP] epoch 002/2  loss=0.1521  acc=0.9358
+[main] Pretrain eval: loss=2.5096 acc=0.7236 f1=0.6289
+[main] training CGAN on the UNSEEN class ...
+[CGAN] epoch 001/10  D=1.2985  G=0.9728
+[CGAN] epoch 002/10  D=1.3290  G=0.9054
+[CGAN] epoch 003/10  D=1.3002  G=0.9214
+[CGAN] epoch 004/10  D=1.3134  G=0.9238
+[CGAN] epoch 005/10  D=1.3227  G=0.9132
+[CGAN] epoch 006/10  D=1.3416  G=0.8413
+[CGAN] epoch 007/10  D=1.3301  G=0.8782
+[CGAN] epoch 008/10  D=1.3132  G=0.9103
+[CGAN] epoch 009/10  D=1.3055  G=0.9083
+[CGAN] epoch 010/10  D=1.2996  G=0.9285
+[main] running CGAN diagnostics for the target class ...
+[main] CGAN diagnostics status: ok
+[main] seeding replay buffer with seen classes ...
+[main] building hybrid environment (GAN + Replay) ...
+[main] training PPO ...
+[PPO] step=  2048 | avgR= 0.0036 | acc= 0.734 | f1= 0.649
+[PPO] step=  4096 | avgR= 0.0043 | acc= 0.817 | f1= 0.800
+[PPO] step=  6144 | avgR= 0.0016 | acc= 0.798 | f1= 0.774
+[PPO] step=  8192 | avgR= 0.0003 | acc= 0.814 | f1= 0.793
+[PPO] step= 10240 | avgR=-0.0009 | acc= 0.836 | f1= 0.821
+[PPO] step= 12288 | avgR=-0.0005 | acc= 0.820 | f1= 0.805
+[PPO] step= 14336 | avgR=-0.0013 | acc= 0.788 | f1= 0.748
+[PPO] step= 16384 | avgR=-0.0005 | acc= 0.776 | f1= 0.729
+[PPO] step= 18432 | avgR= 0.0032 | acc= 0.773 | f1= 0.724
+[PPO] step= 20000 | avgR= 0.0015 | acc= 0.786 | f1= 0.742
+
+[Training completed in 19.61 min]
+[main] saving artifacts ...
+[main] Final eval: loss=1.3922 acc=0.7856 f1=0.7422
+[main] saving RL diagnostics ...
+[main] run saved to: outputs/20261004_164938
+
+real	21m20.384s
+user	60m4.068s
+sys	18m46.887s
