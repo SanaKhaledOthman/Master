@@ -177,6 +177,10 @@ def make_learner_class(pf):
             if self.gate in ("xai", "conf_xai"):
                 self.xai_gate.calibrate(self.model, lambda X: self._predict(X)[0])
                 accept &= self.xai_gate.accept(self.model, X_batch, preds)
+            # Upstream _train has no drop_last, and BatchNorm fails on a final mini-batch of
+            # one sample. Upstream always adds 2784 rows so never hits it; a gate can.
+            if (len(y_full) + accept.sum()) % self.cfg.BATCH_SIZE == 1:
+                accept[np.flatnonzero(accept)[-1]] = False
             pseudo = preds[accept].copy()
             # same label-noise injection as upstream, applied to the accepted labels
             flip = np.random.choice(len(pseudo), size=int(self.cfg.LAMBDA_FLIP * len(pseudo)),
