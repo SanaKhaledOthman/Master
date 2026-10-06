@@ -4,6 +4,9 @@ Runs the upstream main block's steps with the upstream functions and Config.
 Usage: python reproduce_pseudofilter.py [--runs 5]
 """
 import argparse
+import os
+
+import torch
 
 from upstream import load_pseudofilter
 
@@ -11,6 +14,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--runs", type=int, default=None, help="default: upstream Config.RUNS (5)")
 args = ap.parse_args()
 
+torch.set_num_threads(int(os.environ.get("THREADS", torch.get_num_threads())))
 pf = load_pseudofilter()
 cfg = pf.Config()
 if args.runs is not None:
