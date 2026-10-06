@@ -30,11 +30,15 @@ setting changed is `Config.TRAIN_PATH` / `TEST_PATH`, set at run time.
 | `run_all.sh` | Every run behind the results below |
 | `results/` | Per-batch CSV logs, run logs and `RESULTS.md` |
 
-AOC-IDS itself is reproduced by running its script unchanged inside its own folder:
+AOC-IDS itself is reproduced by running its script unchanged inside its own folder. It
+needs the versions pinned in its `requirements.txt`: with PyTorch 2.x it crashes at the
+first online update.
 
 ```bash
+uv venv -p python3.10 ../../aoc_env
+VIRTUAL_ENV=../../aoc_env uv pip install torch==1.13.1 numpy==1.23.5 pandas==1.5.3 scikit-learn==1.2.1 scipy==1.10.0
 cd ../../g1_upstream/AOC-IDS
-python online_training.py --dataset unsw --epochs 800 --epoch_1 1 --flip_percent 0.05 --sample_interval 2784
+../../aoc_env/bin/python online_training.py --dataset unsw --epochs 800 --epoch_1 1 --flip_percent 0.05 --sample_interval 2784
 ```
 
 ## Zero-day protocol
@@ -100,4 +104,4 @@ python g1_experiment.py --quick --zero_day Fuzzers   # smoke test, ~5 min on CPU
 THREADS=2 ./run_all.sh                               # full runs, several hours on CPU
 ```
 
-Results: `results/RESULTS.md`.
+Results: [`results/RESULTS.md`](results/RESULTS.md).

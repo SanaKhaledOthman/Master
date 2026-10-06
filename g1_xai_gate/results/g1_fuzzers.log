@@ -1,0 +1,1051 @@
+[Data] Train (175341, 194) | Normal=56000 Attack=119341
+[Data] Test  (82332, 194)  | Normal=37000  Attack=45332
+
+=== zero-day=Fuzzers seed=0 gate=none
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4400
+    epoch 20/50  loss=0.4199
+    epoch 30/50  loss=0.3577
+    epoch 40/50  loss=0.3897
+    epoch 50/50  loss=0.4112
+  [Init] Done in 0.6 min
+  [none] after init  acc=91.35 zd_recall=52.77
+  [none  1/51] acc=91.42 zd_recall=45.40 added=2784 label_prec=97.8 zd normal/attack/rejected=0/0/0 (3s)
+  [none  2/51] acc=91.51 zd_recall=47.53 added=2784 label_prec=98.1 zd normal/attack/rejected=0/0/0 (3s)
+  [none  3/51] acc=91.36 zd_recall=44.89 added=2784 label_prec=98.1 zd normal/attack/rejected=0/0/0 (2s)
+  [none  4/51] acc=91.21 zd_recall=48.04 added=2784 label_prec=98.1 zd normal/attack/rejected=0/0/0 (3s)
+  [none  5/51] acc=91.39 zd_recall=43.29 added=2784 label_prec=98.1 zd normal/attack/rejected=0/0/0 (3s)
+  [none  6/51] acc=91.19 zd_recall=43.10 added=2784 label_prec=98.0 zd normal/attack/rejected=0/0/0 (4s)
+  [none  7/51] acc=91.21 zd_recall=47.05 added=2784 label_prec=97.8 zd normal/attack/rejected=0/0/0 (4s)
+  [none  8/51] acc=91.43 zd_recall=44.92 added=2784 label_prec=98.3 zd normal/attack/rejected=0/0/0 (3s)
+  [none  9/51] acc=91.30 zd_recall=48.32 added=2784 label_prec=98.0 zd normal/attack/rejected=0/0/0 (4s)
+  [none 10/51] acc=91.21 zd_recall=46.63 added=2784 label_prec=98.0 zd normal/attack/rejected=0/0/0 (4s)
+  [none 11/51] acc=91.30 zd_recall=47.34 added=2784 label_prec=98.2 zd normal/attack/rejected=0/0/0 (4s)
+  [none 12/51] acc=91.28 zd_recall=50.43 added=2784 label_prec=98.1 zd normal/attack/rejected=0/0/0 (4s)
+  [none 13/51] acc=91.35 zd_recall=47.66 added=2784 label_prec=97.8 zd normal/attack/rejected=0/0/0 (5s)
+  [none 14/51] acc=91.40 zd_recall=45.74 added=2784 label_prec=98.0 zd normal/attack/rejected=0/0/0 (5s)
+  [none 15/51] acc=91.32 zd_recall=47.26 added=2784 label_prec=97.8 zd normal/attack/rejected=0/0/0 (4s)
+  [none 16/51] acc=91.38 zd_recall=47.66 added=2784 label_prec=91.4 zd normal/attack/rejected=194/69/0 (5s)
+  [none 17/51] acc=91.19 zd_recall=49.59 added=2784 label_prec=85.7 zd normal/attack/rejected=364/149/0 (5s)
+  [none 18/51] acc=91.26 zd_recall=46.29 added=2784 label_prec=84.9 zd normal/attack/rejected=366/123/0 (5s)
+  [none 19/51] acc=91.38 zd_recall=47.31 added=2784 label_prec=86.5 zd normal/attack/rejected=328/141/0 (5s)
+  [none 20/51] acc=91.33 zd_recall=47.90 added=2784 label_prec=86.0 zd normal/attack/rejected=348/151/0 (5s)
+  [none 21/51] acc=91.34 zd_recall=44.33 added=2784 label_prec=84.7 zd normal/attack/rejected=386/124/0 (6s)
+  [none 22/51] acc=91.18 zd_recall=49.21 added=2784 label_prec=84.4 zd normal/attack/rejected=384/116/0 (6s)
+  [none 23/51] acc=91.37 zd_recall=46.67 added=2784 label_prec=85.4 zd normal/attack/rejected=353/116/0 (6s)
+  [none 24/51] acc=91.27 zd_recall=50.40 added=2784 label_prec=85.4 zd normal/attack/rejected=364/125/0 (6s)
+  [none 25/51] acc=91.22 zd_recall=47.08 added=2784 label_prec=85.7 zd normal/attack/rejected=359/138/0 (6s)
+  [none 26/51] acc=91.23 zd_recall=46.95 added=2784 label_prec=84.6 zd normal/attack/rejected=371/134/0 (7s)
+  [none 27/51] acc=91.37 zd_recall=44.82 added=2784 label_prec=84.4 zd normal/attack/rejected=379/133/0 (6s)
+  [none 28/51] acc=91.36 zd_recall=48.25 added=2784 label_prec=84.8 zd normal/attack/rejected=379/129/0 (6s)
+  [none 29/51] acc=91.38 zd_recall=46.49 added=2784 label_prec=86.2 zd normal/attack/rejected=342/140/0 (7s)
+  [none 30/51] acc=91.27 zd_recall=48.02 added=2784 label_prec=84.4 zd normal/attack/rejected=393/138/0 (7s)
+  [none 31/51] acc=91.28 zd_recall=49.21 added=2784 label_prec=84.0 zd normal/attack/rejected=402/122/0 (7s)
+  [none 32/51] acc=91.30 zd_recall=47.00 added=2784 label_prec=84.8 zd normal/attack/rejected=376/148/0 (7s)
+  [none 33/51] acc=91.26 zd_recall=47.86 added=2784 label_prec=84.7 zd normal/attack/rejected=379/151/0 (7s)
+  [none 34/51] acc=91.38 zd_recall=47.39 added=2784 label_prec=85.5 zd normal/attack/rejected=353/126/0 (8s)
+  [none 35/51] acc=91.24 zd_recall=47.81 added=2784 label_prec=84.4 zd normal/attack/rejected=392/153/0 (7s)
+  [none 36/51] acc=91.18 zd_recall=46.39 added=2784 label_prec=84.5 zd normal/attack/rejected=383/146/0 (8s)
+  [none 37/51] acc=91.25 zd_recall=48.45 added=2784 label_prec=84.4 zd normal/attack/rejected=380/118/0 (8s)
+  [none 38/51] acc=91.24 zd_recall=48.42 added=2784 label_prec=85.2 zd normal/attack/rejected=373/145/0 (8s)
+  [none 39/51] acc=91.33 zd_recall=44.51 added=2784 label_prec=86.4 zd normal/attack/rejected=337/122/0 (8s)
+  [none 40/51] acc=91.33 zd_recall=46.44 added=2784 label_prec=84.8 zd normal/attack/rejected=377/115/0 (9s)
+  [none 41/51] acc=91.37 zd_recall=48.32 added=2784 label_prec=85.6 zd normal/attack/rejected=341/156/0 (9s)
+  [none 42/51] acc=91.25 zd_recall=45.63 added=2784 label_prec=86.2 zd normal/attack/rejected=349/127/0 (9s)
+  [none 43/51] acc=91.45 zd_recall=46.95 added=2784 label_prec=84.8 zd normal/attack/rejected=380/109/0 (9s)
+  [none 44/51] acc=91.36 zd_recall=48.71 added=2784 label_prec=84.6 zd normal/attack/rejected=386/144/0 (10s)
+  [none 45/51] acc=91.41 zd_recall=47.77 added=2784 label_prec=84.8 zd normal/attack/rejected=381/130/0 (9s)
+  [none 46/51] acc=91.22 zd_recall=37.69 added=2784 label_prec=85.1 zd normal/attack/rejected=368/142/0 (9s)
+  [none 47/51] acc=91.29 zd_recall=48.22 added=2784 label_prec=83.0 zd normal/attack/rejected=413/123/0 (11s)
+  [none 48/51] acc=91.49 zd_recall=46.57 added=2784 label_prec=85.9 zd normal/attack/rejected=345/114/0 (10s)
+  [none 49/51] acc=91.29 zd_recall=45.76 added=2784 label_prec=85.5 zd normal/attack/rejected=356/114/0 (10s)
+  [none 50/51] acc=91.32 zd_recall=49.29 added=2784 label_prec=85.3 zd normal/attack/rejected=366/130/0 (11s)
+  [none 51/51] acc=91.36 zd_recall=46.83 added=2784 label_prec=84.6 zd normal/attack/rejected=393/127/0 (10s)
+
+=== zero-day=Fuzzers seed=0 gate=pseudofilter
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4400
+    epoch 20/50  loss=0.4199
+    epoch 30/50  loss=0.3577
+    epoch 40/50  loss=0.3897
+    epoch 50/50  loss=0.4112
+  [Init] Done in 0.5 min
+  [pseudofilter] after init  acc=91.35 zd_recall=52.77
+  [pseudofilter  1/51] acc=91.31 zd_recall=39.82 added=2784 label_prec=93.5 zd normal/attack/rejected=0/0/0 (2s)
+  [pseudofilter  2/51] acc=91.39 zd_recall=38.50 added=2784 label_prec=93.7 zd normal/attack/rejected=0/0/0 (2s)
+  [pseudofilter  3/51] acc=91.39 zd_recall=37.63 added=2784 label_prec=93.0 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  4/51] acc=91.09 zd_recall=29.10 added=2784 label_prec=90.5 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  5/51] acc=90.94 zd_recall=26.94 added=2784 label_prec=88.7 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  6/51] acc=90.59 zd_recall=24.22 added=2784 label_prec=88.8 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  7/51] acc=90.89 zd_recall=25.64 added=2784 label_prec=85.8 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  8/51] acc=90.45 zd_recall=23.95 added=2784 label_prec=82.2 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  9/51] acc=90.10 zd_recall=23.95 added=2784 label_prec=82.1 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter 10/51] acc=90.04 zd_recall=23.47 added=2784 label_prec=78.4 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 11/51] acc=89.96 zd_recall=23.28 added=2784 label_prec=80.0 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 12/51] acc=89.51 zd_recall=23.06 added=2784 label_prec=78.7 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 13/51] acc=89.25 zd_recall=22.43 added=2784 label_prec=77.6 zd normal/attack/rejected=0/0/0 (5s)
+  [pseudofilter 14/51] acc=87.92 zd_recall=21.99 added=2784 label_prec=78.1 zd normal/attack/rejected=0/0/0 (5s)
+  [pseudofilter 15/51] acc=88.29 zd_recall=21.97 added=2784 label_prec=71.9 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 16/51] acc=87.72 zd_recall=21.79 added=2784 label_prec=68.7 zd normal/attack/rejected=247/16/0 (5s)
+  [pseudofilter 17/51] acc=86.85 zd_recall=21.71 added=2784 label_prec=63.0 zd normal/attack/rejected=474/39/0 (5s)
+  [pseudofilter 18/51] acc=86.55 zd_recall=21.41 added=2784 label_prec=62.9 zd normal/attack/rejected=451/38/0 (5s)
+  [pseudofilter 19/51] acc=86.35 zd_recall=21.36 added=2784 label_prec=63.9 zd normal/attack/rejected=439/30/0 (5s)
+  [pseudofilter 20/51] acc=85.32 zd_recall=21.20 added=2784 label_prec=63.1 zd normal/attack/rejected=452/47/0 (5s)
+  [pseudofilter 21/51] acc=85.24 zd_recall=21.18 added=2784 label_prec=63.2 zd normal/attack/rejected=479/31/0 (5s)
+  [pseudofilter 22/51] acc=83.78 zd_recall=20.93 added=2784 label_prec=63.5 zd normal/attack/rejected=471/29/0 (6s)
+  [pseudofilter 23/51] acc=84.62 zd_recall=20.95 added=2784 label_prec=62.4 zd normal/attack/rejected=441/28/0 (7s)
+  [pseudofilter 24/51] acc=84.60 zd_recall=20.88 added=2784 label_prec=62.0 zd normal/attack/rejected=457/32/0 (6s)
+  [pseudofilter 25/51] acc=84.28 zd_recall=20.95 added=2784 label_prec=61.8 zd normal/attack/rejected=461/36/0 (6s)
+  [pseudofilter 26/51] acc=83.45 zd_recall=20.75 added=2784 label_prec=62.4 zd normal/attack/rejected=468/37/0 (7s)
+  [pseudofilter 27/51] acc=81.86 zd_recall=20.60 added=2784 label_prec=61.3 zd normal/attack/rejected=475/37/0 (7s)
+  [pseudofilter 28/51] acc=82.73 zd_recall=20.74 added=2784 label_prec=62.8 zd normal/attack/rejected=468/40/0 (8s)
+  [pseudofilter 29/51] acc=81.98 zd_recall=20.67 added=2784 label_prec=62.6 zd normal/attack/rejected=448/34/0 (8s)
+  [pseudofilter 30/51] acc=81.02 zd_recall=20.49 added=2784 label_prec=59.7 zd normal/attack/rejected=490/41/0 (7s)
+  [pseudofilter 31/51] acc=80.56 zd_recall=20.42 added=2784 label_prec=54.8 zd normal/attack/rejected=502/22/0 (7s)
+  [pseudofilter 32/51] acc=80.47 zd_recall=20.29 added=2784 label_prec=58.3 zd normal/attack/rejected=497/27/0 (7s)
+  [pseudofilter 33/51] acc=80.33 zd_recall=20.36 added=2784 label_prec=57.7 zd normal/attack/rejected=492/38/0 (7s)
+  [pseudofilter 34/51] acc=80.45 zd_recall=20.24 added=2784 label_prec=59.2 zd normal/attack/rejected=457/22/0 (8s)
+  [pseudofilter 35/51] acc=80.27 zd_recall=20.34 added=2784 label_prec=54.1 zd normal/attack/rejected=512/33/0 (8s)
+  [pseudofilter 36/51] acc=79.35 zd_recall=20.32 added=2784 label_prec=56.1 zd normal/attack/rejected=497/32/0 (8s)
+  [pseudofilter 37/51] acc=79.23 zd_recall=20.34 added=2784 label_prec=52.2 zd normal/attack/rejected=475/23/0 (8s)
+  [pseudofilter 38/51] acc=78.96 zd_recall=20.16 added=2784 label_prec=54.4 zd normal/attack/rejected=489/29/0 (9s)
+  [pseudofilter 39/51] acc=79.45 zd_recall=20.17 added=2784 label_prec=55.9 zd normal/attack/rejected=435/24/0 (9s)
+  [pseudofilter 40/51] acc=78.72 zd_recall=20.04 added=2784 label_prec=55.2 zd normal/attack/rejected=466/26/0 (8s)
+  [pseudofilter 41/51] acc=78.56 zd_recall=19.99 added=2784 label_prec=52.7 zd normal/attack/rejected=467/30/0 (8s)
+  [pseudofilter 42/51] acc=78.71 zd_recall=19.94 added=2784 label_prec=53.9 zd normal/attack/rejected=457/19/0 (9s)
+  [pseudofilter 43/51] acc=78.60 zd_recall=19.91 added=2784 label_prec=54.8 zd normal/attack/rejected=471/18/0 (9s)
+  [pseudofilter 44/51] acc=78.37 zd_recall=19.78 added=2784 label_prec=52.9 zd normal/attack/rejected=508/22/0 (9s)
+  [pseudofilter 45/51] acc=78.21 zd_recall=19.88 added=2784 label_prec=50.1 zd normal/attack/rejected=493/18/0 (9s)
+  [pseudofilter 46/51] acc=78.25 zd_recall=20.01 added=2784 label_prec=49.2 zd normal/attack/rejected=494/16/0 (9s)
+  [pseudofilter 47/51] acc=77.99 zd_recall=19.91 added=2784 label_prec=49.1 zd normal/attack/rejected=513/23/0 (9s)
+  [pseudofilter 48/51] acc=78.34 zd_recall=19.84 added=2784 label_prec=49.6 zd normal/attack/rejected=446/13/0 (10s)
+  [pseudofilter 49/51] acc=78.12 zd_recall=19.83 added=2784 label_prec=51.9 zd normal/attack/rejected=455/15/0 (10s)
+  [pseudofilter 50/51] acc=77.87 zd_recall=19.71 added=2784 label_prec=49.4 zd normal/attack/rejected=476/20/0 (10s)
+  [pseudofilter 51/51] acc=78.26 zd_recall=19.76 added=2784 label_prec=48.5 zd normal/attack/rejected=499/21/0 (10s)
+
+=== zero-day=Fuzzers seed=0 gate=conf_drop
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4400
+    epoch 20/50  loss=0.4199
+    epoch 30/50  loss=0.3577
+    epoch 40/50  loss=0.3897
+    epoch 50/50  loss=0.4112
+  [Init] Done in 0.5 min
+  [conf_drop] after init  acc=91.35 zd_recall=52.77
+  [conf_drop  1/51] acc=91.43 zd_recall=46.14 added=2497 label_prec=99.7 zd normal/attack/rejected=0/0/0 (2s)
+  [conf_drop  2/51] acc=91.30 zd_recall=47.95 added=2542 label_prec=99.6 zd normal/attack/rejected=0/0/0 (2s)
+  [conf_drop  3/51] acc=91.25 zd_recall=47.87 added=2524 label_prec=99.8 zd normal/attack/rejected=0/0/0 (2s)
+  [conf_drop  4/51] acc=91.26 zd_recall=54.11 added=2502 label_prec=99.7 zd normal/attack/rejected=0/0/0 (2s)
+  [conf_drop  5/51] acc=91.33 zd_recall=45.63 added=2500 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  6/51] acc=91.35 zd_recall=47.94 added=2537 label_prec=99.8 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  7/51] acc=91.21 zd_recall=45.55 added=2493 label_prec=99.8 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  8/51] acc=91.38 zd_recall=49.01 added=2472 label_prec=99.9 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop  9/51] acc=91.33 zd_recall=43.91 added=2534 label_prec=99.6 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop 10/51] acc=91.36 zd_recall=47.49 added=2333 label_prec=99.7 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop 11/51] acc=91.32 zd_recall=46.63 added=2407 label_prec=99.7 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 12/51] acc=91.29 zd_recall=52.29 added=2526 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 13/51] acc=91.22 zd_recall=45.69 added=2428 label_prec=99.9 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 14/51] acc=91.12 zd_recall=49.13 added=2364 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 15/51] acc=91.11 zd_recall=51.98 added=2288 label_prec=100.0 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 16/51] acc=91.13 zd_recall=50.56 added=2151 label_prec=96.5 zd normal/attack/rejected=72/22/169 (4s)
+  [conf_drop 17/51] acc=91.16 zd_recall=51.44 added=2052 label_prec=92.8 zd normal/attack/rejected=146/50/317 (5s)
+  [conf_drop 18/51] acc=91.05 zd_recall=46.65 added=2048 label_prec=91.7 zd normal/attack/rejected=167/49/273 (4s)
+  [conf_drop 19/51] acc=91.26 zd_recall=51.32 added=2051 label_prec=92.3 zd normal/attack/rejected=155/31/283 (4s)
+  [conf_drop 20/51] acc=91.15 zd_recall=46.11 added=2187 label_prec=92.0 zd normal/attack/rejected=171/63/265 (5s)
+  [conf_drop 21/51] acc=91.15 zd_recall=47.15 added=1912 label_prec=90.3 zd normal/attack/rejected=184/30/296 (5s)
+  [conf_drop 22/51] acc=90.88 zd_recall=45.78 added=2169 label_prec=90.0 zd normal/attack/rejected=215/44/241 (5s)
+  [conf_drop 23/51] acc=91.24 zd_recall=51.27 added=1909 label_prec=89.7 zd normal/attack/rejected=197/30/242 (5s)
+  [conf_drop 24/51] acc=91.34 zd_recall=50.40 added=2106 label_prec=92.0 zd normal/attack/rejected=165/42/282 (5s)
+  [conf_drop 25/51] acc=91.08 zd_recall=49.51 added=2245 label_prec=91.1 zd normal/attack/rejected=196/53/248 (6s)
+  [conf_drop 26/51] acc=91.08 zd_recall=51.29 added=1831 label_prec=91.7 zd normal/attack/rejected=151/40/314 (6s)
+  [conf_drop 27/51] acc=90.88 zd_recall=42.03 added=1894 label_prec=93.5 zd normal/attack/rejected=120/42/350 (5s)
+  [conf_drop 28/51] acc=91.31 zd_recall=50.84 added=2174 label_prec=93.1 zd normal/attack/rejected=149/52/307 (5s)
+  [conf_drop 29/51] acc=91.06 zd_recall=44.14 added=2244 label_prec=91.2 zd normal/attack/rejected=194/58/230 (6s)
+  [conf_drop 30/51] acc=91.24 zd_recall=53.37 added=1956 label_prec=89.4 zd normal/attack/rejected=207/41/283 (7s)
+  [conf_drop 31/51] acc=91.07 zd_recall=47.90 added=1998 label_prec=91.3 zd normal/attack/rejected=170/39/315 (6s)
+  [conf_drop 32/51] acc=91.15 zd_recall=50.30 added=1999 label_prec=91.2 zd normal/attack/rejected=172/39/313 (7s)
+  [conf_drop 33/51] acc=91.19 zd_recall=52.31 added=2010 label_prec=91.8 zd normal/attack/rejected=160/53/317 (7s)
+  [conf_drop 34/51] acc=91.18 zd_recall=51.67 added=1967 label_prec=92.3 zd normal/attack/rejected=148/32/299 (6s)
+  [conf_drop 35/51] acc=91.09 zd_recall=50.68 added=2160 label_prec=91.4 zd normal/attack/rejected=184/60/301 (6s)
+  [conf_drop 36/51] acc=91.08 zd_recall=50.20 added=1866 label_prec=91.8 zd normal/attack/rejected=150/39/340 (7s)
+  [conf_drop 37/51] acc=91.14 zd_recall=50.66 added=1883 label_prec=91.1 zd normal/attack/rejected=165/37/296 (7s)
+  [conf_drop 38/51] acc=91.15 zd_recall=50.96 added=2056 label_prec=91.6 zd normal/attack/rejected=171/43/304 (8s)
+  [conf_drop 39/51] acc=91.22 zd_recall=50.30 added=1987 label_prec=93.4 zd normal/attack/rejected=131/40/288 (7s)
+  [conf_drop 40/51] acc=91.20 zd_recall=52.38 added=2141 label_prec=91.1 zd normal/attack/rejected=187/42/263 (8s)
+  [conf_drop 41/51] acc=91.05 zd_recall=42.76 added=2001 label_prec=92.1 zd normal/attack/rejected=153/48/296 (8s)
+  [conf_drop 42/51] acc=91.11 zd_recall=49.87 added=1976 label_prec=90.6 zd normal/attack/rejected=184/28/264 (8s)
+  [conf_drop 43/51] acc=91.04 zd_recall=50.07 added=1921 label_prec=91.8 zd normal/attack/rejected=153/31/305 (8s)
+  [conf_drop 44/51] acc=91.06 zd_recall=47.92 added=1948 label_prec=92.7 zd normal/attack/rejected=142/40/348 (7s)
+  [conf_drop 45/51] acc=91.25 zd_recall=49.64 added=2032 label_prec=90.7 zd normal/attack/rejected=188/42/281 (8s)
+  [conf_drop 46/51] acc=91.28 zd_recall=51.70 added=1912 label_prec=92.8 zd normal/attack/rejected=134/42/334 (8s)
+  [conf_drop 47/51] acc=91.10 zd_recall=49.65 added=1755 label_prec=91.2 zd normal/attack/rejected=154/35/347 (8s)
+  [conf_drop 48/51] acc=91.20 zd_recall=48.19 added=2018 label_prec=92.4 zd normal/attack/rejected=152/36/271 (8s)
+  [conf_drop 49/51] acc=91.16 zd_recall=48.28 added=2168 label_prec=92.9 zd normal/attack/rejected=148/37/285 (8s)
+  [conf_drop 50/51] acc=91.18 zd_recall=52.24 added=1931 label_prec=90.7 zd normal/attack/rejected=177/34/285 (8s)
+  [conf_drop 51/51] acc=91.12 zd_recall=55.81 added=2091 label_prec=91.0 zd normal/attack/rejected=188/48/284 (8s)
+
+=== zero-day=Fuzzers seed=0 gate=xai
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4400
+    epoch 20/50  loss=0.4199
+    epoch 30/50  loss=0.3577
+    epoch 40/50  loss=0.3897
+    epoch 50/50  loss=0.4112
+  [Init] Done in 0.6 min
+  [xai] after init  acc=91.35 zd_recall=52.77
+  [xai  1/51] acc=91.39 zd_recall=49.06 added=2244 label_prec=97.6 zd normal/attack/rejected=0/0/0 (3s)
+  [xai  2/51] acc=91.45 zd_recall=50.23 added=2241 label_prec=98.0 zd normal/attack/rejected=0/0/0 (3s)
+  [xai  3/51] acc=91.23 zd_recall=47.13 added=2228 label_prec=98.1 zd normal/attack/rejected=0/0/0 (3s)
+  [xai  4/51] acc=91.47 zd_recall=49.97 added=2181 label_prec=98.3 zd normal/attack/rejected=0/0/0 (3s)
+  [xai  5/51] acc=91.29 zd_recall=45.76 added=2257 label_prec=98.0 zd normal/attack/rejected=0/0/0 (4s)
+  [xai  6/51] acc=91.17 zd_recall=46.70 added=2216 label_prec=98.2 zd normal/attack/rejected=0/0/0 (4s)
+  [xai  7/51] acc=91.34 zd_recall=45.41 added=2203 label_prec=98.4 zd normal/attack/rejected=0/0/0 (4s)
+  [xai  8/51] acc=91.34 zd_recall=47.97 added=2246 label_prec=98.0 zd normal/attack/rejected=0/0/0 (4s)
+  [xai  9/51] acc=91.27 zd_recall=46.93 added=2191 label_prec=98.0 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 10/51] acc=91.34 zd_recall=48.98 added=2216 label_prec=97.9 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 11/51] acc=91.22 zd_recall=51.34 added=2215 label_prec=98.3 zd normal/attack/rejected=0/0/0 (5s)
+  [xai 12/51] acc=91.32 zd_recall=49.74 added=2262 label_prec=99.2 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 13/51] acc=91.34 zd_recall=48.93 added=2198 label_prec=98.9 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 14/51] acc=91.44 zd_recall=45.65 added=2229 label_prec=99.0 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 15/51] acc=91.42 zd_recall=44.66 added=2232 label_prec=97.7 zd normal/attack/rejected=0/0/0 (5s)
+  [xai 16/51] acc=91.26 zd_recall=47.92 added=2201 label_prec=91.7 zd normal/attack/rejected=142/43/78 (5s)
+  [xai 17/51] acc=91.33 zd_recall=47.48 added=2238 label_prec=84.1 zd normal/attack/rejected=322/107/84 (5s)
+  [xai 18/51] acc=91.21 zd_recall=49.21 added=2175 label_prec=87.4 zd normal/attack/rejected=252/74/163 (5s)
+  [xai 19/51] acc=91.33 zd_recall=51.48 added=2282 label_prec=85.7 zd normal/attack/rejected=280/123/66 (5s)
+  [xai 20/51] acc=91.33 zd_recall=47.33 added=2215 label_prec=87.0 zd normal/attack/rejected=254/122/123 (6s)
+  [xai 21/51] acc=91.43 zd_recall=44.79 added=2150 label_prec=88.9 zd normal/attack/rejected=225/105/180 (7s)
+  [xai 22/51] acc=91.37 zd_recall=44.18 added=2282 label_prec=82.6 zd normal/attack/rejected=354/101/45 (6s)
+  [xai 23/51] acc=91.30 zd_recall=49.24 added=2090 label_prec=92.2 zd normal/attack/rejected=148/78/243 (5s)
+  [xai 24/51] acc=91.30 zd_recall=49.01 added=2182 label_prec=87.7 zd normal/attack/rejected=237/91/161 (5s)
+  [xai 25/51] acc=91.34 zd_recall=45.22 added=2008 label_prec=92.9 zd normal/attack/rejected=134/90/273 (6s)
+  [xai 26/51] acc=91.31 zd_recall=42.81 added=2056 label_prec=91.8 zd normal/attack/rejected=152/93/260 (6s)
+  [xai 27/51] acc=91.23 zd_recall=45.73 added=2046 label_prec=91.0 zd normal/attack/rejected=171/96/245 (6s)
+  [xai 28/51] acc=91.38 zd_recall=47.33 added=2132 label_prec=90.1 zd normal/attack/rejected=176/104/228 (6s)
+  [xai 29/51] acc=91.40 zd_recall=47.20 added=2267 label_prec=85.9 zd normal/attack/rejected=286/105/91 (7s)
+  [xai 30/51] acc=91.39 zd_recall=46.63 added=2083 label_prec=89.9 zd normal/attack/rejected=192/103/236 (7s)
+  [xai 31/51] acc=91.49 zd_recall=49.27 added=2095 label_prec=88.6 zd normal/attack/rejected=216/70/238 (7s)
+  [xai 32/51] acc=91.35 zd_recall=47.66 added=2144 label_prec=88.7 zd normal/attack/rejected=223/97/204 (7s)
+  [xai 33/51] acc=91.46 zd_recall=46.95 added=2099 label_prec=90.2 zd normal/attack/rejected=189/107/234 (7s)
+  [xai 34/51] acc=91.46 zd_recall=45.99 added=2247 label_prec=84.6 zd normal/attack/rejected=301/102/76 (7s)
+  [xai 35/51] acc=91.37 zd_recall=50.58 added=2098 label_prec=88.9 zd normal/attack/rejected=214/98/233 (7s)
+  [xai 36/51] acc=91.43 zd_recall=47.33 added=2053 label_prec=89.6 zd normal/attack/rejected=186/105/238 (8s)
+  [xai 37/51] acc=91.44 zd_recall=47.31 added=2264 label_prec=83.3 zd normal/attack/rejected=335/90/73 (8s)
+  [xai 38/51] acc=91.32 zd_recall=45.46 added=2130 label_prec=89.2 zd normal/attack/rejected=206/116/196 (9s)
+  [xai 39/51] acc=91.47 zd_recall=50.49 added=2280 label_prec=84.3 zd normal/attack/rejected=317/96/46 (8s)
+  [xai 40/51] acc=91.41 zd_recall=48.04 added=2032 label_prec=91.5 zd normal/attack/rejected=158/94/240 (8s)
+  [xai 41/51] acc=91.21 zd_recall=41.82 added=2197 label_prec=87.8 zd normal/attack/rejected=230/130/137 (8s)
+  [xai 42/51] acc=91.44 zd_recall=49.90 added=2124 label_prec=91.8 zd normal/attack/rejected=161/80/235 (8s)
+  [xai 43/51] acc=91.44 zd_recall=46.54 added=2136 label_prec=91.2 zd normal/attack/rejected=169/91/229 (9s)
+  [xai 44/51] acc=91.30 zd_recall=47.28 added=2101 label_prec=90.2 zd normal/attack/rejected=188/111/231 (9s)
+  [xai 45/51] acc=91.23 zd_recall=47.71 added=2303 label_prec=83.4 zd normal/attack/rejected=344/112/55 (8s)
+  [xai 46/51] acc=91.39 zd_recall=47.34 added=2173 label_prec=89.1 zd normal/attack/rejected=199/123/188 (9s)
+  [xai 47/51] acc=91.43 zd_recall=48.33 added=2125 label_prec=88.3 zd normal/attack/rejected=216/104/216 (9s)
+  [xai 48/51] acc=91.41 zd_recall=46.98 added=2163 label_prec=88.9 zd normal/attack/rejected=216/89/154 (10s)
+  [xai 49/51] acc=91.30 zd_recall=46.09 added=2191 label_prec=88.6 zd normal/attack/rejected=216/92/162 (9s)
+  [xai 50/51] acc=91.48 zd_recall=47.54 added=2119 label_prec=90.3 zd normal/attack/rejected=186/109/201 (9s)
+  [xai 51/51] acc=91.41 zd_recall=49.46 added=2249 label_prec=82.9 zd normal/attack/rejected=355/95/70 (11s)
+
+=== zero-day=Fuzzers seed=0 gate=conf_xai
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4400
+    epoch 20/50  loss=0.4199
+    epoch 30/50  loss=0.3577
+    epoch 40/50  loss=0.3897
+    epoch 50/50  loss=0.4112
+  [Init] Done in 0.6 min
+  [conf_xai] after init  acc=91.35 zd_recall=52.77
+  [conf_xai  1/51] acc=91.37 zd_recall=52.38 added=1982 label_prec=99.7 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  2/51] acc=91.33 zd_recall=44.34 added=2041 label_prec=99.6 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  3/51] acc=91.34 zd_recall=45.46 added=2055 label_prec=99.8 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  4/51] acc=91.32 zd_recall=46.95 added=1956 label_prec=99.6 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  5/51] acc=91.27 zd_recall=46.30 added=2049 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  6/51] acc=91.28 zd_recall=49.13 added=1988 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai  7/51] acc=91.29 zd_recall=49.31 added=2052 label_prec=99.8 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  8/51] acc=91.31 zd_recall=50.08 added=2003 label_prec=99.7 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  9/51] acc=91.22 zd_recall=49.47 added=1960 label_prec=99.7 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 10/51] acc=91.24 zd_recall=45.66 added=1873 label_prec=99.7 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 11/51] acc=91.30 zd_recall=50.59 added=1831 label_prec=99.7 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 12/51] acc=91.15 zd_recall=43.01 added=1938 label_prec=99.9 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 13/51] acc=91.28 zd_recall=49.13 added=2010 label_prec=100.0 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 14/51] acc=91.15 zd_recall=48.25 added=2021 label_prec=100.0 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 15/51] acc=91.03 zd_recall=44.33 added=1919 label_prec=99.9 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 16/51] acc=91.18 zd_recall=43.50 added=1805 label_prec=96.0 zd normal/attack/rejected=68/13/182 (5s)
+  [conf_xai 17/51] acc=91.15 zd_recall=48.48 added=1801 label_prec=90.4 zd normal/attack/rejected=169/44/300 (5s)
+  [conf_xai 18/51] acc=91.22 zd_recall=49.36 added=1678 label_prec=92.3 zd normal/attack/rejected=127/43/319 (5s)
+  [conf_xai 19/51] acc=91.34 zd_recall=49.92 added=1835 label_prec=90.1 zd normal/attack/rejected=178/31/260 (5s)
+  [conf_xai 20/51] acc=91.22 zd_recall=52.06 added=1566 label_prec=93.0 zd normal/attack/rejected=107/34/358 (5s)
+  [conf_xai 21/51] acc=91.35 zd_recall=49.72 added=1626 label_prec=94.8 zd normal/attack/rejected=84/34/392 (5s)
+  [conf_xai 22/51] acc=91.16 zd_recall=43.30 added=1694 label_prec=89.6 zd normal/attack/rejected=174/31/295 (5s)
+  [conf_xai 23/51] acc=91.30 zd_recall=44.67 added=1643 label_prec=95.1 zd normal/attack/rejected=80/35/354 (5s)
+  [conf_xai 24/51] acc=91.06 zd_recall=47.43 added=1700 label_prec=90.9 zd normal/attack/rejected=153/35/301 (6s)
+  [conf_xai 25/51] acc=91.02 zd_recall=54.45 added=1742 label_prec=96.4 zd normal/attack/rejected=62/41/394 (6s)
+  [conf_xai 26/51] acc=91.18 zd_recall=47.66 added=1624 label_prec=97.0 zd normal/attack/rejected=47/51/407 (6s)
+  [conf_xai 27/51] acc=91.23 zd_recall=51.07 added=1802 label_prec=94.5 zd normal/attack/rejected=99/46/367 (6s)
+  [conf_xai 28/51] acc=91.14 zd_recall=46.90 added=1403 label_prec=96.4 zd normal/attack/rejected=51/28/429 (6s)
+  [conf_xai 29/51] acc=91.09 zd_recall=57.69 added=1718 label_prec=89.8 zd normal/attack/rejected=173/29/280 (6s)
+  [conf_xai 30/51] acc=91.29 zd_recall=47.69 added=1566 label_prec=94.4 zd normal/attack/rejected=88/49/394 (6s)
+  [conf_xai 31/51] acc=91.10 zd_recall=47.51 added=1703 label_prec=92.2 zd normal/attack/rejected=131/33/360 (6s)
+  [conf_xai 32/51] acc=91.18 zd_recall=47.87 added=1752 label_prec=92.8 zd normal/attack/rejected=124/34/366 (7s)
+  [conf_xai 33/51] acc=91.08 zd_recall=49.18 added=1790 label_prec=94.7 zd normal/attack/rejected=91/46/393 (7s)
+  [conf_xai 34/51] acc=91.05 zd_recall=45.25 added=1481 label_prec=94.8 zd normal/attack/rejected=77/19/383 (7s)
+  [conf_xai 35/51] acc=91.13 zd_recall=50.36 added=1643 label_prec=91.5 zd normal/attack/rejected=139/49/357 (6s)
+  [conf_xai 36/51] acc=91.06 zd_recall=47.36 added=1674 label_prec=94.6 zd normal/attack/rejected=90/43/396 (7s)
+  [conf_xai 37/51] acc=91.25 zd_recall=53.55 added=1736 label_prec=89.1 zd normal/attack/rejected=183/36/279 (8s)
+  [conf_xai 38/51] acc=91.12 zd_recall=41.93 added=1501 label_prec=97.3 zd normal/attack/rejected=40/35/443 (7s)
+  [conf_xai 39/51] acc=90.79 zd_recall=40.50 added=1530 label_prec=89.9 zd normal/attack/rejected=155/20/284 (7s)
+  [conf_xai 40/51] acc=91.38 zd_recall=49.46 added=900 label_prec=88.0 zd normal/attack/rejected=106/23/363 (8s)
+  [conf_xai 41/51] acc=91.24 zd_recall=49.37 added=1609 label_prec=93.5 zd normal/attack/rejected=103/47/347 (8s)
+  [conf_xai 42/51] acc=91.16 zd_recall=55.89 added=1721 label_prec=94.4 zd normal/attack/rejected=95/31/350 (7s)
+  [conf_xai 43/51] acc=91.23 zd_recall=49.64 added=1473 label_prec=95.1 zd normal/attack/rejected=71/23/395 (7s)
+  [conf_xai 44/51] acc=91.24 zd_recall=39.39 added=1481 label_prec=92.4 zd normal/attack/rejected=112/23/395 (8s)
+  [conf_xai 45/51] acc=91.30 zd_recall=50.66 added=1618 label_prec=87.1 zd normal/attack/rejected=207/30/274 (9s)
+  [conf_xai 46/51] acc=91.05 zd_recall=47.00 added=1528 label_prec=92.5 zd normal/attack/rejected=111/27/372 (8s)
+  [conf_xai 47/51] acc=91.23 zd_recall=51.25 added=1532 label_prec=92.6 zd normal/attack/rejected=113/30/393 (8s)
+  [conf_xai 48/51] acc=91.12 zd_recall=46.32 added=1684 label_prec=94.4 zd normal/attack/rejected=93/33/333 (8s)
+  [conf_xai 49/51] acc=91.09 zd_recall=55.21 added=1636 label_prec=90.8 zd normal/attack/rejected=145/22/303 (8s)
+  [conf_xai 50/51] acc=91.10 zd_recall=53.74 added=1622 label_prec=95.0 zd normal/attack/rejected=80/34/382 (8s)
+  [conf_xai 51/51] acc=91.09 zd_recall=49.37 added=1784 label_prec=89.8 zd normal/attack/rejected=181/42/297 (10s)
+
+=== zero-day=Fuzzers seed=1 gate=none
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4564
+    epoch 20/50  loss=0.4421
+    epoch 30/50  loss=0.4280
+    epoch 40/50  loss=0.4197
+    epoch 50/50  loss=0.4447
+  [Init] Done in 0.6 min
+  [none] after init  acc=91.81 zd_recall=48.98
+  [none  1/51] acc=91.66 zd_recall=43.81 added=2784 label_prec=97.8 zd normal/attack/rejected=0/0/0 (3s)
+  [none  2/51] acc=91.76 zd_recall=44.28 added=2784 label_prec=98.5 zd normal/attack/rejected=0/0/0 (3s)
+  [none  3/51] acc=91.61 zd_recall=42.46 added=2784 label_prec=98.3 zd normal/attack/rejected=0/0/0 (3s)
+  [none  4/51] acc=91.81 zd_recall=43.83 added=2784 label_prec=98.5 zd normal/attack/rejected=0/0/0 (3s)
+  [none  5/51] acc=91.76 zd_recall=47.82 added=2784 label_prec=98.0 zd normal/attack/rejected=0/0/0 (3s)
+  [none  6/51] acc=91.64 zd_recall=43.32 added=2784 label_prec=98.0 zd normal/attack/rejected=0/0/0 (4s)
+  [none  7/51] acc=91.78 zd_recall=49.55 added=2784 label_prec=98.1 zd normal/attack/rejected=0/0/0 (4s)
+  [none  8/51] acc=91.70 zd_recall=43.98 added=2784 label_prec=98.5 zd normal/attack/rejected=0/0/0 (4s)
+  [none  9/51] acc=91.85 zd_recall=48.40 added=2784 label_prec=98.2 zd normal/attack/rejected=0/0/0 (4s)
+  [none 10/51] acc=91.67 zd_recall=48.96 added=2784 label_prec=98.0 zd normal/attack/rejected=0/0/0 (4s)
+  [none 11/51] acc=91.72 zd_recall=45.93 added=2784 label_prec=98.0 zd normal/attack/rejected=0/0/0 (4s)
+  [none 12/51] acc=91.93 zd_recall=49.04 added=2784 label_prec=97.8 zd normal/attack/rejected=0/0/0 (4s)
+  [none 13/51] acc=91.81 zd_recall=49.62 added=2784 label_prec=98.2 zd normal/attack/rejected=0/0/0 (5s)
+  [none 14/51] acc=91.35 zd_recall=36.75 added=2784 label_prec=98.1 zd normal/attack/rejected=0/0/0 (5s)
+  [none 15/51] acc=91.81 zd_recall=50.35 added=2784 label_prec=98.6 zd normal/attack/rejected=0/0/0 (5s)
+  [none 16/51] acc=91.72 zd_recall=42.66 added=2784 label_prec=92.0 zd normal/attack/rejected=179/69/0 (5s)
+  [none 17/51] acc=91.86 zd_recall=48.75 added=2784 label_prec=83.7 zd normal/attack/rejected=408/110/0 (5s)
+  [none 18/51] acc=91.83 zd_recall=45.32 added=2784 label_prec=85.3 zd normal/attack/rejected=369/136/0 (6s)
+  [none 19/51] acc=91.91 zd_recall=46.14 added=2784 label_prec=84.8 zd normal/attack/rejected=368/140/0 (6s)
+  [none 20/51] acc=91.75 zd_recall=47.34 added=2784 label_prec=84.8 zd normal/attack/rejected=378/127/0 (6s)
+  [none 21/51] acc=91.96 zd_recall=48.48 added=2784 label_prec=85.3 zd normal/attack/rejected=348/130/0 (6s)
+  [none 22/51] acc=91.79 zd_recall=44.39 added=2784 label_prec=85.0 zd normal/attack/rejected=358/138/0 (6s)
+  [none 23/51] acc=91.78 zd_recall=44.47 added=2784 label_prec=85.9 zd normal/attack/rejected=345/124/0 (6s)
+  [none 24/51] acc=91.86 zd_recall=45.66 added=2784 label_prec=85.1 zd normal/attack/rejected=365/129/0 (6s)
+  [none 25/51] acc=91.88 zd_recall=48.14 added=2784 label_prec=84.7 zd normal/attack/rejected=369/131/0 (8s)
+  [none 26/51] acc=91.73 zd_recall=43.96 added=2784 label_prec=85.7 zd normal/attack/rejected=351/139/0 (7s)
+  [none 27/51] acc=91.91 zd_recall=47.72 added=2784 label_prec=84.8 zd normal/attack/rejected=365/123/0 (7s)
+  [none 28/51] acc=91.80 zd_recall=44.97 added=2784 label_prec=84.3 zd normal/attack/rejected=389/120/0 (7s)
+  [none 29/51] acc=91.83 zd_recall=45.99 added=2784 label_prec=84.9 zd normal/attack/rejected=381/112/0 (8s)
+  [none 30/51] acc=91.69 zd_recall=47.54 added=2784 label_prec=84.6 zd normal/attack/rejected=378/113/0 (7s)
+  [none 31/51] acc=91.82 zd_recall=45.99 added=2784 label_prec=84.2 zd normal/attack/rejected=403/110/0 (8s)
+  [none 32/51] acc=91.86 zd_recall=47.41 added=2784 label_prec=84.5 zd normal/attack/rejected=380/124/0 (8s)
+  [none 33/51] acc=91.83 zd_recall=46.95 added=2784 label_prec=85.7 zd normal/attack/rejected=352/132/0 (7s)
+  [none 34/51] acc=91.90 zd_recall=47.64 added=2784 label_prec=83.4 zd normal/attack/rejected=404/107/0 (8s)
+  [none 35/51] acc=91.77 zd_recall=50.35 added=2784 label_prec=85.5 zd normal/attack/rejected=359/127/0 (9s)
+  [none 36/51] acc=91.79 zd_recall=49.27 added=2784 label_prec=84.3 zd normal/attack/rejected=387/134/0 (9s)
+  [none 37/51] acc=91.67 zd_recall=42.94 added=2784 label_prec=86.0 zd normal/attack/rejected=337/140/0 (9s)
+  [none 38/51] acc=91.66 zd_recall=41.78 added=2784 label_prec=83.5 zd normal/attack/rejected=391/116/0 (10s)
+  [none 39/51] acc=91.88 zd_recall=45.81 added=2784 label_prec=85.1 zd normal/attack/rejected=360/99/0 (9s)
+  [none 40/51] acc=91.85 zd_recall=49.03 added=2784 label_prec=82.7 zd normal/attack/rejected=425/147/0 (10s)
+  [none 41/51] acc=91.85 zd_recall=48.98 added=2784 label_prec=84.7 zd normal/attack/rejected=384/143/0 (10s)
+  [none 42/51] acc=91.73 zd_recall=45.20 added=2784 label_prec=85.5 zd normal/attack/rejected=349/149/0 (9s)
+  [none 43/51] acc=91.81 zd_recall=46.40 added=2784 label_prec=84.4 zd normal/attack/rejected=388/121/0 (9s)
+  [none 44/51] acc=91.81 zd_recall=44.94 added=2784 label_prec=84.1 zd normal/attack/rejected=386/128/0 (11s)
+  [none 45/51] acc=91.75 zd_recall=45.40 added=2784 label_prec=84.7 zd normal/attack/rejected=386/108/0 (11s)
+  [none 46/51] acc=91.82 zd_recall=46.55 added=2784 label_prec=83.9 zd normal/attack/rejected=401/127/0 (10s)
+  [none 47/51] acc=91.81 zd_recall=46.70 added=2784 label_prec=85.2 zd normal/attack/rejected=360/128/0 (11s)
+  [none 48/51] acc=91.80 zd_recall=49.26 added=2784 label_prec=84.7 zd normal/attack/rejected=377/155/0 (10s)
+  [none 49/51] acc=91.83 zd_recall=46.27 added=2784 label_prec=85.8 zd normal/attack/rejected=345/131/0 (11s)
+  [none 50/51] acc=91.78 zd_recall=45.78 added=2784 label_prec=84.6 zd normal/attack/rejected=381/114/0 (12s)
+  [none 51/51] acc=91.64 zd_recall=43.47 added=2784 label_prec=84.7 zd normal/attack/rejected=372/139/0 (11s)
+
+=== zero-day=Fuzzers seed=1 gate=pseudofilter
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4564
+    epoch 20/50  loss=0.4421
+    epoch 30/50  loss=0.4280
+    epoch 40/50  loss=0.4197
+    epoch 50/50  loss=0.4447
+  [Init] Done in 0.6 min
+  [pseudofilter] after init  acc=91.81 zd_recall=48.98
+  [pseudofilter  1/51] acc=91.55 zd_recall=40.55 added=2784 label_prec=93.9 zd normal/attack/rejected=0/0/0 (2s)
+  [pseudofilter  2/51] acc=91.45 zd_recall=37.15 added=2784 label_prec=92.6 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  3/51] acc=91.26 zd_recall=32.91 added=2784 label_prec=91.5 zd normal/attack/rejected=0/0/0 (2s)
+  [pseudofilter  4/51] acc=91.02 zd_recall=28.21 added=2784 label_prec=88.4 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  5/51] acc=90.83 zd_recall=25.70 added=2784 label_prec=87.2 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  6/51] acc=90.19 zd_recall=23.33 added=2784 label_prec=83.9 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  7/51] acc=90.55 zd_recall=24.20 added=2784 label_prec=82.7 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  8/51] acc=89.60 zd_recall=22.40 added=2784 label_prec=79.5 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  9/51] acc=90.29 zd_recall=23.49 added=2784 label_prec=76.2 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 10/51] acc=89.72 zd_recall=22.63 added=2784 label_prec=76.5 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 11/51] acc=89.06 zd_recall=22.12 added=2784 label_prec=76.9 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 12/51] acc=89.73 zd_recall=22.63 added=2784 label_prec=74.8 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 13/51] acc=89.51 zd_recall=22.42 added=2784 label_prec=75.8 zd normal/attack/rejected=0/0/0 (5s)
+  [pseudofilter 14/51] acc=89.03 zd_recall=21.97 added=2784 label_prec=76.7 zd normal/attack/rejected=0/0/0 (5s)
+  [pseudofilter 15/51] acc=88.54 zd_recall=21.82 added=2784 label_prec=74.5 zd normal/attack/rejected=0/0/0 (5s)
+  [pseudofilter 16/51] acc=87.81 zd_recall=21.77 added=2784 label_prec=69.5 zd normal/attack/rejected=230/18/0 (5s)
+  [pseudofilter 17/51] acc=86.58 zd_recall=21.31 added=2784 label_prec=63.2 zd normal/attack/rejected=488/30/0 (6s)
+  [pseudofilter 18/51] acc=86.94 zd_recall=21.28 added=2784 label_prec=61.0 zd normal/attack/rejected=474/31/0 (6s)
+  [pseudofilter 19/51] acc=85.70 zd_recall=21.08 added=2784 label_prec=62.6 zd normal/attack/rejected=460/48/0 (6s)
+  [pseudofilter 20/51] acc=86.16 zd_recall=21.30 added=2784 label_prec=63.1 zd normal/attack/rejected=467/38/0 (6s)
+  [pseudofilter 21/51] acc=83.66 zd_recall=20.88 added=2784 label_prec=61.1 zd normal/attack/rejected=453/25/0 (5s)
+  [pseudofilter 22/51] acc=83.45 zd_recall=20.77 added=2784 label_prec=59.7 zd normal/attack/rejected=461/35/0 (5s)
+  [pseudofilter 23/51] acc=82.65 zd_recall=20.82 added=2784 label_prec=61.2 zd normal/attack/rejected=453/16/0 (6s)
+  [pseudofilter 24/51] acc=83.65 zd_recall=20.77 added=2784 label_prec=61.2 zd normal/attack/rejected=467/27/0 (6s)
+  [pseudofilter 25/51] acc=80.26 zd_recall=20.62 added=2784 label_prec=61.3 zd normal/attack/rejected=470/30/0 (6s)
+  [pseudofilter 26/51] acc=81.96 zd_recall=20.62 added=2784 label_prec=60.4 zd normal/attack/rejected=449/41/0 (7s)
+  [pseudofilter 27/51] acc=81.37 zd_recall=20.59 added=2784 label_prec=61.8 zd normal/attack/rejected=453/35/0 (6s)
+  [pseudofilter 28/51] acc=80.84 zd_recall=20.36 added=2784 label_prec=59.1 zd normal/attack/rejected=485/24/0 (7s)
+  [pseudofilter 29/51] acc=79.14 zd_recall=20.19 added=2784 label_prec=61.2 zd normal/attack/rejected=462/31/0 (7s)
+  [pseudofilter 30/51] acc=80.24 zd_recall=20.01 added=2784 label_prec=59.9 zd normal/attack/rejected=476/15/0 (7s)
+  [pseudofilter 31/51] acc=79.92 zd_recall=20.09 added=2784 label_prec=59.4 zd normal/attack/rejected=488/25/0 (8s)
+  [pseudofilter 32/51] acc=79.61 zd_recall=20.27 added=2784 label_prec=60.3 zd normal/attack/rejected=483/21/0 (8s)
+  [pseudofilter 33/51] acc=79.08 zd_recall=20.03 added=2784 label_prec=59.2 zd normal/attack/rejected=458/26/0 (8s)
+  [pseudofilter 34/51] acc=79.65 zd_recall=19.99 added=2784 label_prec=59.5 zd normal/attack/rejected=486/25/0 (8s)
+  [pseudofilter 35/51] acc=78.20 zd_recall=19.73 added=2784 label_prec=59.9 zd normal/attack/rejected=457/29/0 (8s)
+  [pseudofilter 36/51] acc=77.74 zd_recall=19.70 added=2784 label_prec=58.9 zd normal/attack/rejected=495/26/0 (9s)
+  [pseudofilter 37/51] acc=78.35 zd_recall=19.78 added=2784 label_prec=58.3 zd normal/attack/rejected=458/19/0 (8s)
+  [pseudofilter 38/51] acc=78.51 zd_recall=19.80 added=2784 label_prec=58.9 zd normal/attack/rejected=488/19/0 (8s)
+  [pseudofilter 39/51] acc=78.33 zd_recall=19.96 added=2784 label_prec=60.8 zd normal/attack/rejected=435/24/0 (9s)
+  [pseudofilter 40/51] acc=77.43 zd_recall=19.68 added=2784 label_prec=57.4 zd normal/attack/rejected=540/32/0 (10s)
+  [pseudofilter 41/51] acc=77.63 zd_recall=19.53 added=2784 label_prec=58.7 zd normal/attack/rejected=495/32/0 (10s)
+  [pseudofilter 42/51] acc=77.29 zd_recall=19.60 added=2784 label_prec=58.4 zd normal/attack/rejected=468/30/0 (12s)
+  [pseudofilter 43/51] acc=77.74 zd_recall=19.58 added=2784 label_prec=56.7 zd normal/attack/rejected=483/26/0 (11s)
+  [pseudofilter 44/51] acc=77.18 zd_recall=19.19 added=2784 label_prec=57.3 zd normal/attack/rejected=486/28/0 (11s)
+  [pseudofilter 45/51] acc=76.96 zd_recall=19.05 added=2784 label_prec=58.4 zd normal/attack/rejected=465/29/0 (11s)
+  [pseudofilter 46/51] acc=77.62 zd_recall=19.35 added=2784 label_prec=56.9 zd normal/attack/rejected=494/34/0 (10s)
+  [pseudofilter 47/51] acc=77.13 zd_recall=18.92 added=2784 label_prec=58.0 zd normal/attack/rejected=467/21/0 (11s)
+  [pseudofilter 48/51] acc=76.88 zd_recall=19.02 added=2784 label_prec=56.8 zd normal/attack/rejected=497/35/0 (10s)
+  [pseudofilter 49/51] acc=76.96 zd_recall=19.00 added=2784 label_prec=57.8 zd normal/attack/rejected=450/26/0 (11s)
+  [pseudofilter 50/51] acc=76.57 zd_recall=18.62 added=2784 label_prec=58.8 zd normal/attack/rejected=458/37/0 (12s)
+  [pseudofilter 51/51] acc=76.62 zd_recall=18.64 added=2784 label_prec=53.8 zd normal/attack/rejected=491/20/0 (11s)
+
+=== zero-day=Fuzzers seed=1 gate=conf_drop
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4564
+    epoch 20/50  loss=0.4421
+    epoch 30/50  loss=0.4280
+    epoch 40/50  loss=0.4197
+    epoch 50/50  loss=0.4447
+  [Init] Done in 0.6 min
+  [conf_drop] after init  acc=91.81 zd_recall=48.98
+  [conf_drop  1/51] acc=91.49 zd_recall=43.52 added=2557 label_prec=99.7 zd normal/attack/rejected=0/0/0 (2s)
+  [conf_drop  2/51] acc=91.79 zd_recall=47.05 added=2521 label_prec=99.7 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  3/51] acc=91.59 zd_recall=41.87 added=2554 label_prec=99.7 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  4/51] acc=91.56 zd_recall=44.87 added=2535 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  5/51] acc=91.44 zd_recall=45.93 added=2520 label_prec=99.7 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  6/51] acc=91.47 zd_recall=49.41 added=2465 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop  7/51] acc=91.69 zd_recall=46.09 added=2476 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  8/51] acc=91.77 zd_recall=46.73 added=2527 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop  9/51] acc=91.47 zd_recall=45.30 added=2487 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 10/51] acc=91.42 zd_recall=44.41 added=2467 label_prec=99.7 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 11/51] acc=91.55 zd_recall=44.72 added=2478 label_prec=99.8 zd normal/attack/rejected=0/0/0 (5s)
+  [conf_drop 12/51] acc=91.57 zd_recall=46.11 added=2508 label_prec=99.6 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 13/51] acc=91.56 zd_recall=44.61 added=2437 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 14/51] acc=91.48 zd_recall=46.34 added=2463 label_prec=99.9 zd normal/attack/rejected=0/0/0 (5s)
+  [conf_drop 15/51] acc=91.22 zd_recall=33.97 added=2324 label_prec=100.0 zd normal/attack/rejected=0/0/0 (5s)
+  [conf_drop 16/51] acc=91.45 zd_recall=50.16 added=1586 label_prec=96.2 zd normal/attack/rejected=56/12/180 (5s)
+  [conf_drop 17/51] acc=91.38 zd_recall=48.20 added=2232 label_prec=90.7 zd normal/attack/rejected=206/45/267 (5s)
+  [conf_drop 18/51] acc=91.49 zd_recall=47.41 added=2086 label_prec=91.8 zd normal/attack/rejected=168/43/294 (5s)
+  [conf_drop 19/51] acc=91.71 zd_recall=49.54 added=2108 label_prec=91.5 zd normal/attack/rejected=175/63/270 (5s)
+  [conf_drop 20/51] acc=91.47 zd_recall=45.10 added=2014 label_prec=91.7 zd normal/attack/rejected=167/44/294 (5s)
+  [conf_drop 21/51] acc=91.75 zd_recall=48.98 added=2195 label_prec=91.3 zd normal/attack/rejected=188/37/253 (5s)
+  [conf_drop 22/51] acc=91.18 zd_recall=44.39 added=2273 label_prec=89.8 zd normal/attack/rejected=229/55/212 (6s)
+  [conf_drop 23/51] acc=91.28 zd_recall=44.13 added=1816 label_prec=92.5 zd normal/attack/rejected=134/28/307 (5s)
+  [conf_drop 24/51] acc=91.11 zd_recall=47.25 added=1967 label_prec=91.4 zd normal/attack/rejected=167/37/290 (7s)
+  [conf_drop 25/51] acc=91.38 zd_recall=54.87 added=2069 label_prec=91.9 zd normal/attack/rejected=162/44/294 (6s)
+  [conf_drop 26/51] acc=91.49 zd_recall=48.35 added=2084 label_prec=93.5 zd normal/attack/rejected=133/53/304 (7s)
+  [conf_drop 27/51] acc=91.36 zd_recall=50.51 added=1975 label_prec=91.8 zd normal/attack/rejected=159/39/290 (7s)
+  [conf_drop 28/51] acc=91.41 zd_recall=45.38 added=2051 label_prec=91.7 zd normal/attack/rejected=168/36/305 (8s)
+  [conf_drop 29/51] acc=91.23 zd_recall=51.50 added=2127 label_prec=90.5 zd normal/attack/rejected=199/45/249 (8s)
+  [conf_drop 30/51] acc=91.44 zd_recall=48.94 added=1994 label_prec=91.2 zd normal/attack/rejected=171/28/292 (7s)
+  [conf_drop 31/51] acc=91.50 zd_recall=49.51 added=2014 label_prec=90.8 zd normal/attack/rejected=184/37/292 (7s)
+  [conf_drop 32/51] acc=91.20 zd_recall=47.82 added=2078 label_prec=91.0 zd normal/attack/rejected=184/39/281 (7s)
+  [conf_drop 33/51] acc=91.16 zd_recall=51.45 added=1836 label_prec=91.8 zd normal/attack/rejected=150/35/299 (7s)
+  [conf_drop 34/51] acc=91.02 zd_recall=49.59 added=2055 label_prec=91.7 zd normal/attack/rejected=166/38/307 (7s)
+  [conf_drop 35/51] acc=91.29 zd_recall=49.21 added=1963 label_prec=92.7 zd normal/attack/rejected=141/40/305 (8s)
+  [conf_drop 36/51] acc=91.20 zd_recall=48.73 added=2046 label_prec=91.4 zd normal/attack/rejected=176/44/301 (8s)
+  [conf_drop 37/51] acc=91.23 zd_recall=44.82 added=2013 label_prec=91.6 zd normal/attack/rejected=165/38/274 (7s)
+  [conf_drop 38/51] acc=91.26 zd_recall=49.98 added=1939 label_prec=91.4 zd normal/attack/rejected=165/38/304 (9s)
+  [conf_drop 39/51] acc=91.12 zd_recall=53.71 added=2248 label_prec=91.1 zd normal/attack/rejected=195/40/224 (8s)
+  [conf_drop 40/51] acc=91.30 zd_recall=49.62 added=1902 label_prec=91.6 zd normal/attack/rejected=154/44/374 (9s)
+  [conf_drop 41/51] acc=91.29 zd_recall=49.26 added=1995 label_prec=91.9 zd normal/attack/rejected=160/52/315 (8s)
+  [conf_drop 42/51] acc=91.34 zd_recall=47.62 added=2140 label_prec=91.8 zd normal/attack/rejected=170/47/281 (8s)
+  [conf_drop 43/51] acc=91.37 zd_recall=50.43 added=2010 label_prec=90.5 zd normal/attack/rejected=188/34/287 (8s)
+  [conf_drop 44/51] acc=91.32 zd_recall=43.68 added=2116 label_prec=91.0 zd normal/attack/rejected=187/48/279 (10s)
+  [conf_drop 45/51] acc=91.47 zd_recall=47.28 added=2001 label_prec=90.2 zd normal/attack/rejected=194/28/272 (8s)
+  [conf_drop 46/51] acc=91.39 zd_recall=48.78 added=1975 label_prec=90.5 zd normal/attack/rejected=185/41/302 (8s)
+  [conf_drop 47/51] acc=91.37 zd_recall=47.36 added=2131 label_prec=91.4 zd normal/attack/rejected=181/35/272 (9s)
+  [conf_drop 48/51] acc=91.19 zd_recall=49.01 added=2071 label_prec=90.5 zd normal/attack/rejected=190/56/286 (9s)
+  [conf_drop 49/51] acc=91.29 zd_recall=50.08 added=2020 label_prec=92.7 zd normal/attack/rejected=146/36/294 (9s)
+  [conf_drop 50/51] acc=91.37 zd_recall=50.87 added=2201 label_prec=91.7 zd normal/attack/rejected=178/46/271 (9s)
+  [conf_drop 51/51] acc=91.20 zd_recall=46.85 added=1971 label_prec=91.4 zd normal/attack/rejected=165/38/308 (9s)
+
+=== zero-day=Fuzzers seed=1 gate=xai
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4564
+    epoch 20/50  loss=0.4421
+    epoch 30/50  loss=0.4280
+    epoch 40/50  loss=0.4197
+    epoch 50/50  loss=0.4447
+  [Init] Done in 0.6 min
+  [xai] after init  acc=91.81 zd_recall=48.98
+  [xai  1/51] acc=91.68 zd_recall=44.79 added=2191 label_prec=98.4 zd normal/attack/rejected=0/0/0 (3s)
+  [xai  2/51] acc=91.63 zd_recall=43.39 added=2215 label_prec=99.4 zd normal/attack/rejected=0/0/0 (3s)
+  [xai  3/51] acc=91.54 zd_recall=44.23 added=2202 label_prec=98.7 zd normal/attack/rejected=0/0/0 (3s)
+  [xai  4/51] acc=91.53 zd_recall=46.75 added=2250 label_prec=98.2 zd normal/attack/rejected=0/0/0 (3s)
+  [xai  5/51] acc=91.74 zd_recall=47.38 added=2225 label_prec=99.0 zd normal/attack/rejected=0/0/0 (4s)
+  [xai  6/51] acc=91.72 zd_recall=46.88 added=2249 label_prec=98.1 zd normal/attack/rejected=0/0/0 (3s)
+  [xai  7/51] acc=91.81 zd_recall=49.18 added=2191 label_prec=98.6 zd normal/attack/rejected=0/0/0 (3s)
+  [xai  8/51] acc=91.46 zd_recall=37.84 added=2224 label_prec=98.4 zd normal/attack/rejected=0/0/0 (4s)
+  [xai  9/51] acc=91.71 zd_recall=45.96 added=2221 label_prec=99.0 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 10/51] acc=91.68 zd_recall=43.42 added=2212 label_prec=98.9 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 11/51] acc=91.82 zd_recall=45.66 added=2183 label_prec=98.9 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 12/51] acc=91.73 zd_recall=45.83 added=2200 label_prec=98.3 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 13/51] acc=91.72 zd_recall=45.63 added=2218 label_prec=98.1 zd normal/attack/rejected=0/0/0 (5s)
+  [xai 14/51] acc=91.69 zd_recall=43.85 added=2219 label_prec=98.5 zd normal/attack/rejected=0/0/0 (5s)
+  [xai 15/51] acc=91.88 zd_recall=48.43 added=2220 label_prec=99.5 zd normal/attack/rejected=0/0/0 (5s)
+  [xai 16/51] acc=91.70 zd_recall=43.91 added=2173 label_prec=93.9 zd normal/attack/rejected=108/40/100 (5s)
+  [xai 17/51] acc=91.74 zd_recall=45.91 added=2213 label_prec=83.1 zd normal/attack/rejected=332/90/96 (5s)
+  [xai 18/51] acc=91.70 zd_recall=45.22 added=2122 label_prec=90.5 zd normal/attack/rejected=178/92/235 (5s)
+  [xai 19/51] acc=91.74 zd_recall=44.42 added=2131 label_prec=89.6 zd normal/attack/rejected=192/103/213 (6s)
+  [xai 20/51] acc=91.79 zd_recall=46.01 added=2059 label_prec=90.1 zd normal/attack/rejected=177/83/245 (6s)
+  [xai 21/51] acc=91.81 zd_recall=46.85 added=2084 label_prec=90.0 zd normal/attack/rejected=184/62/232 (6s)
+  [xai 22/51] acc=91.68 zd_recall=44.85 added=2146 label_prec=87.1 zd normal/attack/rejected=249/90/157 (6s)
+  [xai 23/51] acc=91.70 zd_recall=44.64 added=2082 label_prec=91.3 zd normal/attack/rejected=153/97/219 (6s)
+  [xai 24/51] acc=91.61 zd_recall=40.66 added=2071 label_prec=89.9 zd normal/attack/rejected=180/68/246 (6s)
+  [xai 25/51] acc=91.74 zd_recall=43.93 added=2096 label_prec=88.4 zd normal/attack/rejected=205/81/214 (6s)
+  [xai 26/51] acc=91.80 zd_recall=44.36 added=2153 label_prec=89.9 zd normal/attack/rejected=194/78/218 (6s)
+  [xai 27/51] acc=91.65 zd_recall=44.61 added=2099 label_prec=91.3 zd normal/attack/rejected=155/85/248 (7s)
+  [xai 28/51] acc=91.76 zd_recall=45.58 added=2042 label_prec=88.7 zd normal/attack/rejected=200/69/240 (6s)
+  [xai 29/51] acc=91.75 zd_recall=46.26 added=2086 label_prec=89.9 zd normal/attack/rejected=191/97/205 (6s)
+  [xai 30/51] acc=91.79 zd_recall=45.43 added=2055 label_prec=89.6 zd normal/attack/rejected=192/71/228 (7s)
+  [xai 31/51] acc=91.77 zd_recall=44.85 added=2111 label_prec=88.0 zd normal/attack/rejected=237/66/210 (7s)
+  [xai 32/51] acc=91.86 zd_recall=46.45 added=2125 label_prec=89.6 zd normal/attack/rejected=189/80/235 (7s)
+  [xai 33/51] acc=91.76 zd_recall=45.07 added=2086 label_prec=90.0 zd normal/attack/rejected=188/89/207 (7s)
+  [xai 34/51] acc=91.68 zd_recall=42.36 added=2075 label_prec=88.7 zd normal/attack/rejected=211/65/235 (7s)
+  [xai 35/51] acc=91.66 zd_recall=46.73 added=2185 label_prec=87.9 zd normal/attack/rejected=236/79/171 (8s)
+  [xai 36/51] acc=91.72 zd_recall=46.37 added=2065 label_prec=90.2 zd normal/attack/rejected=183/83/255 (8s)
+  [xai 37/51] acc=91.85 zd_recall=46.77 added=2093 label_prec=91.2 zd normal/attack/rejected=168/86/223 (7s)
+  [xai 38/51] acc=91.70 zd_recall=43.83 added=2106 label_prec=87.5 zd normal/attack/rejected=230/59/218 (7s)
+  [xai 39/51] acc=91.80 zd_recall=47.61 added=2104 label_prec=88.6 zd normal/attack/rejected=215/66/178 (8s)
+  [xai 40/51] acc=91.69 zd_recall=45.20 added=2107 label_prec=87.6 zd normal/attack/rejected=230/89/253 (8s)
+  [xai 41/51] acc=91.79 zd_recall=45.73 added=2093 label_prec=89.7 zd normal/attack/rejected=198/92/237 (8s)
+  [xai 42/51] acc=91.75 zd_recall=46.24 added=2028 label_prec=91.5 zd normal/attack/rejected=153/99/246 (8s)
+  [xai 43/51] acc=91.84 zd_recall=46.30 added=2108 label_prec=90.6 zd normal/attack/rejected=185/85/239 (8s)
+  [xai 44/51] acc=90.87 zd_recall=30.01 added=2149 label_prec=88.7 zd normal/attack/rejected=210/97/207 (8s)
+  [xai 45/51] acc=91.78 zd_recall=45.60 added=2018 label_prec=89.8 zd normal/attack/rejected=186/54/254 (8s)
+  [xai 46/51] acc=91.70 zd_recall=44.09 added=2117 label_prec=89.6 zd normal/attack/rejected=203/94/231 (8s)
+  [xai 47/51] acc=91.74 zd_recall=44.61 added=2132 label_prec=90.8 zd normal/attack/rejected=178/86/224 (8s)
+  [xai 48/51] acc=91.79 zd_recall=46.52 added=2085 label_prec=89.2 zd normal/attack/rejected=208/101/223 (8s)
+  [xai 49/51] acc=91.80 zd_recall=46.45 added=2201 label_prec=88.2 zd normal/attack/rejected=232/84/160 (9s)
+  [xai 50/51] acc=91.84 zd_recall=47.46 added=2130 label_prec=90.8 zd normal/attack/rejected=179/93/223 (9s)
+  [xai 51/51] acc=91.81 zd_recall=46.27 added=2053 label_prec=90.0 zd normal/attack/rejected=187/105/219 (9s)
+
+=== zero-day=Fuzzers seed=1 gate=conf_xai
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4564
+    epoch 20/50  loss=0.4421
+    epoch 30/50  loss=0.4280
+    epoch 40/50  loss=0.4197
+    epoch 50/50  loss=0.4447
+  [Init] Done in 0.5 min
+  [conf_xai] after init  acc=91.81 zd_recall=48.98
+  [conf_xai  1/51] acc=91.64 zd_recall=46.27 added=2064 label_prec=99.8 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  2/51] acc=91.72 zd_recall=48.14 added=2076 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  3/51] acc=91.60 zd_recall=43.47 added=2106 label_prec=99.7 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  4/51] acc=91.48 zd_recall=45.02 added=1978 label_prec=99.8 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  5/51] acc=91.62 zd_recall=44.69 added=2105 label_prec=100.0 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  6/51] acc=91.81 zd_recall=47.76 added=1981 label_prec=99.8 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  7/51] acc=91.66 zd_recall=43.17 added=2071 label_prec=99.7 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  8/51] acc=91.72 zd_recall=48.20 added=1979 label_prec=99.8 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  9/51] acc=91.67 zd_recall=46.09 added=2037 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai 10/51] acc=91.68 zd_recall=47.25 added=2014 label_prec=99.9 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 11/51] acc=91.66 zd_recall=46.45 added=2037 label_prec=100.0 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 12/51] acc=91.73 zd_recall=44.01 added=1938 label_prec=99.7 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 13/51] acc=91.77 zd_recall=48.98 added=1819 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 14/51] acc=91.48 zd_recall=41.41 added=2030 label_prec=99.9 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 15/51] acc=91.68 zd_recall=43.62 added=1899 label_prec=99.9 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 16/51] acc=91.29 zd_recall=35.50 added=1776 label_prec=96.7 zd normal/attack/rejected=56/18/174 (4s)
+  [conf_xai 17/51] acc=91.72 zd_recall=44.23 added=1370 label_prec=89.8 zd normal/attack/rejected=139/18/361 (4s)
+  [conf_xai 18/51] acc=91.78 zd_recall=49.59 added=1761 label_prec=91.9 zd normal/attack/rejected=139/26/340 (4s)
+  [conf_xai 19/51] acc=91.71 zd_recall=48.55 added=1877 label_prec=93.8 zd normal/attack/rejected=115/63/330 (5s)
+  [conf_xai 20/51] acc=91.56 zd_recall=48.09 added=1706 label_prec=95.9 zd normal/attack/rejected=70/45/390 (5s)
+  [conf_xai 21/51] acc=91.59 zd_recall=47.28 added=1717 label_prec=95.1 zd normal/attack/rejected=83/29/366 (5s)
+  [conf_xai 22/51] acc=91.67 zd_recall=46.67 added=1835 label_prec=91.1 zd normal/attack/rejected=161/50/285 (5s)
+  [conf_xai 23/51] acc=91.69 zd_recall=44.28 added=1757 label_prec=95.8 zd normal/attack/rejected=72/24/373 (5s)
+  [conf_xai 24/51] acc=91.51 zd_recall=48.20 added=1719 label_prec=93.8 zd normal/attack/rejected=104/34/356 (5s)
+  [conf_xai 25/51] acc=91.38 zd_recall=42.84 added=1623 label_prec=95.8 zd normal/attack/rejected=66/27/407 (5s)
+  [conf_xai 26/51] acc=91.73 zd_recall=47.25 added=1600 label_prec=94.6 zd normal/attack/rejected=87/42/361 (5s)
+  [conf_xai 27/51] acc=91.50 zd_recall=49.16 added=1798 label_prec=96.2 zd normal/attack/rejected=67/40/381 (6s)
+  [conf_xai 28/51] acc=91.63 zd_recall=49.26 added=1639 label_prec=93.8 zd normal/attack/rejected=98/29/382 (5s)
+  [conf_xai 29/51] acc=91.52 zd_recall=47.28 added=1682 label_prec=94.9 zd normal/attack/rejected=83/39/371 (7s)
+  [conf_xai 30/51] acc=91.28 zd_recall=49.47 added=1676 label_prec=94.8 zd normal/attack/rejected=86/27/378 (6s)
+  [conf_xai 31/51] acc=91.43 zd_recall=43.02 added=1740 label_prec=92.0 zd normal/attack/rejected=137/29/347 (6s)
+  [conf_xai 32/51] acc=91.63 zd_recall=47.06 added=1093 label_prec=94.0 zd normal/attack/rejected=66/19/419 (6s)
+  [conf_xai 33/51] acc=91.53 zd_recall=40.81 added=1652 label_prec=95.5 zd normal/attack/rejected=74/37/373 (6s)
+  [conf_xai 34/51] acc=91.54 zd_recall=48.65 added=1500 label_prec=94.2 zd normal/attack/rejected=86/25/400 (6s)
+  [conf_xai 35/51] acc=91.40 zd_recall=46.42 added=1652 label_prec=94.1 zd normal/attack/rejected=95/29/362 (7s)
+  [conf_xai 36/51] acc=91.55 zd_recall=48.04 added=1689 label_prec=95.0 zd normal/attack/rejected=84/39/398 (7s)
+  [conf_xai 37/51] acc=91.43 zd_recall=48.88 added=1763 label_prec=94.9 zd normal/attack/rejected=87/35/355 (7s)
+  [conf_xai 38/51] acc=91.69 zd_recall=48.45 added=1545 label_prec=96.0 zd normal/attack/rejected=61/27/419 (8s)
+  [conf_xai 39/51] acc=91.45 zd_recall=49.74 added=1722 label_prec=92.6 zd normal/attack/rejected=124/28/307 (7s)
+  [conf_xai 40/51] acc=91.47 zd_recall=48.73 added=1698 label_prec=93.3 zd normal/attack/rejected=111/35/426 (7s)
+  [conf_xai 41/51] acc=91.52 zd_recall=49.62 added=1729 label_prec=94.7 zd normal/attack/rejected=92/45/390 (7s)
+  [conf_xai 42/51] acc=91.43 zd_recall=46.45 added=1438 label_prec=95.7 zd normal/attack/rejected=61/32/405 (7s)
+  [conf_xai 43/51] acc=91.57 zd_recall=51.30 added=1625 label_prec=95.3 zd normal/attack/rejected=76/25/408 (7s)
+  [conf_xai 44/51] acc=91.49 zd_recall=49.54 added=1683 label_prec=95.4 zd normal/attack/rejected=77/39/398 (8s)
+  [conf_xai 45/51] acc=91.60 zd_recall=47.90 added=1767 label_prec=94.8 zd normal/attack/rejected=91/29/374 (7s)
+  [conf_xai 46/51] acc=91.44 zd_recall=47.28 added=1587 label_prec=95.3 zd normal/attack/rejected=74/43/411 (8s)
+  [conf_xai 47/51] acc=91.49 zd_recall=52.56 added=1681 label_prec=95.2 zd normal/attack/rejected=79/29/380 (7s)
+  [conf_xai 48/51] acc=91.17 zd_recall=50.53 added=1759 label_prec=94.4 zd normal/attack/rejected=96/51/385 (8s)
+  [conf_xai 49/51] acc=91.49 zd_recall=51.09 added=1589 label_prec=95.8 zd normal/attack/rejected=66/27/383 (8s)
+  [conf_xai 50/51] acc=91.49 zd_recall=48.27 added=1772 label_prec=94.4 zd normal/attack/rejected=98/45/352 (7s)
+  [conf_xai 51/51] acc=91.53 zd_recall=42.35 added=1569 label_prec=95.2 zd normal/attack/rejected=73/35/403 (8s)
+
+=== zero-day=Fuzzers seed=2 gate=none
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4602
+    epoch 20/50  loss=0.3708
+    epoch 30/50  loss=0.4106
+    epoch 40/50  loss=0.4043
+    epoch 50/50  loss=0.4082
+  [Init] Done in 0.5 min
+  [none] after init  acc=91.13 zd_recall=46.92
+  [none  1/51] acc=91.32 zd_recall=46.62 added=2784 label_prec=98.4 zd normal/attack/rejected=0/0/0 (2s)
+  [none  2/51] acc=91.17 zd_recall=44.39 added=2784 label_prec=97.9 zd normal/attack/rejected=0/0/0 (2s)
+  [none  3/51] acc=91.09 zd_recall=40.60 added=2784 label_prec=97.9 zd normal/attack/rejected=0/0/0 (3s)
+  [none  4/51] acc=91.25 zd_recall=44.41 added=2784 label_prec=98.0 zd normal/attack/rejected=0/0/0 (3s)
+  [none  5/51] acc=91.33 zd_recall=39.24 added=2784 label_prec=98.5 zd normal/attack/rejected=0/0/0 (3s)
+  [none  6/51] acc=91.02 zd_recall=37.50 added=2784 label_prec=97.5 zd normal/attack/rejected=0/0/0 (4s)
+  [none  7/51] acc=91.21 zd_recall=42.15 added=2784 label_prec=98.0 zd normal/attack/rejected=0/0/0 (3s)
+  [none  8/51] acc=91.20 zd_recall=41.21 added=2784 label_prec=97.7 zd normal/attack/rejected=0/0/0 (3s)
+  [none  9/51] acc=91.04 zd_recall=43.53 added=2784 label_prec=98.2 zd normal/attack/rejected=0/0/0 (3s)
+  [none 10/51] acc=91.25 zd_recall=43.55 added=2784 label_prec=98.5 zd normal/attack/rejected=0/0/0 (4s)
+  [none 11/51] acc=90.75 zd_recall=35.76 added=2784 label_prec=98.4 zd normal/attack/rejected=0/0/0 (4s)
+  [none 12/51] acc=90.68 zd_recall=31.90 added=2784 label_prec=97.7 zd normal/attack/rejected=0/0/0 (4s)
+  [none 13/51] acc=91.12 zd_recall=39.99 added=2784 label_prec=97.5 zd normal/attack/rejected=0/0/0 (4s)
+  [none 14/51] acc=90.63 zd_recall=34.38 added=2784 label_prec=97.5 zd normal/attack/rejected=0/0/0 (5s)
+  [none 15/51] acc=91.04 zd_recall=44.11 added=2784 label_prec=97.7 zd normal/attack/rejected=0/0/0 (4s)
+  [none 16/51] acc=91.12 zd_recall=41.78 added=2784 label_prec=90.7 zd normal/attack/rejected=196/71/0 (5s)
+  [none 17/51] acc=91.10 zd_recall=40.89 added=2784 label_prec=85.4 zd normal/attack/rejected=352/135/0 (5s)
+  [none 18/51] acc=91.08 zd_recall=42.33 added=2784 label_prec=84.1 zd normal/attack/rejected=379/138/0 (5s)
+  [none 19/51] acc=90.95 zd_recall=42.81 added=2784 label_prec=85.4 zd normal/attack/rejected=357/115/0 (5s)
+  [none 20/51] acc=90.96 zd_recall=41.60 added=2784 label_prec=86.0 zd normal/attack/rejected=349/146/0 (5s)
+  [none 21/51] acc=90.93 zd_recall=40.70 added=2784 label_prec=83.7 zd normal/attack/rejected=404/108/0 (6s)
+  [none 22/51] acc=90.90 zd_recall=36.04 added=2784 label_prec=84.5 zd normal/attack/rejected=379/126/0 (6s)
+  [none 23/51] acc=90.92 zd_recall=42.30 added=2784 label_prec=84.9 zd normal/attack/rejected=374/119/0 (7s)
+  [none 24/51] acc=91.02 zd_recall=41.04 added=2784 label_prec=85.3 zd normal/attack/rejected=365/112/0 (6s)
+  [none 25/51] acc=90.89 zd_recall=40.51 added=2784 label_prec=84.4 zd normal/attack/rejected=393/133/0 (6s)
+  [none 26/51] acc=90.90 zd_recall=42.59 added=2784 label_prec=85.4 zd normal/attack/rejected=348/124/0 (7s)
+  [none 27/51] acc=90.88 zd_recall=40.25 added=2784 label_prec=85.1 zd normal/attack/rejected=376/146/0 (7s)
+  [none 28/51] acc=90.97 zd_recall=40.88 added=2784 label_prec=85.1 zd normal/attack/rejected=388/106/0 (6s)
+  [none 29/51] acc=90.90 zd_recall=40.58 added=2784 label_prec=84.2 zd normal/attack/rejected=390/123/0 (7s)
+  [none 30/51] acc=90.77 zd_recall=36.49 added=2784 label_prec=83.6 zd normal/attack/rejected=402/119/0 (7s)
+  [none 31/51] acc=90.81 zd_recall=40.00 added=2784 label_prec=84.3 zd normal/attack/rejected=389/99/0 (7s)
+  [none 32/51] acc=90.91 zd_recall=41.75 added=2784 label_prec=84.6 zd normal/attack/rejected=377/125/0 (7s)
+  [none 33/51] acc=90.93 zd_recall=41.16 added=2784 label_prec=84.9 zd normal/attack/rejected=372/128/0 (7s)
+  [none 34/51] acc=90.95 zd_recall=40.53 added=2784 label_prec=84.0 zd normal/attack/rejected=407/112/0 (8s)
+  [none 35/51] acc=90.93 zd_recall=42.23 added=2784 label_prec=84.7 zd normal/attack/rejected=372/135/0 (8s)
+  [none 36/51] acc=90.89 zd_recall=42.08 added=2784 label_prec=85.0 zd normal/attack/rejected=366/119/0 (9s)
+  [none 37/51] acc=90.79 zd_recall=39.36 added=2784 label_prec=84.1 zd normal/attack/rejected=393/111/0 (8s)
+  [none 38/51] acc=90.75 zd_recall=35.62 added=2784 label_prec=85.3 zd normal/attack/rejected=364/120/0 (8s)
+  [none 39/51] acc=90.86 zd_recall=40.84 added=2784 label_prec=83.3 zd normal/attack/rejected=403/103/0 (8s)
+  [none 40/51] acc=90.82 zd_recall=41.08 added=2784 label_prec=83.8 zd normal/attack/rejected=390/127/0 (9s)
+  [none 41/51] acc=90.79 zd_recall=40.50 added=2784 label_prec=84.9 zd normal/attack/rejected=369/121/0 (10s)
+  [none 42/51] acc=90.81 zd_recall=38.49 added=2784 label_prec=84.9 zd normal/attack/rejected=365/118/0 (9s)
+  [none 43/51] acc=90.94 zd_recall=43.02 added=2784 label_prec=85.4 zd normal/attack/rejected=363/157/0 (9s)
+  [none 44/51] acc=90.82 zd_recall=40.51 added=2784 label_prec=84.9 zd normal/attack/rejected=376/141/0 (10s)
+  [none 45/51] acc=90.88 zd_recall=40.53 added=2784 label_prec=84.2 zd normal/attack/rejected=381/108/0 (10s)
+  [none 46/51] acc=90.83 zd_recall=39.87 added=2784 label_prec=85.1 zd normal/attack/rejected=368/131/0 (11s)
+  [none 47/51] acc=90.81 zd_recall=38.25 added=2784 label_prec=83.6 zd normal/attack/rejected=394/138/0 (11s)
+  [none 48/51] acc=90.91 zd_recall=42.48 added=2784 label_prec=84.7 zd normal/attack/rejected=375/119/0 (10s)
+  [none 49/51] acc=90.92 zd_recall=42.76 added=2784 label_prec=84.8 zd normal/attack/rejected=370/113/0 (11s)
+  [none 50/51] acc=90.79 zd_recall=39.74 added=2784 label_prec=83.2 zd normal/attack/rejected=417/126/0 (11s)
+  [none 51/51] acc=90.94 zd_recall=41.98 added=2784 label_prec=83.3 zd normal/attack/rejected=413/116/0 (12s)
+
+=== zero-day=Fuzzers seed=2 gate=pseudofilter
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4602
+    epoch 20/50  loss=0.3708
+    epoch 30/50  loss=0.4106
+    epoch 40/50  loss=0.4043
+    epoch 50/50  loss=0.4082
+  [Init] Done in 0.6 min
+  [pseudofilter] after init  acc=91.13 zd_recall=46.92
+  [pseudofilter  1/51] acc=91.17 zd_recall=38.39 added=2784 label_prec=94.5 zd normal/attack/rejected=0/0/0 (2s)
+  [pseudofilter  2/51] acc=91.18 zd_recall=33.95 added=2784 label_prec=92.1 zd normal/attack/rejected=0/0/0 (2s)
+  [pseudofilter  3/51] acc=91.05 zd_recall=32.17 added=2784 label_prec=90.7 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  4/51] acc=90.84 zd_recall=27.68 added=2784 label_prec=86.1 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  5/51] acc=90.80 zd_recall=28.24 added=2784 label_prec=82.9 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  6/51] acc=90.33 zd_recall=24.27 added=2784 label_prec=83.3 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  7/51] acc=90.14 zd_recall=23.77 added=2784 label_prec=79.7 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  8/51] acc=89.51 zd_recall=22.68 added=2784 label_prec=79.8 zd normal/attack/rejected=0/0/0 (3s)
+  [pseudofilter  9/51] acc=88.81 zd_recall=22.07 added=2784 label_prec=77.5 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 10/51] acc=88.80 zd_recall=22.04 added=2784 label_prec=78.5 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 11/51] acc=87.14 zd_recall=21.73 added=2784 label_prec=78.2 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 12/51] acc=85.98 zd_recall=21.45 added=2784 label_prec=77.7 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 13/51] acc=85.85 zd_recall=21.43 added=2784 label_prec=78.1 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 14/51] acc=86.35 zd_recall=21.84 added=2784 label_prec=75.1 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 15/51] acc=84.21 zd_recall=21.23 added=2784 label_prec=77.2 zd normal/attack/rejected=0/0/0 (4s)
+  [pseudofilter 16/51] acc=84.28 zd_recall=21.33 added=2784 label_prec=70.9 zd normal/attack/rejected=244/23/0 (5s)
+  [pseudofilter 17/51] acc=83.60 zd_recall=21.13 added=2784 label_prec=64.5 zd normal/attack/rejected=447/40/0 (5s)
+  [pseudofilter 18/51] acc=82.01 zd_recall=20.80 added=2784 label_prec=63.6 zd normal/attack/rejected=482/35/0 (5s)
+  [pseudofilter 19/51] acc=82.17 zd_recall=20.92 added=2784 label_prec=65.8 zd normal/attack/rejected=441/31/0 (5s)
+  [pseudofilter 20/51] acc=81.92 zd_recall=20.85 added=2784 label_prec=63.8 zd normal/attack/rejected=458/37/0 (5s)
+  [pseudofilter 21/51] acc=80.24 zd_recall=20.59 added=2784 label_prec=63.0 zd normal/attack/rejected=477/35/0 (5s)
+  [pseudofilter 22/51] acc=80.14 zd_recall=20.59 added=2784 label_prec=62.6 zd normal/attack/rejected=470/35/0 (6s)
+  [pseudofilter 23/51] acc=80.24 zd_recall=20.41 added=2784 label_prec=63.1 zd normal/attack/rejected=454/39/0 (6s)
+  [pseudofilter 24/51] acc=80.84 zd_recall=20.37 added=2784 label_prec=62.9 zd normal/attack/rejected=439/38/0 (6s)
+  [pseudofilter 25/51] acc=79.77 zd_recall=20.52 added=2784 label_prec=61.2 zd normal/attack/rejected=485/41/0 (6s)
+  [pseudofilter 26/51] acc=79.59 zd_recall=20.32 added=2784 label_prec=62.8 zd normal/attack/rejected=448/24/0 (7s)
+  [pseudofilter 27/51] acc=79.41 zd_recall=20.22 added=2784 label_prec=61.6 zd normal/attack/rejected=479/43/0 (6s)
+  [pseudofilter 28/51] acc=78.71 zd_recall=20.14 added=2784 label_prec=63.8 zd normal/attack/rejected=460/34/0 (7s)
+  [pseudofilter 29/51] acc=78.61 zd_recall=20.03 added=2784 label_prec=62.4 zd normal/attack/rejected=468/45/0 (7s)
+  [pseudofilter 30/51] acc=78.28 zd_recall=20.09 added=2784 label_prec=61.0 zd normal/attack/rejected=490/31/0 (8s)
+  [pseudofilter 31/51] acc=78.51 zd_recall=20.04 added=2784 label_prec=61.5 zd normal/attack/rejected=453/35/0 (7s)
+  [pseudofilter 32/51] acc=78.30 zd_recall=19.93 added=2784 label_prec=61.1 zd normal/attack/rejected=477/25/0 (8s)
+  [pseudofilter 33/51] acc=78.59 zd_recall=20.01 added=2784 label_prec=61.5 zd normal/attack/rejected=468/32/0 (8s)
+  [pseudofilter 34/51] acc=78.29 zd_recall=19.91 added=2784 label_prec=62.1 zd normal/attack/rejected=487/32/0 (9s)
+  [pseudofilter 35/51] acc=78.09 zd_recall=19.91 added=2784 label_prec=61.5 zd normal/attack/rejected=475/32/0 (8s)
+  [pseudofilter 36/51] acc=78.03 zd_recall=19.84 added=2784 label_prec=62.1 zd normal/attack/rejected=449/36/0 (8s)
+  [pseudofilter 37/51] acc=77.90 zd_recall=19.78 added=2784 label_prec=62.2 zd normal/attack/rejected=480/24/0 (9s)
+  [pseudofilter 38/51] acc=78.12 zd_recall=19.78 added=2784 label_prec=62.1 zd normal/attack/rejected=457/27/0 (8s)
+  [pseudofilter 39/51] acc=77.94 zd_recall=19.94 added=2784 label_prec=61.5 zd normal/attack/rejected=483/23/0 (8s)
+  [pseudofilter 40/51] acc=77.69 zd_recall=19.73 added=2784 label_prec=61.1 zd normal/attack/rejected=482/35/0 (9s)
+  [pseudofilter 41/51] acc=77.83 zd_recall=19.83 added=2784 label_prec=60.3 zd normal/attack/rejected=453/37/0 (10s)
+  [pseudofilter 42/51] acc=77.44 zd_recall=19.83 added=2784 label_prec=61.8 zd normal/attack/rejected=447/36/0 (9s)
+  [pseudofilter 43/51] acc=77.45 zd_recall=19.73 added=2784 label_prec=60.2 zd normal/attack/rejected=482/38/0 (10s)
+  [pseudofilter 44/51] acc=77.40 zd_recall=19.60 added=2784 label_prec=60.5 zd normal/attack/rejected=486/31/0 (9s)
+  [pseudofilter 45/51] acc=76.88 zd_recall=19.70 added=2784 label_prec=59.3 zd normal/attack/rejected=462/27/0 (9s)
+  [pseudofilter 46/51] acc=77.19 zd_recall=19.56 added=2784 label_prec=60.6 zd normal/attack/rejected=469/30/0 (10s)
+  [pseudofilter 47/51] acc=76.58 zd_recall=19.63 added=2784 label_prec=59.1 zd normal/attack/rejected=500/32/0 (11s)
+  [pseudofilter 48/51] acc=76.69 zd_recall=19.60 added=2784 label_prec=60.1 zd normal/attack/rejected=465/29/0 (10s)
+  [pseudofilter 49/51] acc=74.46 zd_recall=19.33 added=2784 label_prec=59.8 zd normal/attack/rejected=452/31/0 (11s)
+  [pseudofilter 50/51] acc=75.59 zd_recall=19.53 added=2784 label_prec=58.7 zd normal/attack/rejected=511/32/0 (11s)
+  [pseudofilter 51/51] acc=75.64 zd_recall=19.61 added=2784 label_prec=59.7 zd normal/attack/rejected=495/34/0 (9s)
+
+=== zero-day=Fuzzers seed=2 gate=conf_drop
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4602
+    epoch 20/50  loss=0.3708
+    epoch 30/50  loss=0.4106
+    epoch 40/50  loss=0.4043
+    epoch 50/50  loss=0.4082
+  [Init] Done in 0.5 min
+  [conf_drop] after init  acc=91.13 zd_recall=46.92
+  [conf_drop  1/51] acc=91.23 zd_recall=45.48 added=2553 label_prec=99.8 zd normal/attack/rejected=0/0/0 (2s)
+  [conf_drop  2/51] acc=91.25 zd_recall=46.34 added=2473 label_prec=99.9 zd normal/attack/rejected=0/0/0 (2s)
+  [conf_drop  3/51] acc=91.28 zd_recall=45.83 added=2476 label_prec=99.9 zd normal/attack/rejected=0/0/0 (2s)
+  [conf_drop  4/51] acc=91.22 zd_recall=45.23 added=2442 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  5/51] acc=91.21 zd_recall=44.29 added=2509 label_prec=99.8 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  6/51] acc=91.20 zd_recall=44.94 added=2468 label_prec=99.8 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  7/51] acc=91.45 zd_recall=46.07 added=2436 label_prec=99.8 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  8/51] acc=91.07 zd_recall=45.79 added=2495 label_prec=99.6 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  9/51] acc=91.02 zd_recall=45.56 added=2460 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop 10/51] acc=91.02 zd_recall=47.54 added=2474 label_prec=99.9 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 11/51] acc=91.07 zd_recall=46.26 added=2429 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 12/51] acc=91.09 zd_recall=46.72 added=2474 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 13/51] acc=90.64 zd_recall=38.24 added=2436 label_prec=99.9 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 14/51] acc=90.74 zd_recall=43.60 added=2316 label_prec=100.0 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 15/51] acc=90.86 zd_recall=45.93 added=2368 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 16/51] acc=90.93 zd_recall=50.02 added=2261 label_prec=95.2 zd normal/attack/rejected=107/28/132 (4s)
+  [conf_drop 17/51] acc=90.94 zd_recall=45.65 added=2000 label_prec=95.0 zd normal/attack/rejected=99/50/338 (5s)
+  [conf_drop 18/51] acc=90.85 zd_recall=46.57 added=2208 label_prec=91.0 zd normal/attack/rejected=193/48/276 (5s)
+  [conf_drop 19/51] acc=91.03 zd_recall=48.32 added=2164 label_prec=92.8 zd normal/attack/rejected=153/38/281 (4s)
+  [conf_drop 20/51] acc=91.13 zd_recall=33.95 added=2234 label_prec=92.7 zd normal/attack/rejected=159/46/290 (5s)
+  [conf_drop 21/51] acc=90.90 zd_recall=48.58 added=1367 label_prec=84.9 zd normal/attack/rejected=207/13/292 (5s)
+  [conf_drop 22/51] acc=90.90 zd_recall=49.93 added=2004 label_prec=92.6 zd normal/attack/rejected=146/44/315 (5s)
+  [conf_drop 23/51] acc=90.92 zd_recall=51.47 added=2188 label_prec=92.3 zd normal/attack/rejected=167/55/271 (6s)
+  [conf_drop 24/51] acc=90.97 zd_recall=47.99 added=1990 label_prec=93.7 zd normal/attack/rejected=123/42/312 (6s)
+  [conf_drop 25/51] acc=90.88 zd_recall=47.84 added=2176 label_prec=91.4 zd normal/attack/rejected=185/55/286 (6s)
+  [conf_drop 26/51] acc=90.78 zd_recall=42.51 added=2079 label_prec=92.5 zd normal/attack/rejected=152/32/288 (6s)
+  [conf_drop 27/51] acc=90.82 zd_recall=46.49 added=1901 label_prec=89.8 zd normal/attack/rejected=191/44/287 (6s)
+  [conf_drop 28/51] acc=90.90 zd_recall=52.33 added=1964 label_prec=91.2 zd normal/attack/rejected=169/34/291 (6s)
+  [conf_drop 29/51] acc=90.81 zd_recall=46.32 added=1974 label_prec=93.7 zd normal/attack/rejected=123/54/336 (7s)
+  [conf_drop 30/51] acc=90.93 zd_recall=47.81 added=1947 label_prec=91.4 zd normal/attack/rejected=165/33/323 (6s)
+  [conf_drop 31/51] acc=90.92 zd_recall=48.40 added=2061 label_prec=91.8 zd normal/attack/rejected=167/46/275 (7s)
+  [conf_drop 32/51] acc=90.89 zd_recall=47.46 added=2091 label_prec=91.1 zd normal/attack/rejected=184/35/283 (7s)
+  [conf_drop 33/51] acc=90.91 zd_recall=50.86 added=2002 label_prec=91.8 zd normal/attack/rejected=159/44/297 (7s)
+  [conf_drop 34/51] acc=90.98 zd_recall=49.60 added=2094 label_prec=90.7 zd normal/attack/rejected=189/37/293 (7s)
+  [conf_drop 35/51] acc=90.88 zd_recall=48.48 added=2074 label_prec=91.5 zd normal/attack/rejected=175/43/289 (7s)
+  [conf_drop 36/51] acc=90.87 zd_recall=48.22 added=2080 label_prec=93.0 zd normal/attack/rejected=141/42/302 (7s)
+  [conf_drop 37/51] acc=90.84 zd_recall=49.85 added=2061 label_prec=90.2 zd normal/attack/rejected=200/31/273 (8s)
+  [conf_drop 38/51] acc=90.87 zd_recall=47.39 added=2068 label_prec=94.0 zd normal/attack/rejected=123/40/321 (7s)
+  [conf_drop 39/51] acc=90.56 zd_recall=46.54 added=2028 label_prec=91.4 zd normal/attack/rejected=172/32/302 (8s)
+  [conf_drop 40/51] acc=90.73 zd_recall=46.93 added=2123 label_prec=93.2 zd normal/attack/rejected=142/49/326 (8s)
+  [conf_drop 41/51] acc=90.91 zd_recall=45.81 added=2043 label_prec=92.8 zd normal/attack/rejected=146/50/294 (7s)
+  [conf_drop 42/51] acc=90.70 zd_recall=45.07 added=1976 label_prec=91.2 zd normal/attack/rejected=171/43/269 (9s)
+  [conf_drop 43/51] acc=90.92 zd_recall=51.17 added=1993 label_prec=91.8 zd normal/attack/rejected=163/45/312 (9s)
+  [conf_drop 44/51] acc=90.77 zd_recall=48.94 added=2175 label_prec=91.1 zd normal/attack/rejected=192/47/278 (9s)
+  [conf_drop 45/51] acc=90.73 zd_recall=43.43 added=1983 label_prec=91.8 zd normal/attack/rejected=160/30/299 (8s)
+  [conf_drop 46/51] acc=90.83 zd_recall=46.75 added=2087 label_prec=93.3 zd normal/attack/rejected=137/39/323 (8s)
+  [conf_drop 47/51] acc=91.00 zd_recall=48.28 added=1998 label_prec=91.2 zd normal/attack/rejected=174/38/320 (8s)
+Traceback (most recent call last):
+  File "/home/user/Master/g1_xai_gate/g1_experiment.py", line 289, in <module>
+    main()
+  File "/home/user/Master/g1_xai_gate/g1_experiment.py", line 282, in main
+    log = run(pf, data, gate, zd, seed, args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/Master/g1_xai_gate/g1_experiment.py", line 228, in run
+    preds, n_acc, X_lab, y_lab, added, clean = model.online_update(X_tr[ib], X_lab, y_lab)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/Master/g1_xai_gate/g1_experiment.py", line 187, in online_update
+    self._train(X_new, y_new, self.cfg.EPOCH1)
+  File "/home/user/g1_upstream/AOC-IDS-Pipeline/unsw_improvement_2.py", line 117, in _train
+    X_train  = X_train.drop(columns=zero_var)
+                               ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/g1_upstream/AOC-IDS-Pipeline/unsw_improvement_2.py", line 83, in forward
+    f"\nExpected names:"
+^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/nn/modules/batchnorm.py", line 210, in forward
+    return F.batch_norm(
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/nn/functional.py", line 2895, in batch_norm
+    _verify_batch_size(input.size())
+  File "/usr/local/lib/python3.11/dist-packages/torch/nn/functional.py", line 2860, in _verify_batch_size
+    raise ValueError(
+ValueError: Expected more than 1 value per channel when training, got input size torch.Size([1, 64])
+[Data] Train (175341, 194) | Normal=56000 Attack=119341
+[Data] Test  (82332, 194)  | Normal=37000  Attack=45332
+skip /home/user/g1_runs/full/Fuzzers_seed0_none.csv
+skip /home/user/g1_runs/full/Fuzzers_seed0_pseudofilter.csv
+skip /home/user/g1_runs/full/Fuzzers_seed0_conf_drop.csv
+skip /home/user/g1_runs/full/Fuzzers_seed0_xai.csv
+skip /home/user/g1_runs/full/Fuzzers_seed0_conf_xai.csv
+skip /home/user/g1_runs/full/Fuzzers_seed1_none.csv
+skip /home/user/g1_runs/full/Fuzzers_seed1_pseudofilter.csv
+skip /home/user/g1_runs/full/Fuzzers_seed1_conf_drop.csv
+skip /home/user/g1_runs/full/Fuzzers_seed1_xai.csv
+skip /home/user/g1_runs/full/Fuzzers_seed1_conf_xai.csv
+skip /home/user/g1_runs/full/Fuzzers_seed2_none.csv
+skip /home/user/g1_runs/full/Fuzzers_seed2_pseudofilter.csv
+
+=== zero-day=Fuzzers seed=2 gate=conf_drop
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4602
+    epoch 20/50  loss=0.3708
+    epoch 30/50  loss=0.4106
+    epoch 40/50  loss=0.4043
+    epoch 50/50  loss=0.4082
+  [Init] Done in 0.6 min
+  [conf_drop] after init  acc=91.13 zd_recall=46.92
+  [conf_drop  1/51] acc=91.23 zd_recall=45.48 added=2553 label_prec=99.8 zd normal/attack/rejected=0/0/0 (2s)
+  [conf_drop  2/51] acc=91.25 zd_recall=46.34 added=2473 label_prec=99.9 zd normal/attack/rejected=0/0/0 (2s)
+  [conf_drop  3/51] acc=91.28 zd_recall=45.83 added=2476 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  4/51] acc=91.22 zd_recall=45.23 added=2442 label_prec=99.9 zd normal/attack/rejected=0/0/0 (2s)
+  [conf_drop  5/51] acc=91.21 zd_recall=44.29 added=2509 label_prec=99.8 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  6/51] acc=91.20 zd_recall=44.94 added=2468 label_prec=99.8 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  7/51] acc=91.45 zd_recall=46.07 added=2436 label_prec=99.8 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  8/51] acc=91.07 zd_recall=45.79 added=2495 label_prec=99.6 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop  9/51] acc=91.02 zd_recall=45.56 added=2460 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop 10/51] acc=91.02 zd_recall=47.54 added=2474 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_drop 11/51] acc=91.07 zd_recall=46.26 added=2429 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 12/51] acc=91.09 zd_recall=46.72 added=2474 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 13/51] acc=90.64 zd_recall=38.24 added=2436 label_prec=99.9 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 14/51] acc=90.74 zd_recall=43.60 added=2316 label_prec=100.0 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 15/51] acc=90.86 zd_recall=45.93 added=2368 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_drop 16/51] acc=90.93 zd_recall=50.02 added=2261 label_prec=95.2 zd normal/attack/rejected=107/28/132 (5s)
+  [conf_drop 17/51] acc=90.94 zd_recall=45.65 added=2000 label_prec=95.0 zd normal/attack/rejected=99/50/338 (4s)
+  [conf_drop 18/51] acc=90.85 zd_recall=46.57 added=2208 label_prec=91.0 zd normal/attack/rejected=193/48/276 (4s)
+  [conf_drop 19/51] acc=91.03 zd_recall=48.32 added=2164 label_prec=92.8 zd normal/attack/rejected=153/38/281 (5s)
+  [conf_drop 20/51] acc=91.13 zd_recall=33.95 added=2234 label_prec=92.7 zd normal/attack/rejected=159/46/290 (5s)
+  [conf_drop 21/51] acc=90.90 zd_recall=48.58 added=1367 label_prec=84.9 zd normal/attack/rejected=207/13/292 (5s)
+  [conf_drop 22/51] acc=90.90 zd_recall=49.93 added=2004 label_prec=92.6 zd normal/attack/rejected=146/44/315 (5s)
+  [conf_drop 23/51] acc=90.92 zd_recall=51.47 added=2188 label_prec=92.3 zd normal/attack/rejected=167/55/271 (5s)
+  [conf_drop 24/51] acc=90.97 zd_recall=47.99 added=1990 label_prec=93.7 zd normal/attack/rejected=123/42/312 (5s)
+  [conf_drop 25/51] acc=90.88 zd_recall=47.84 added=2176 label_prec=91.4 zd normal/attack/rejected=185/55/286 (5s)
+  [conf_drop 26/51] acc=90.78 zd_recall=42.51 added=2079 label_prec=92.5 zd normal/attack/rejected=152/32/288 (6s)
+  [conf_drop 27/51] acc=90.82 zd_recall=46.49 added=1901 label_prec=89.8 zd normal/attack/rejected=191/44/287 (6s)
+  [conf_drop 28/51] acc=90.90 zd_recall=52.33 added=1964 label_prec=91.2 zd normal/attack/rejected=169/34/291 (6s)
+  [conf_drop 29/51] acc=90.81 zd_recall=46.32 added=1974 label_prec=93.7 zd normal/attack/rejected=123/54/336 (6s)
+  [conf_drop 30/51] acc=90.93 zd_recall=47.81 added=1947 label_prec=91.4 zd normal/attack/rejected=165/33/323 (7s)
+  [conf_drop 31/51] acc=90.92 zd_recall=48.40 added=2061 label_prec=91.8 zd normal/attack/rejected=167/46/275 (6s)
+  [conf_drop 32/51] acc=90.89 zd_recall=47.46 added=2091 label_prec=91.1 zd normal/attack/rejected=184/35/283 (6s)
+  [conf_drop 33/51] acc=90.91 zd_recall=50.86 added=2002 label_prec=91.8 zd normal/attack/rejected=159/44/297 (6s)
+  [conf_drop 34/51] acc=90.98 zd_recall=49.60 added=2094 label_prec=90.7 zd normal/attack/rejected=189/37/293 (6s)
+  [conf_drop 35/51] acc=90.88 zd_recall=48.48 added=2074 label_prec=91.5 zd normal/attack/rejected=175/43/289 (7s)
+  [conf_drop 36/51] acc=90.87 zd_recall=48.22 added=2080 label_prec=93.0 zd normal/attack/rejected=141/42/302 (7s)
+  [conf_drop 37/51] acc=90.84 zd_recall=49.85 added=2061 label_prec=90.2 zd normal/attack/rejected=200/31/273 (7s)
+  [conf_drop 38/51] acc=90.87 zd_recall=47.39 added=2068 label_prec=94.0 zd normal/attack/rejected=123/40/321 (7s)
+  [conf_drop 39/51] acc=90.56 zd_recall=46.54 added=2028 label_prec=91.4 zd normal/attack/rejected=172/32/302 (7s)
+  [conf_drop 40/51] acc=90.73 zd_recall=46.93 added=2123 label_prec=93.2 zd normal/attack/rejected=142/49/326 (7s)
+  [conf_drop 41/51] acc=90.91 zd_recall=45.81 added=2043 label_prec=92.8 zd normal/attack/rejected=146/50/294 (8s)
+  [conf_drop 42/51] acc=90.70 zd_recall=45.07 added=1976 label_prec=91.2 zd normal/attack/rejected=171/43/269 (8s)
+  [conf_drop 43/51] acc=90.92 zd_recall=51.17 added=1993 label_prec=91.8 zd normal/attack/rejected=163/45/312 (8s)
+  [conf_drop 44/51] acc=90.77 zd_recall=48.94 added=2175 label_prec=91.1 zd normal/attack/rejected=192/47/278 (8s)
+  [conf_drop 45/51] acc=90.73 zd_recall=43.43 added=1983 label_prec=91.8 zd normal/attack/rejected=160/30/299 (9s)
+  [conf_drop 46/51] acc=90.83 zd_recall=46.75 added=2087 label_prec=93.3 zd normal/attack/rejected=137/39/323 (9s)
+  [conf_drop 47/51] acc=91.00 zd_recall=48.28 added=1998 label_prec=91.2 zd normal/attack/rejected=174/38/320 (9s)
+  [conf_drop 48/51] acc=90.83 zd_recall=52.72 added=1278 label_prec=94.0 zd normal/attack/rejected=76/18/400 (8s)
+  [conf_drop 49/51] acc=90.84 zd_recall=48.47 added=2040 label_prec=93.4 zd normal/attack/rejected=131/38/314 (9s)
+  [conf_drop 50/51] acc=90.80 zd_recall=47.86 added=2096 label_prec=90.6 zd normal/attack/rejected=192/43/308 (9s)
+  [conf_drop 51/51] acc=90.81 zd_recall=48.68 added=2057 label_prec=89.9 zd normal/attack/rejected=203/38/288 (10s)
+
+=== zero-day=Fuzzers seed=2 gate=xai
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4602
+    epoch 20/50  loss=0.3708
+    epoch 30/50  loss=0.4106
+    epoch 40/50  loss=0.4043
+    epoch 50/50  loss=0.4082
+  [Init] Done in 0.5 min
+  [xai] after init  acc=91.13 zd_recall=46.92
+  [xai  1/51] acc=91.17 zd_recall=47.33 added=2242 label_prec=99.0 zd normal/attack/rejected=0/0/0 (3s)
+  [xai  2/51] acc=91.19 zd_recall=42.94 added=2255 label_prec=97.7 zd normal/attack/rejected=0/0/0 (3s)
+  [xai  3/51] acc=91.13 zd_recall=37.31 added=2220 label_prec=98.2 zd normal/attack/rejected=0/0/0 (3s)
+  [xai  4/51] acc=91.17 zd_recall=45.88 added=2209 label_prec=99.1 zd normal/attack/rejected=0/0/0 (4s)
+  [xai  5/51] acc=91.14 zd_recall=45.13 added=2225 label_prec=98.7 zd normal/attack/rejected=0/0/0 (4s)
+  [xai  6/51] acc=91.24 zd_recall=45.51 added=2201 label_prec=98.6 zd normal/attack/rejected=0/0/0 (4s)
+  [xai  7/51] acc=91.22 zd_recall=45.03 added=2203 label_prec=99.0 zd normal/attack/rejected=0/0/0 (3s)
+  [xai  8/51] acc=91.13 zd_recall=44.94 added=2196 label_prec=98.9 zd normal/attack/rejected=0/0/0 (4s)
+  [xai  9/51] acc=91.27 zd_recall=45.71 added=2214 label_prec=99.2 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 10/51] acc=91.29 zd_recall=45.28 added=2200 label_prec=98.3 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 11/51] acc=91.29 zd_recall=43.68 added=2250 label_prec=99.3 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 12/51] acc=91.20 zd_recall=47.61 added=2255 label_prec=98.8 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 13/51] acc=91.31 zd_recall=46.59 added=2202 label_prec=99.0 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 14/51] acc=91.24 zd_recall=48.56 added=2231 label_prec=97.5 zd normal/attack/rejected=0/0/0 (4s)
+  [xai 15/51] acc=91.21 zd_recall=45.81 added=2220 label_prec=99.1 zd normal/attack/rejected=0/0/0 (5s)
+  [xai 16/51] acc=91.21 zd_recall=46.75 added=2128 label_prec=95.1 zd normal/attack/rejected=82/62/123 (5s)
+  [xai 17/51] acc=91.12 zd_recall=43.86 added=2098 label_prec=91.8 zd normal/attack/rejected=155/84/248 (5s)
+  [xai 18/51] acc=91.18 zd_recall=47.62 added=2140 label_prec=89.9 zd normal/attack/rejected=185/89/243 (5s)
+  [xai 19/51] acc=91.30 zd_recall=48.50 added=2146 label_prec=90.0 zd normal/attack/rejected=185/95/192 (5s)
+  [xai 20/51] acc=91.23 zd_recall=48.32 added=1978 label_prec=94.5 zd normal/attack/rejected=89/106/300 (6s)
+  [xai 21/51] acc=91.21 zd_recall=44.44 added=2246 label_prec=85.2 zd normal/attack/rejected=291/93/128 (6s)
+  [xai 22/51] acc=91.21 zd_recall=45.40 added=2065 label_prec=90.7 zd normal/attack/rejected=168/106/231 (6s)
+  [xai 23/51] acc=91.27 zd_recall=46.12 added=2058 label_prec=93.6 zd normal/attack/rejected=117/121/255 (5s)
+  [xai 24/51] acc=91.18 zd_recall=46.77 added=2005 label_prec=93.0 zd normal/attack/rejected=121/85/271 (6s)
+  [xai 25/51] acc=91.29 zd_recall=45.66 added=2043 label_prec=92.0 zd normal/attack/rejected=151/108/267 (6s)
+  [xai 26/51] acc=91.08 zd_recall=46.12 added=2054 label_prec=92.4 zd normal/attack/rejected=139/94/239 (6s)
+  [xai 27/51] acc=91.23 zd_recall=47.56 added=2108 label_prec=88.7 zd normal/attack/rejected=217/111/194 (5s)
+  [xai 28/51] acc=91.08 zd_recall=50.91 added=2094 label_prec=91.8 zd normal/attack/rejected=154/91/249 (7s)
+  [xai 29/51] acc=91.03 zd_recall=49.22 added=2074 label_prec=92.0 zd normal/attack/rejected=145/109/259 (7s)
+  [xai 30/51] acc=91.20 zd_recall=46.65 added=2082 label_prec=91.2 zd normal/attack/rejected=159/105/257 (8s)
+  [xai 31/51] acc=91.20 zd_recall=49.62 added=2123 label_prec=90.6 zd normal/attack/rejected=175/85/228 (7s)
+  [xai 32/51] acc=91.25 zd_recall=47.58 added=2080 label_prec=90.9 zd normal/attack/rejected=170/102/230 (7s)
+  [xai 33/51] acc=91.17 zd_recall=49.51 added=2172 label_prec=89.2 zd normal/attack/rejected=214/94/192 (7s)
+  [xai 34/51] acc=91.14 zd_recall=48.32 added=2159 label_prec=86.1 zd normal/attack/rejected=279/94/146 (7s)
+  [xai 35/51] acc=91.17 zd_recall=46.88 added=2063 label_prec=90.5 zd normal/attack/rejected=173/100/234 (7s)
+  [xai 36/51] acc=91.11 zd_recall=49.24 added=2083 label_prec=90.9 zd normal/attack/rejected=161/87/237 (7s)
+  [xai 37/51] acc=91.19 zd_recall=45.46 added=2080 label_prec=90.7 zd normal/attack/rejected=173/90/241 (8s)
+  [xai 38/51] acc=91.22 zd_recall=48.85 added=2078 label_prec=91.3 zd normal/attack/rejected=155/98/231 (8s)
+  [xai 39/51] acc=91.23 zd_recall=48.17 added=2081 label_prec=91.7 zd normal/attack/rejected=148/90/268 (8s)
+  [xai 40/51] acc=91.23 zd_recall=52.05 added=2111 label_prec=89.0 zd normal/attack/rejected=209/114/194 (8s)
+  [xai 41/51] acc=91.17 zd_recall=51.98 added=2046 label_prec=91.7 zd normal/attack/rejected=153/102/235 (8s)
+  [xai 42/51] acc=91.23 zd_recall=48.81 added=2050 label_prec=92.7 zd normal/attack/rejected=133/102/248 (8s)
+  [xai 43/51] acc=91.20 zd_recall=47.67 added=2109 label_prec=92.2 zd normal/attack/rejected=152/127/241 (8s)
+  [xai 44/51] acc=91.20 zd_recall=48.42 added=2119 label_prec=89.5 zd normal/attack/rejected=198/112/207 (9s)
+  [xai 45/51] acc=91.14 zd_recall=45.81 added=1960 label_prec=92.7 zd normal/attack/rejected=130/75/284 (9s)
+  [xai 46/51] acc=91.26 zd_recall=50.30 added=2076 label_prec=91.3 zd normal/attack/rejected=161/95/243 (9s)
+  [xai 47/51] acc=91.14 zd_recall=44.31 added=2136 label_prec=88.8 zd normal/attack/rejected=203/129/200 (8s)
+  [xai 48/51] acc=91.11 zd_recall=48.96 added=2053 label_prec=90.6 zd normal/attack/rejected=170/79/245 (9s)
+  [xai 49/51] acc=91.11 zd_recall=50.16 added=2051 label_prec=92.4 zd normal/attack/rejected=134/98/251 (9s)
+  [xai 50/51] acc=91.23 zd_recall=48.38 added=2057 label_prec=91.2 zd normal/attack/rejected=162/99/282 (10s)
+  [xai 51/51] acc=91.11 zd_recall=47.05 added=2053 label_prec=91.1 zd normal/attack/rejected=157/103/269 (11s)
+
+=== zero-day=Fuzzers seed=2 gate=conf_xai
+  [Init] 31431 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.4602
+    epoch 20/50  loss=0.3708
+    epoch 30/50  loss=0.4106
+    epoch 40/50  loss=0.4043
+    epoch 50/50  loss=0.4082
+  [Init] Done in 0.5 min
+  [conf_xai] after init  acc=91.13 zd_recall=46.92
+  [conf_xai  1/51] acc=91.33 zd_recall=45.88 added=2089 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  2/51] acc=91.17 zd_recall=45.68 added=2021 label_prec=99.9 zd normal/attack/rejected=0/0/0 (2s)
+  [conf_xai  3/51] acc=91.20 zd_recall=44.18 added=2016 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  4/51] acc=91.12 zd_recall=44.29 added=2056 label_prec=100.0 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  5/51] acc=91.17 zd_recall=45.53 added=2046 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  6/51] acc=91.21 zd_recall=41.59 added=2051 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai  7/51] acc=91.10 zd_recall=42.61 added=2056 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  8/51] acc=91.07 zd_recall=46.30 added=2027 label_prec=99.9 zd normal/attack/rejected=0/0/0 (3s)
+  [conf_xai  9/51] acc=91.03 zd_recall=43.25 added=2054 label_prec=99.9 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 10/51] acc=90.99 zd_recall=45.94 added=1978 label_prec=99.9 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 11/51] acc=91.14 zd_recall=43.35 added=2012 label_prec=100.0 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 12/51] acc=91.22 zd_recall=49.11 added=2077 label_prec=99.9 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 13/51] acc=91.13 zd_recall=44.99 added=2007 label_prec=100.0 zd normal/attack/rejected=0/0/0 (5s)
+  [conf_xai 14/51] acc=91.07 zd_recall=48.76 added=1909 label_prec=99.9 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 15/51] acc=91.02 zd_recall=43.19 added=1943 label_prec=99.8 zd normal/attack/rejected=0/0/0 (4s)
+  [conf_xai 16/51] acc=91.20 zd_recall=48.22 added=1837 label_prec=97.3 zd normal/attack/rejected=50/23/194 (5s)
+  [conf_xai 17/51] acc=91.13 zd_recall=46.77 added=1759 label_prec=96.3 zd normal/attack/rejected=64/42/381 (5s)
+  [conf_xai 18/51] acc=90.97 zd_recall=48.53 added=1729 label_prec=96.0 zd normal/attack/rejected=69/38/410 (5s)
+  [conf_xai 19/51] acc=90.87 zd_recall=46.27 added=1780 label_prec=95.2 zd normal/attack/rejected=83/37/352 (6s)
+  [conf_xai 20/51] acc=91.11 zd_recall=49.92 added=1660 label_prec=97.2 zd normal/attack/rejected=45/39/411 (6s)
+  [conf_xai 21/51] acc=91.05 zd_recall=44.89 added=1764 label_prec=91.6 zd normal/attack/rejected=149/32/331 (5s)
+  [conf_xai 22/51] acc=91.00 zd_recall=44.64 added=1788 label_prec=94.0 zd normal/attack/rejected=106/32/367 (5s)
+  [conf_xai 23/51] acc=91.05 zd_recall=45.86 added=1680 label_prec=97.4 zd normal/attack/rejected=43/51/399 (5s)
+  [conf_xai 24/51] acc=91.04 zd_recall=44.67 added=1534 label_prec=96.0 zd normal/attack/rejected=59/36/382 (6s)
+  [conf_xai 25/51] acc=90.96 zd_recall=44.95 added=1733 label_prec=95.8 zd normal/attack/rejected=72/51/403 (5s)
+  [conf_xai 26/51] acc=90.84 zd_recall=44.04 added=1555 label_prec=95.4 zd normal/attack/rejected=71/25/376 (6s)
+  [conf_xai 27/51] acc=90.97 zd_recall=47.33 added=1659 label_prec=95.2 zd normal/attack/rejected=78/51/393 (6s)
+  [conf_xai 28/51] acc=90.87 zd_recall=45.03 added=1789 label_prec=95.9 zd normal/attack/rejected=71/39/384 (5s)
+  [conf_xai 29/51] acc=90.95 zd_recall=50.69 added=1631 label_prec=96.5 zd normal/attack/rejected=57/45/411 (6s)
+  [conf_xai 30/51] acc=90.87 zd_recall=49.47 added=1577 label_prec=95.1 zd normal/attack/rejected=77/34/410 (6s)
+  [conf_xai 31/51] acc=90.97 zd_recall=49.67 added=1679 label_prec=95.8 zd normal/attack/rejected=71/41/376 (6s)
+  [conf_xai 32/51] acc=91.03 zd_recall=46.04 added=1637 label_prec=97.3 zd normal/attack/rejected=44/29/429 (6s)
+  [conf_xai 33/51] acc=90.99 zd_recall=47.48 added=1692 label_prec=93.4 zd normal/attack/rejected=112/31/357 (7s)
+  [conf_xai 34/51] acc=90.90 zd_recall=46.63 added=1755 label_prec=89.9 zd normal/attack/rejected=175/37/307 (7s)
+  [conf_xai 35/51] acc=90.89 zd_recall=45.38 added=1731 label_prec=94.9 zd normal/attack/rejected=85/42/380 (7s)
+  [conf_xai 36/51] acc=90.90 zd_recall=49.31 added=1728 label_prec=94.5 zd normal/attack/rejected=92/43/350 (6s)
+  [conf_xai 37/51] acc=90.95 zd_recall=50.76 added=1728 label_prec=95.0 zd normal/attack/rejected=86/28/390 (7s)
+  [conf_xai 38/51] acc=90.96 zd_recall=51.17 added=1548 label_prec=96.8 zd normal/attack/rejected=49/29/406 (7s)
+  [conf_xai 39/51] acc=90.88 zd_recall=48.42 added=1620 label_prec=96.2 zd normal/attack/rejected=62/24/420 (7s)
+  [conf_xai 40/51] acc=90.87 zd_recall=47.29 added=1645 label_prec=92.6 zd normal/attack/rejected=119/39/359 (7s)
+  [conf_xai 41/51] acc=90.96 zd_recall=48.33 added=1554 label_prec=94.9 zd normal/attack/rejected=79/32/379 (7s)
+  [conf_xai 42/51] acc=90.98 zd_recall=46.92 added=1634 label_prec=96.2 zd normal/attack/rejected=61/39/383 (7s)
+  [conf_xai 43/51] acc=90.88 zd_recall=48.81 added=1642 label_prec=93.8 zd normal/attack/rejected=100/39/381 (8s)
+  [conf_xai 44/51] acc=90.83 zd_recall=47.56 added=1692 label_prec=95.7 zd normal/attack/rejected=72/35/410 (7s)
+  [conf_xai 45/51] acc=91.19 zd_recall=52.75 added=1536 label_prec=95.3 zd normal/attack/rejected=72/24/393 (9s)
+  [conf_xai 46/51] acc=90.85 zd_recall=52.13 added=1645 label_prec=95.7 zd normal/attack/rejected=71/30/398 (10s)
+  [conf_xai 47/51] acc=90.89 zd_recall=47.26 added=1559 label_prec=96.2 zd normal/attack/rejected=59/31/442 (8s)
+  [conf_xai 48/51] acc=91.07 zd_recall=53.50 added=1708 label_prec=94.2 zd normal/attack/rejected=97/34/363 (8s)
+  [conf_xai 49/51] acc=90.88 zd_recall=49.93 added=1731 label_prec=97.4 zd normal/attack/rejected=43/40/400 (8s)
+  [conf_xai 50/51] acc=91.00 zd_recall=46.80 added=1461 label_prec=95.4 zd normal/attack/rejected=66/27/450 (8s)
+  [conf_xai 51/51] acc=90.84 zd_recall=48.23 added=1713 label_prec=95.0 zd normal/attack/rejected=84/37/408 (9s)
+[Data] Train (175341, 194) | Normal=56000 Attack=119341
+[Data] Test  (82332, 194)  | Normal=37000  Attack=45332
+skip /home/user/g1_runs/full/Fuzzers_seed0_none.csv
+skip /home/user/g1_runs/full/Fuzzers_seed0_pseudofilter.csv
+skip /home/user/g1_runs/full/Fuzzers_seed0_conf_drop.csv
+skip /home/user/g1_runs/full/Fuzzers_seed0_xai.csv
+skip /home/user/g1_runs/full/Fuzzers_seed0_conf_xai.csv
+skip /home/user/g1_runs/full/Fuzzers_seed1_none.csv
+skip /home/user/g1_runs/full/Fuzzers_seed1_pseudofilter.csv
+skip /home/user/g1_runs/full/Fuzzers_seed1_conf_drop.csv
+skip /home/user/g1_runs/full/Fuzzers_seed1_xai.csv
+skip /home/user/g1_runs/full/Fuzzers_seed1_conf_xai.csv
+skip /home/user/g1_runs/full/Fuzzers_seed2_none.csv
+skip /home/user/g1_runs/full/Fuzzers_seed2_pseudofilter.csv
+skip /home/user/g1_runs/full/Fuzzers_seed2_conf_drop.csv
+skip /home/user/g1_runs/full/Fuzzers_seed2_xai.csv
+skip /home/user/g1_runs/full/Fuzzers_seed2_conf_xai.csv

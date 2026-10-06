@@ -1,0 +1,371 @@
+Device : cpu
+[Data] Train (175341, 194) | Normal=56000 Attack=119341
+[Data] Test  (82332, 194)  | Normal=37000  Attack=45332
+
+══════════════════════════════════════════════════  Run 1/5
+  [Init] 35068 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.5481
+    epoch 20/50  loss=0.5357
+    epoch 30/50  loss=0.5451
+    epoch 40/50  loss=0.5041
+    epoch 50/50  loss=0.5169
+  [Init] Done in 0.6 min
+  [After init]  Acc=88.73%  F1=90.32%
+  [Batch   1/50]  Acc=89.67%  F1=90.94%  Accepted=2202/2784  (3s)
+  [Batch   2/50]  Acc=90.24%  F1=91.31%  Accepted=2098/2784  (3s)
+  [Batch   3/50]  Acc=90.48%  F1=91.34%  Accepted=2044/2784  (3s)
+  [Batch   4/50]  Acc=90.65%  F1=91.33%  Accepted=1900/2784  (3s)
+  [Batch   5/50]  Acc=90.77%  F1=91.40%  Accepted=1890/2784  (3s)
+  [Batch   6/50]  Acc=90.64%  F1=91.16%  Accepted=1821/2784  (4s)
+  [Batch   7/50]  Acc=90.31%  F1=90.64%  Accepted=1841/2784  (4s)
+  [Batch   8/50]  Acc=89.59%  F1=89.78%  Accepted=1848/2784  (4s)
+  [Batch   9/50]  Acc=89.84%  F1=90.05%  Accepted=1838/2784  (4s)
+  [Batch  10/50]  Acc=89.41%  F1=89.50%  Accepted=1750/2784  (5s)
+  [Batch  11/50]  Acc=88.47%  F1=88.41%  Accepted=1815/2784  (5s)
+  [Batch  12/50]  Acc=88.41%  F1=88.32%  Accepted=1748/2784  (5s)
+  [Batch  13/50]  Acc=87.82%  F1=87.64%  Accepted=1799/2784  (5s)
+  [Batch  14/50]  Acc=86.04%  F1=85.54%  Accepted=1796/2784  (5s)
+  [Batch  15/50]  Acc=85.23%  F1=84.56%  Accepted=1775/2784  (5s)
+  [Batch  16/50]  Acc=85.20%  F1=84.52%  Accepted=1752/2784  (6s)
+  [Batch  17/50]  Acc=83.54%  F1=82.46%  Accepted=1817/2784  (6s)
+  [Batch  18/50]  Acc=82.02%  F1=80.52%  Accepted=1778/2784  (6s)
+  [Batch  19/50]  Acc=81.23%  F1=79.50%  Accepted=1745/2784  (6s)
+  [Batch  20/50]  Acc=81.23%  F1=79.49%  Accepted=1727/2784  (6s)
+  [Batch  21/50]  Acc=80.97%  F1=79.14%  Accepted=1772/2784  (6s)
+  [Batch  22/50]  Acc=80.02%  F1=77.86%  Accepted=1768/2784  (6s)
+  [Batch  23/50]  Acc=79.89%  F1=77.69%  Accepted=1708/2784  (7s)
+  [Batch  24/50]  Acc=79.14%  F1=76.66%  Accepted=1745/2784  (7s)
+  [Batch  25/50]  Acc=79.03%  F1=76.51%  Accepted=1754/2784  (7s)
+  [Batch  26/50]  Acc=78.44%  F1=75.68%  Accepted=1733/2784  (7s)
+  [Batch  27/50]  Acc=78.56%  F1=75.85%  Accepted=1729/2784  (8s)
+  [Batch  28/50]  Acc=78.11%  F1=75.21%  Accepted=1746/2784  (7s)
+  [Batch  29/50]  Acc=78.11%  F1=75.21%  Accepted=1751/2784  (8s)
+  [Batch  30/50]  Acc=78.03%  F1=75.09%  Accepted=1741/2784  (7s)
+  [Batch  31/50]  Acc=78.10%  F1=75.19%  Accepted=1740/2784  (7s)
+  [Batch  32/50]  Acc=77.85%  F1=74.83%  Accepted=1764/2784  (8s)
+  [Batch  33/50]  Acc=77.94%  F1=74.96%  Accepted=1659/2784  (8s)
+  [Batch  34/50]  Acc=77.83%  F1=74.80%  Accepted=1749/2784  (8s)
+  [Batch  35/50]  Acc=77.60%  F1=74.47%  Accepted=1753/2784  (9s)
+  [Batch  36/50]  Acc=77.60%  F1=74.46%  Accepted=1715/2784  (9s)
+  [Batch  37/50]  Acc=77.61%  F1=74.49%  Accepted=1686/2784  (9s)
+  [Batch  38/50]  Acc=77.64%  F1=74.52%  Accepted=1684/2784  (8s)
+  [Batch  39/50]  Acc=77.53%  F1=74.38%  Accepted=1715/2784  (9s)
+  [Batch  40/50]  Acc=77.56%  F1=74.41%  Accepted=1708/2784  (9s)
+  [Batch  41/50]  Acc=77.55%  F1=74.40%  Accepted=1647/2784  (9s)
+  [Batch  42/50]  Acc=77.51%  F1=74.34%  Accepted=1697/2784  (10s)
+  [Batch  43/50]  Acc=77.39%  F1=74.16%  Accepted=1650/2784  (10s)
+  [Batch  44/50]  Acc=77.49%  F1=74.31%  Accepted=1717/2784  (10s)
+  [Batch  45/50]  Acc=77.32%  F1=74.07%  Accepted=1681/2784  (11s)
+  [Batch  46/50]  Acc=77.43%  F1=74.22%  Accepted=1625/2784  (10s)
+  [Batch  47/50]  Acc=77.41%  F1=74.19%  Accepted=1695/2784  (10s)
+  [Batch  48/50]  Acc=77.34%  F1=74.10%  Accepted=1626/2784  (11s)
+  [Batch  49/50]  Acc=77.30%  F1=74.04%  Accepted=1658/2784  (10s)
+  [Batch  50/50]  Acc=77.28%  F1=74.01%  Accepted=1639/2784  (10s)
+
+  ★ Final  Acc=77.28%  Pre=99.98%  Rec=58.74%  F1=74.01%
+  ★ Best   Acc=90.77%  F1=91.40%
+
+══════════════════════════════════════════════════  Run 2/5
+  [Init] 35068 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.5196
+    epoch 20/50  loss=0.5436
+    epoch 30/50  loss=0.5231
+    epoch 40/50  loss=0.4823
+    epoch 50/50  loss=0.5239
+  [Init] Done in 0.6 min
+  [After init]  Acc=88.54%  F1=90.11%
+  [Batch   1/50]  Acc=89.60%  F1=90.82%  Accepted=2187/2784  (3s)
+  [Batch   2/50]  Acc=90.10%  F1=91.08%  Accepted=2111/2784  (3s)
+  [Batch   3/50]  Acc=90.37%  F1=91.17%  Accepted=2043/2784  (3s)
+  [Batch   4/50]  Acc=90.47%  F1=91.18%  Accepted=2006/2784  (3s)
+  [Batch   5/50]  Acc=90.59%  F1=91.16%  Accepted=2004/2784  (3s)
+  [Batch   6/50]  Acc=90.59%  F1=90.99%  Accepted=1903/2784  (4s)
+  [Batch   7/50]  Acc=90.44%  F1=90.76%  Accepted=1884/2784  (4s)
+  [Batch   8/50]  Acc=90.32%  F1=90.55%  Accepted=1839/2784  (4s)
+  [Batch   9/50]  Acc=90.06%  F1=90.22%  Accepted=1852/2784  (4s)
+  [Batch  10/50]  Acc=89.79%  F1=89.89%  Accepted=1828/2784  (5s)
+  [Batch  11/50]  Acc=88.43%  F1=88.34%  Accepted=1826/2784  (4s)
+  [Batch  12/50]  Acc=87.68%  F1=87.48%  Accepted=1782/2784  (4s)
+  [Batch  13/50]  Acc=86.50%  F1=86.09%  Accepted=1795/2784  (4s)
+  [Batch  14/50]  Acc=86.30%  F1=85.85%  Accepted=1779/2784  (5s)
+  [Batch  15/50]  Acc=85.09%  F1=84.39%  Accepted=1761/2784  (5s)
+  [Batch  16/50]  Acc=85.01%  F1=84.29%  Accepted=1778/2784  (6s)
+  [Batch  17/50]  Acc=85.04%  F1=84.33%  Accepted=1772/2784  (5s)
+  [Batch  18/50]  Acc=83.57%  F1=82.50%  Accepted=1753/2784  (6s)
+  [Batch  19/50]  Acc=83.76%  F1=82.74%  Accepted=1717/2784  (5s)
+  [Batch  20/50]  Acc=81.69%  F1=80.09%  Accepted=1729/2784  (6s)
+  [Batch  21/50]  Acc=81.30%  F1=79.57%  Accepted=1715/2784  (6s)
+  [Batch  22/50]  Acc=81.15%  F1=79.37%  Accepted=1687/2784  (7s)
+  [Batch  23/50]  Acc=82.32%  F1=80.91%  Accepted=1731/2784  (6s)
+  [Batch  24/50]  Acc=80.97%  F1=79.13%  Accepted=1664/2784  (6s)
+  [Batch  25/50]  Acc=80.19%  F1=78.08%  Accepted=1663/2784  (7s)
+  [Batch  26/50]  Acc=81.16%  F1=79.37%  Accepted=1660/2784  (7s)
+  [Batch  27/50]  Acc=80.20%  F1=78.09%  Accepted=1624/2784  (7s)
+  [Batch  28/50]  Acc=80.39%  F1=78.34%  Accepted=1601/2784  (7s)
+  [Batch  29/50]  Acc=79.88%  F1=77.65%  Accepted=1646/2784  (7s)
+  [Batch  30/50]  Acc=79.10%  F1=76.58%  Accepted=1629/2784  (7s)
+  [Batch  31/50]  Acc=78.56%  F1=75.83%  Accepted=1597/2784  (8s)
+  [Batch  32/50]  Acc=79.16%  F1=76.66%  Accepted=1532/2784  (8s)
+  [Batch  33/50]  Acc=78.36%  F1=75.55%  Accepted=1563/2784  (8s)
+  [Batch  34/50]  Acc=78.51%  F1=75.75%  Accepted=1551/2784  (8s)
+  [Batch  35/50]  Acc=78.30%  F1=75.47%  Accepted=1474/2784  (8s)
+  [Batch  36/50]  Acc=78.50%  F1=75.74%  Accepted=1490/2784  (9s)
+  [Batch  37/50]  Acc=78.23%  F1=75.37%  Accepted=1494/2784  (9s)
+  [Batch  38/50]  Acc=77.64%  F1=74.52%  Accepted=1462/2784  (8s)
+  [Batch  39/50]  Acc=77.57%  F1=74.43%  Accepted=1468/2784  (9s)
+  [Batch  40/50]  Acc=77.72%  F1=74.64%  Accepted=1405/2784  (9s)
+  [Batch  41/50]  Acc=77.38%  F1=74.15%  Accepted=1455/2784  (9s)
+  [Batch  42/50]  Acc=77.17%  F1=73.85%  Accepted=1391/2784  (10s)
+  [Batch  43/50]  Acc=76.66%  F1=73.11%  Accepted=1375/2784  (9s)
+  [Batch  44/50]  Acc=75.80%  F1=71.84%  Accepted=1387/2784  (10s)
+  [Batch  45/50]  Acc=75.55%  F1=71.47%  Accepted=1348/2784  (10s)
+  [Batch  46/50]  Acc=75.47%  F1=71.35%  Accepted=1364/2784  (10s)
+  [Batch  47/50]  Acc=74.26%  F1=69.51%  Accepted=1337/2784  (11s)
+  [Batch  48/50]  Acc=75.51%  F1=71.40%  Accepted=1318/2784  (10s)
+  [Batch  49/50]  Acc=73.71%  F1=68.64%  Accepted=1261/2784  (11s)
+  [Batch  50/50]  Acc=74.15%  F1=69.33%  Accepted=1257/2784  (12s)
+
+  ★ Final  Acc=74.15%  Pre=99.98%  Rec=53.06%  F1=69.33%
+  ★ Best   Acc=90.59%  F1=91.16%
+
+══════════════════════════════════════════════════  Run 3/5
+  [Init] 35068 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.5701
+    epoch 20/50  loss=0.5232
+    epoch 30/50  loss=0.5482
+    epoch 40/50  loss=0.5401
+    epoch 50/50  loss=0.5172
+  [Init] Done in 0.6 min
+  [After init]  Acc=89.50%  F1=90.92%
+  [Batch   1/50]  Acc=90.09%  F1=91.28%  Accepted=2221/2784  (2s)
+  [Batch   2/50]  Acc=90.38%  F1=91.35%  Accepted=2156/2784  (3s)
+  [Batch   3/50]  Acc=90.66%  F1=91.53%  Accepted=2136/2784  (3s)
+  [Batch   4/50]  Acc=90.72%  F1=91.49%  Accepted=2057/2784  (4s)
+  [Batch   5/50]  Acc=90.75%  F1=91.35%  Accepted=2011/2784  (3s)
+  [Batch   6/50]  Acc=90.71%  F1=91.17%  Accepted=1942/2784  (3s)
+  [Batch   7/50]  Acc=90.10%  F1=90.37%  Accepted=1843/2784  (4s)
+  [Batch   8/50]  Acc=90.09%  F1=90.34%  Accepted=1793/2784  (4s)
+  [Batch   9/50]  Acc=89.73%  F1=89.90%  Accepted=1798/2784  (4s)
+  [Batch  10/50]  Acc=89.38%  F1=89.48%  Accepted=1740/2784  (4s)
+  [Batch  11/50]  Acc=89.28%  F1=89.35%  Accepted=1777/2784  (5s)
+  [Batch  12/50]  Acc=88.88%  F1=88.88%  Accepted=1788/2784  (5s)
+  [Batch  13/50]  Acc=87.56%  F1=87.35%  Accepted=1756/2784  (5s)
+  [Batch  14/50]  Acc=86.47%  F1=86.07%  Accepted=1713/2784  (6s)
+  [Batch  15/50]  Acc=87.25%  F1=86.99%  Accepted=1754/2784  (5s)
+  [Batch  16/50]  Acc=86.68%  F1=86.31%  Accepted=1718/2784  (5s)
+  [Batch  17/50]  Acc=86.19%  F1=85.74%  Accepted=1709/2784  (6s)
+  [Batch  18/50]  Acc=85.07%  F1=84.38%  Accepted=1745/2784  (6s)
+  [Batch  19/50]  Acc=85.25%  F1=84.59%  Accepted=1695/2784  (6s)
+  [Batch  20/50]  Acc=82.91%  F1=81.67%  Accepted=1707/2784  (7s)
+  [Batch  21/50]  Acc=83.90%  F1=82.93%  Accepted=1757/2784  (6s)
+  [Batch  22/50]  Acc=83.37%  F1=82.27%  Accepted=1723/2784  (7s)
+  [Batch  23/50]  Acc=82.05%  F1=80.56%  Accepted=1707/2784  (7s)
+  [Batch  24/50]  Acc=82.14%  F1=80.67%  Accepted=1713/2784  (7s)
+  [Batch  25/50]  Acc=80.52%  F1=78.54%  Accepted=1731/2784  (7s)
+  [Batch  26/50]  Acc=80.51%  F1=78.52%  Accepted=1700/2784  (7s)
+  [Batch  27/50]  Acc=80.32%  F1=78.28%  Accepted=1708/2784  (7s)
+  [Batch  28/50]  Acc=79.43%  F1=77.06%  Accepted=1715/2784  (8s)
+  [Batch  29/50]  Acc=78.93%  F1=76.38%  Accepted=1688/2784  (7s)
+  [Batch  30/50]  Acc=78.92%  F1=76.36%  Accepted=1719/2784  (8s)
+  [Batch  31/50]  Acc=78.65%  F1=75.98%  Accepted=1697/2784  (8s)
+  [Batch  32/50]  Acc=78.08%  F1=75.17%  Accepted=1698/2784  (8s)
+  [Batch  33/50]  Acc=78.25%  F1=75.41%  Accepted=1650/2784  (8s)
+  [Batch  34/50]  Acc=77.55%  F1=74.40%  Accepted=1667/2784  (9s)
+  [Batch  35/50]  Acc=78.27%  F1=75.44%  Accepted=1671/2784  (9s)
+  [Batch  36/50]  Acc=77.53%  F1=74.37%  Accepted=1645/2784  (9s)
+  [Batch  37/50]  Acc=77.40%  F1=74.19%  Accepted=1617/2784  (9s)
+  [Batch  38/50]  Acc=77.47%  F1=74.29%  Accepted=1641/2784  (9s)
+  [Batch  39/50]  Acc=77.33%  F1=74.10%  Accepted=1678/2784  (10s)
+  [Batch  40/50]  Acc=77.27%  F1=74.00%  Accepted=1600/2784  (9s)
+  [Batch  41/50]  Acc=77.34%  F1=74.10%  Accepted=1616/2784  (9s)
+  [Batch  42/50]  Acc=77.31%  F1=74.06%  Accepted=1627/2784  (10s)
+  [Batch  43/50]  Acc=77.23%  F1=73.94%  Accepted=1633/2784  (9s)
+  [Batch  44/50]  Acc=77.26%  F1=73.99%  Accepted=1665/2784  (10s)
+  [Batch  45/50]  Acc=77.07%  F1=73.71%  Accepted=1612/2784  (11s)
+  [Batch  46/50]  Acc=77.04%  F1=73.66%  Accepted=1640/2784  (11s)
+  [Batch  47/50]  Acc=77.10%  F1=73.75%  Accepted=1629/2784  (11s)
+  [Batch  48/50]  Acc=76.85%  F1=73.39%  Accepted=1642/2784  (11s)
+  [Batch  49/50]  Acc=76.86%  F1=73.40%  Accepted=1635/2784  (11s)
+  [Batch  50/50]  Acc=76.81%  F1=73.32%  Accepted=1582/2784  (12s)
+
+  ★ Final  Acc=76.81%  Pre=99.98%  Rec=57.89%  F1=73.32%
+  ★ Best   Acc=90.75%  F1=91.35%
+
+══════════════════════════════════════════════════  Run 4/5
+  [Init] 35068 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.5592
+    epoch 20/50  loss=0.5335
+    epoch 30/50  loss=0.5348
+    epoch 40/50  loss=0.5381
+    epoch 50/50  loss=0.5297
+  [Init] Done in 0.6 min
+  [After init]  Acc=88.49%  F1=90.06%
+  [Batch   1/50]  Acc=89.20%  F1=90.53%  Accepted=2197/2784  (3s)
+  [Batch   2/50]  Acc=89.92%  F1=90.99%  Accepted=2151/2784  (3s)
+  [Batch   3/50]  Acc=90.15%  F1=91.05%  Accepted=2122/2784  (3s)
+  [Batch   4/50]  Acc=90.51%  F1=91.19%  Accepted=2075/2784  (3s)
+  [Batch   5/50]  Acc=90.59%  F1=91.16%  Accepted=2004/2784  (3s)
+  [Batch   6/50]  Acc=90.59%  F1=91.07%  Accepted=1995/2784  (3s)
+  [Batch   7/50]  Acc=90.65%  F1=91.10%  Accepted=1925/2784  (4s)
+  [Batch   8/50]  Acc=90.18%  F1=90.43%  Accepted=1930/2784  (4s)
+  [Batch   9/50]  Acc=89.93%  F1=90.10%  Accepted=1862/2784  (4s)
+  [Batch  10/50]  Acc=89.58%  F1=89.69%  Accepted=1845/2784  (5s)
+  [Batch  11/50]  Acc=89.29%  F1=89.35%  Accepted=1804/2784  (4s)
+  [Batch  12/50]  Acc=88.99%  F1=89.00%  Accepted=1825/2784  (5s)
+  [Batch  13/50]  Acc=88.22%  F1=88.12%  Accepted=1828/2784  (5s)
+  [Batch  14/50]  Acc=87.60%  F1=87.40%  Accepted=1778/2784  (5s)
+  [Batch  15/50]  Acc=87.09%  F1=86.82%  Accepted=1771/2784  (5s)
+  [Batch  16/50]  Acc=87.03%  F1=86.74%  Accepted=1785/2784  (5s)
+  [Batch  17/50]  Acc=86.35%  F1=85.93%  Accepted=1777/2784  (6s)
+  [Batch  18/50]  Acc=86.11%  F1=85.65%  Accepted=1787/2784  (6s)
+  [Batch  19/50]  Acc=85.56%  F1=84.96%  Accepted=1776/2784  (6s)
+  [Batch  20/50]  Acc=85.35%  F1=84.71%  Accepted=1809/2784  (6s)
+  [Batch  21/50]  Acc=85.06%  F1=84.34%  Accepted=1779/2784  (6s)
+  [Batch  22/50]  Acc=84.39%  F1=83.52%  Accepted=1747/2784  (7s)
+  [Batch  23/50]  Acc=84.48%  F1=83.63%  Accepted=1738/2784  (7s)
+  [Batch  24/50]  Acc=83.25%  F1=82.10%  Accepted=1726/2784  (7s)
+  [Batch  25/50]  Acc=83.78%  F1=82.77%  Accepted=1718/2784  (7s)
+  [Batch  26/50]  Acc=81.68%  F1=80.08%  Accepted=1753/2784  (8s)
+  [Batch  27/50]  Acc=81.88%  F1=80.34%  Accepted=1679/2784  (8s)
+  [Batch  28/50]  Acc=81.00%  F1=79.17%  Accepted=1749/2784  (8s)
+  [Batch  29/50]  Acc=80.78%  F1=78.89%  Accepted=1692/2784  (9s)
+  [Batch  30/50]  Acc=79.74%  F1=77.48%  Accepted=1694/2784  (9s)
+  [Batch  31/50]  Acc=80.06%  F1=77.91%  Accepted=1690/2784  (9s)
+  [Batch  32/50]  Acc=80.05%  F1=77.90%  Accepted=1692/2784  (8s)
+  [Batch  33/50]  Acc=79.20%  F1=76.74%  Accepted=1716/2784  (8s)
+  [Batch  34/50]  Acc=79.46%  F1=77.09%  Accepted=1696/2784  (9s)
+  [Batch  35/50]  Acc=79.52%  F1=77.18%  Accepted=1718/2784  (8s)
+  [Batch  36/50]  Acc=78.71%  F1=76.06%  Accepted=1699/2784  (10s)
+  [Batch  37/50]  Acc=79.13%  F1=76.63%  Accepted=1715/2784  (11s)
+  [Batch  38/50]  Acc=78.89%  F1=76.30%  Accepted=1734/2784  (9s)
+  [Batch  39/50]  Acc=78.60%  F1=75.90%  Accepted=1702/2784  (10s)
+  [Batch  40/50]  Acc=78.27%  F1=75.45%  Accepted=1670/2784  (9s)
+  [Batch  41/50]  Acc=78.57%  F1=75.86%  Accepted=1709/2784  (9s)
+  [Batch  42/50]  Acc=78.01%  F1=75.07%  Accepted=1685/2784  (10s)
+  [Batch  43/50]  Acc=78.09%  F1=75.18%  Accepted=1640/2784  (10s)
+  [Batch  44/50]  Acc=77.92%  F1=74.93%  Accepted=1676/2784  (10s)
+  [Batch  45/50]  Acc=77.99%  F1=75.03%  Accepted=1726/2784  (10s)
+  [Batch  46/50]  Acc=77.63%  F1=74.52%  Accepted=1663/2784  (11s)
+  [Batch  47/50]  Acc=77.73%  F1=74.66%  Accepted=1620/2784  (11s)
+  [Batch  48/50]  Acc=77.66%  F1=74.56%  Accepted=1646/2784  (11s)
+  [Batch  49/50]  Acc=77.16%  F1=73.84%  Accepted=1658/2784  (11s)
+  [Batch  50/50]  Acc=77.50%  F1=74.34%  Accepted=1658/2784  (11s)
+
+  ★ Final  Acc=77.50%  Pre=99.93%  Rec=59.18%  F1=74.34%
+  ★ Best   Acc=90.65%  F1=91.10%
+
+══════════════════════════════════════════════════  Run 5/5
+  [Init] 35068 samples | 50 epochs | params=29,830
+    epoch 10/50  loss=0.5759
+    epoch 20/50  loss=0.5413
+    epoch 30/50  loss=0.5310
+    epoch 40/50  loss=0.5197
+    epoch 50/50  loss=0.4923
+  [Init] Done in 0.6 min
+  [After init]  Acc=89.52%  F1=90.97%
+  [Batch   1/50]  Acc=90.17%  F1=91.37%  Accepted=2200/2784  (3s)
+  [Batch   2/50]  Acc=90.31%  F1=91.45%  Accepted=2180/2784  (3s)
+  [Batch   3/50]  Acc=90.74%  F1=91.63%  Accepted=2163/2784  (3s)
+  [Batch   4/50]  Acc=90.81%  F1=91.61%  Accepted=2046/2784  (3s)
+  [Batch   5/50]  Acc=90.75%  F1=91.36%  Accepted=1938/2784  (3s)
+  [Batch   6/50]  Acc=90.68%  F1=91.24%  Accepted=1939/2784  (3s)
+  [Batch   7/50]  Acc=90.62%  F1=91.11%  Accepted=1914/2784  (4s)
+  [Batch   8/50]  Acc=90.25%  F1=90.58%  Accepted=1818/2784  (4s)
+  [Batch   9/50]  Acc=89.98%  F1=90.23%  Accepted=1827/2784  (4s)
+  [Batch  10/50]  Acc=89.59%  F1=89.73%  Accepted=1790/2784  (5s)
+  [Batch  11/50]  Acc=89.18%  F1=89.24%  Accepted=1830/2784  (5s)
+  [Batch  12/50]  Acc=89.49%  F1=89.61%  Accepted=1812/2784  (5s)
+  [Batch  13/50]  Acc=89.13%  F1=89.17%  Accepted=1798/2784  (5s)
+  [Batch  14/50]  Acc=87.04%  F1=86.76%  Accepted=1755/2784  (5s)
+  [Batch  15/50]  Acc=86.69%  F1=86.34%  Accepted=1740/2784  (6s)
+  [Batch  16/50]  Acc=86.17%  F1=85.73%  Accepted=1749/2784  (6s)
+  [Batch  17/50]  Acc=85.21%  F1=84.56%  Accepted=1790/2784  (6s)
+  [Batch  18/50]  Acc=84.68%  F1=83.92%  Accepted=1699/2784  (6s)
+  [Batch  19/50]  Acc=84.32%  F1=83.48%  Accepted=1727/2784  (6s)
+  [Batch  20/50]  Acc=83.15%  F1=82.00%  Accepted=1757/2784  (6s)
+  [Batch  21/50]  Acc=82.76%  F1=81.51%  Accepted=1749/2784  (6s)
+  [Batch  22/50]  Acc=82.23%  F1=80.81%  Accepted=1762/2784  (7s)
+  [Batch  23/50]  Acc=81.31%  F1=79.62%  Accepted=1786/2784  (7s)
+  [Batch  24/50]  Acc=81.56%  F1=79.95%  Accepted=1758/2784  (6s)
+  [Batch  25/50]  Acc=80.70%  F1=78.81%  Accepted=1708/2784  (7s)
+  [Batch  26/50]  Acc=80.79%  F1=78.92%  Accepted=1662/2784  (7s)
+  [Batch  27/50]  Acc=79.85%  F1=77.65%  Accepted=1723/2784  (7s)
+  [Batch  28/50]  Acc=80.33%  F1=78.31%  Accepted=1713/2784  (8s)
+  [Batch  29/50]  Acc=80.11%  F1=78.01%  Accepted=1682/2784  (8s)
+  [Batch  30/50]  Acc=79.27%  F1=76.86%  Accepted=1697/2784  (8s)
+  [Batch  31/50]  Acc=78.24%  F1=75.42%  Accepted=1656/2784  (8s)
+  [Batch  32/50]  Acc=78.41%  F1=75.66%  Accepted=1649/2784  (9s)
+  [Batch  33/50]  Acc=78.33%  F1=75.54%  Accepted=1629/2784  (9s)
+  [Batch  34/50]  Acc=78.44%  F1=75.70%  Accepted=1686/2784  (8s)
+  [Batch  35/50]  Acc=78.01%  F1=75.08%  Accepted=1637/2784  (8s)
+  [Batch  36/50]  Acc=78.19%  F1=75.36%  Accepted=1678/2784  (10s)
+  [Batch  37/50]  Acc=77.96%  F1=75.03%  Accepted=1649/2784  (9s)
+  [Batch  38/50]  Acc=77.76%  F1=74.73%  Accepted=1578/2784  (9s)
+  [Batch  39/50]  Acc=77.74%  F1=74.70%  Accepted=1569/2784  (9s)
+  [Batch  40/50]  Acc=77.42%  F1=74.23%  Accepted=1529/2784  (11s)
+  [Batch  41/50]  Acc=76.90%  F1=73.48%  Accepted=1570/2784  (10s)
+  [Batch  42/50]  Acc=77.46%  F1=74.29%  Accepted=1536/2784  (11s)
+  [Batch  43/50]  Acc=76.31%  F1=72.62%  Accepted=1466/2784  (11s)
+  [Batch  44/50]  Acc=77.39%  F1=74.20%  Accepted=1535/2784  (11s)
+  [Batch  45/50]  Acc=76.39%  F1=72.74%  Accepted=1529/2784  (12s)
+  [Batch  46/50]  Acc=76.13%  F1=72.35%  Accepted=1476/2784  (11s)
+  [Batch  47/50]  Acc=76.01%  F1=72.17%  Accepted=1541/2784  (10s)
+  [Batch  48/50]  Acc=75.18%  F1=70.94%  Accepted=1482/2784  (13s)
+  [Batch  49/50]  Acc=74.48%  F1=69.86%  Accepted=1404/2784  (11s)
+  [Batch  50/50]  Acc=75.32%  F1=71.14%  Accepted=1448/2784  (12s)
+
+  ★ Final  Acc=75.32%  Pre=99.91%  Rec=55.23%  F1=71.14%
+  ★ Best   Acc=90.81%  F1=91.61%
+
+╔══════════════════════════════════════════════════════════════════╗
+║                Final — Improved vs Base Paper (%)                ║
+╠══════════════════════════════════════════════════════════════════╣
+║             │      Acc      Pre      Rec       F1   ║
+╠──────────────────────────────────────────────────────────────────╣
+║    Run 1    │    77.28    99.98    58.74    74.01   ║
+║    Run 2    │    74.15    99.98    53.06    69.33   ║
+║    Run 3    │    76.81    99.98    57.89    73.32   ║
+║    Run 4    │    77.50    99.93    59.18    74.34   ║
+║    Run 5    │    75.32    99.91    55.23    71.14   ║
+╠──────────────────────────────────────────────────────────────────╣
+║     Mean    │    76.21    99.96    56.82    72.43   ║
+║     ±Std    │    ±1.28    ±0.03    ±2.33    ±1.91   ║
+╠──────────────────────────────────────────────────────────────────╣
+║  BasePaper  │    89.19    90.65    89.70    90.14   ║
+║      Δ      │   -12.98    +9.31   -32.88   -17.71   ║
+╚══════════════════════════════════════════════════════════════════╝
+
+  Final Summary:
+  Metric   Base Paper    Improved         Δ
+  ──────────────────────────────────────────
+  Acc          89.19%      76.21%   ▼ 12.98%
+  Pre          90.65%      99.96%   ▲ 9.31%
+  Rec          89.70%      56.82%   ▼ 32.88%
+  F1           90.14%      72.43%   ▼ 17.71%
+
+╔══════════════════════════════════════════════════════════════════╗
+║             Best per run — Improved vs Base Paper (%)            ║
+╠══════════════════════════════════════════════════════════════════╣
+║             │      Acc      Pre      Rec       F1   ║
+╠──────────────────────────────────────────────────────────────────╣
+║    Run 1    │    90.77    93.84    89.08    91.40   ║
+║    Run 2    │    90.59    94.44    88.09    91.16   ║
+║    Run 3    │    90.75    94.12    88.74    91.35   ║
+║    Run 4    │    90.65    95.73    86.90    91.10   ║
+║    Run 5    │    90.81    92.15    91.07    91.61   ║
+╠──────────────────────────────────────────────────────────────────╣
+║     Mean    │    90.72    94.06    88.78    91.32   ║
+║     ±Std    │    ±0.08    ±1.15    ±1.37    ±0.18   ║
+╠──────────────────────────────────────────────────────────────────╣
+║  BasePaper  │    89.19    90.65    89.70    90.14   ║
+║      Δ      │    +1.53    +3.41    -0.92    +1.18   ║
+╚══════════════════════════════════════════════════════════════════╝
+
+  Best per run Summary:
+  Metric   Base Paper    Improved         Δ
+  ──────────────────────────────────────────
+  Acc          89.19%      90.72%   ▲ 1.53%
+  Pre          90.65%      94.06%   ▲ 3.41%
+  Rec          89.70%      88.78%   ▼ 0.92%
+  F1           90.14%      91.32%   ▲ 1.18%
+
